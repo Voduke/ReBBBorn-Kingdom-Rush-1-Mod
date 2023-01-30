@@ -15446,9 +15446,9 @@ tt.hero.skills.arcane_rain.xp_level_steps = {
 	[7.0] = 2
 }
 tt.hero.skills.arcane_rain.xp_gain = {
-	50,
-	100,
-	150
+	125,
+	250,
+	375
 }
 tt.health.dead_lifetime = 15
 tt.health_bar.offset = v(0, 33)
@@ -15523,8 +15523,8 @@ tt.timed_attacks.list[2].entity = "magnus_arcane_rain_controller"
 tt.timed_attacks.list[2].cooldown = fts(25) + 14
 tt.timed_attacks.list[2].cast_time = fts(15)
 tt.timed_attacks.list[2].disabled = true
-tt.timed_attacks.list[2].max_range = 120
-tt.timed_attacks.list[2].min_range = 50
+tt.timed_attacks.list[2].max_range = 150
+tt.timed_attacks.list[2].min_range = 45
 tt.timed_attacks.list[2].sound = "HeroMageRainCharge"
 tt.timed_attacks.list[2].vis_bans = bor(F_FRIEND, F_FLYING)
 tt.timed_attacks.list[2].vis_flags = F_RANGED
@@ -15624,9 +15624,9 @@ tt.hero.skills.flaming_frenzy.xp_gain = {
 }
 tt.hero.skills.surge_of_flame = CC("hero_skill")
 tt.hero.skills.surge_of_flame.damage_max = {
-	20,
 	30,
-	40
+	40,
+	50
 }
 tt.hero.skills.surge_of_flame.damage_min = {
 	10,
@@ -15724,15 +15724,15 @@ tt.hero.fixed_stat_range = 0
 tt.hero.fixed_stat_speed = 4
 tt.hero.level_stats.armor = {
 	0,
-	0.1,
-	0.1,
-	0.2,
-	0.2,
-	0.3,
-	0.3,
-	0.4,
-	0.4,
-	0.5
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0
 }
 tt.hero.level_stats.hp_max = {
 	450,
@@ -15804,9 +15804,9 @@ tt.hero.skills.smash.xp_level_steps = {
 	3
 }
 tt.hero.skills.smash.xp_gain = {
+	50,
 	100,
-	200,
-	300
+	150
 }
 tt.hero.skills.fissure = CC("hero_skill")
 tt.hero.skills.fissure.damage_min = {
@@ -15825,9 +15825,9 @@ tt.hero.skills.fissure.xp_level_steps = {
 	[7.0] = 2
 }
 tt.hero.skills.fissure.xp_gain = {
-	50,
-	100,
-	150
+	300,
+	600,
+	900
 }
 tt.health.dead_lifetime = 15
 tt.health_bar.offset = v(0, 38)
@@ -15851,12 +15851,12 @@ tt.sound_events.insert = "HeroReinforcementTauntIntro"
 tt.sound_events.respawn = "HeroReinforcementTauntIntro"
 tt.unit.marker_offset = v(0, 0)
 tt.unit.mod_offset = v(0, 20)
-tt.melee.range = 50
+tt.melee.range = 45
 tt.melee.cooldown = 1
 tt.melee.attacks[1].cooldown = 1
 tt.melee.attacks[1].hit_time = fts(5)
 tt.melee.attacks[1].shared_cooldown = true
-tt.melee.attacks[1].xp_gain_factor = 3
+tt.melee.attacks[1].xp_gain_factor = 2
 tt.melee.attacks[1].sound_hit = "HeroReinforcementHit"
 tt.melee.attacks[2] = table.deepclone(tt.melee.attacks[1])
 tt.melee.attacks[2].animation = "attack2"
@@ -15881,7 +15881,7 @@ tt.melee.attacks[4].animation = "fissure"
 tt.melee.attacks[4].cooldown = fts(37) + 10
 tt.melee.attacks[4].damage_max = 0
 tt.melee.attacks[4].damage_min = 0
-tt.melee.attacks[4].damage_radius = 50
+tt.melee.attacks[4].damage_radius = 60
 tt.melee.attacks[4].damage_type = DAMAGE_NONE
 tt.melee.attacks[4].disabled = true
 tt.melee.attacks[4].hit_aura = "aura_malik_fissure"
@@ -16232,9 +16232,9 @@ tt.hero.skills.bear.damage_max = {
 	60
 }
 tt.hero.skills.bear.duration = {
+	8,
 	10,
-	12,
-	14
+	12
 }
 tt.hero.skills.bear.xp_level_steps = {
 	[10.0] = 3,
@@ -17328,13 +17328,13 @@ tt.sound_events.death_args = {
 tt.sound_events.hero_room_select = "TenShiTauntSelect"
 tt.sound_events.insert = "TenShiTauntIntro"
 tt.sound_events.respawn = "TenShiRespawn"
-tt.teleport.min_distance = 100
+tt.teleport.min_distance = 50
 tt.teleport.delay = 0
 tt.teleport.sound = "TenShiTeleportSfx"
 tt.unit.marker_offset = v(0, 0)
 tt.unit.mod_offset = v(0, 20)
 tt.unit.hit_offset = v(0, 20)
-tt.melee.range_normal = 50
+tt.melee.range_normal = 45
 tt.melee.range_buffed = 65
 tt.melee.range = tt.melee.range_normal
 tt.melee.attacks[1].cooldown = 1.35
@@ -17361,7 +17361,7 @@ tt.melee.attacks[3].loops = 2
 tt.melee.attacks[3].disabled = true
 tt.melee.attacks[3].damage_min = nil
 tt.melee.attacks[3].damage_max = nil
-tt.melee.attacks[3].damage_radius = 50
+tt.melee.attacks[3].damage_radius = 60
 tt.melee.attacks[3].damage_type = DAMAGE_PHYSICAL
 tt.melee.attacks[3].hit_times = {
 	fts(2),
