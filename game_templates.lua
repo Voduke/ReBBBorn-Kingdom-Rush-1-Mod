@@ -2325,7 +2325,7 @@ tt.attacks.list[1].cooldowns = {
 }
 tt.attacks.list[1].cooldown = 0.7
 tt.attacks.list[1].critical_chances = {
-	0.01,
+	0.03,
 	0.06
 }
 tt.attacks.list[1].shoot_times = {
@@ -2411,18 +2411,18 @@ tt.info.portrait = ((IS_PHONE and "portraits_towers") or "info_portraits_towers"
 tt.info.fn = scripts2.tower_silver.get_info
 tt.powers.sentence = E.clone_c(E, "power")
 tt.powers.sentence.attack_idx = 2
-tt.powers.sentence.price_base = 300
-tt.powers.sentence.price_inc = 300
+tt.powers.sentence.price_base = 400
+tt.powers.sentence.price_inc = 400
 tt.powers.sentence.chances = {
 	{
-		0.015,
-		0.03,
-		0.045
+		0.025,
+		0.05,
+		0.075
 	},
 	{
-		0.03,
-		0.06,
-		0.09
+		0.05,
+		0.1,
+		0.15
 	}
 }
 tt.powers.sentence.enc_icon = 3
@@ -2696,12 +2696,12 @@ tt.attacks.list[3].vis_flags = bor(F_RANGED)
 tt.attacks.list[3].sound = "TowerWildMagusDisruptionCast"
 tt.powers.eldritch = E.clone_c(E, "power")
 tt.powers.eldritch.attack_idx = 2
-tt.powers.eldritch.price_base = 325
-tt.powers.eldritch.price_inc = 185
+tt.powers.eldritch.price_base = 350
+tt.powers.eldritch.price_inc = 200
 tt.powers.eldritch.cooldowns = {
 	28,
-	28,
-	28
+	24,
+	20
 }
 tt.powers.eldritch.enc_icon = 16
 tt.powers.ward = E.clone_c(E, "power")
@@ -2885,7 +2885,7 @@ tt.main_script.update = scripts2.tower_high_elven.update
 tt.main_script.remove = scripts2.tower_high_elven.remove
 tt.tower.type = "high_elven"
 tt.tower.level = 1
-tt.tower.price = 300
+tt.tower.price = 275
 tt.tower.size = TOWER_SIZE_LARGE
 tt.attacks.range = 180
 tt.attacks.list[1] = E.clone_c(E, "bullet_attack")
@@ -2981,7 +2981,7 @@ tt = E.register_t(E, "high_elven_sentinel", "decal_scripted")
 
 E.add_comps(E, tt, "force_motion", "ranged", "tween")
 
-tt.charge_time = 10
+tt.charge_time = 5
 tt.flight_height = 50
 tt.force_motion.max_a = 135000
 tt.force_motion.max_v = 450
@@ -3001,13 +3001,13 @@ tt.ranged.attacks[1].cooldown = 0.5
 tt.ranged.attacks[1].search_cooldown = 0.25
 tt.ranged.attacks[1].shoot_range = 25
 tt.ranged.attacks[1].launch_range = 300
-tt.ranged.attacks[1].max_range = 9000
+tt.ranged.attacks[1].max_range = 300
 tt.ranged.attacks[1].min_range = 0
 tt.ranged.attacks[1].animation = "shoot"
 tt.ranged.attacks[1].bullet_start_offset = v(0, 0)
 tt.ranged.attacks[1].vis_flags = F_RANGED
 tt.ranged.attacks[1].vis_bans = 0
-tt.ranged.attacks[1].max_shots = 20
+tt.ranged.attacks[1].max_shots = 10
 tt.render.sprites[1].prefix = "high_elven_sentinel"
 tt.render.sprites[1].name = "small"
 tt.render.sprites[1].z = Z_BULLETS
@@ -3139,7 +3139,7 @@ E.add_comps(E, tt, "attacks", "powers", "barrack")
 
 tt.tower.type = "druid"
 tt.tower.level = 1
-tt.tower.price = 375
+tt.tower.price = 350
 tt.tower.range_offset = v(0, 10)
 tt.info.enc_icon = 13
 tt.info.portrait = ((IS_PHONE and "portraits_towers") or "info_portraits_towers") .. "_0012"
@@ -3173,8 +3173,8 @@ tt.powers.nature.entity = "druid_shooter_nature"
 tt.powers.nature.enc_icon = 12
 tt.powers.nature.name = "NATURES_FRIEND"
 tt.powers.sylvan = E.clone_c(E, "power")
-tt.powers.sylvan.price_base = 200
-tt.powers.sylvan.price_inc = 200
+tt.powers.sylvan.price_base = 250
+tt.powers.sylvan.price_inc = 250
 tt.powers.sylvan.entity = "druid_shooter_sylvan"
 tt.powers.sylvan.enc_icon = 13
 tt.render.sprites[1].animated = false
@@ -3220,7 +3220,14 @@ tt.attacks.list[1].spell = "mod_druid_sylvan"
 tt.attacks.list[1].cooldown = 10
 tt.attacks.list[1].range = 175
 tt.attacks.list[1].excluded_templates = {
-	"enemy_ogre_magi"
+	"enemy_ogre_magi",
+	"enemy_goblin",
+	"enemy_zombie",
+	"enemy_skeleton",
+	"enemy_wolf_small",
+	"enemy_halloween_zombie",
+	"enemy_spider_tiny",
+	"enemy_spider_rotten_tiny"
 }
 tt.attacks.list[1].cast_time = fts(20)
 tt.attacks.list[1].sound = "TowerDruidHengeSylvanCurseCast"
@@ -3274,11 +3281,11 @@ tt.attacks.list[3].animation = "special2"
 tt.attacks.list[3].cooldown = 12
 tt.attacks.list[3].damage_bans = F_FLYING
 tt.attacks.list[3].damage_flags = F_AREA
-tt.attacks.list[3].damage_radius = 225
+tt.attacks.list[3].damage_radius = 240
 tt.attacks.list[3].damage_type = DAMAGE_TRUE
 tt.attacks.list[3].hit_time = fts(20)
 tt.attacks.list[3].min_count = 2
-tt.attacks.list[3].range = 195
+tt.attacks.list[3].range = 210
 tt.attacks.list[3].sound = "TowerEntwoodClobber"
 tt.attacks.list[3].stun_chances = {
 	1,
@@ -3290,8 +3297,8 @@ tt.attacks.list[3].stun_mod = "mod_clobber"
 tt.attacks.list[3].vis_bans = bor(F_FLYING, F_BOSS)
 tt.attacks.list[3].vis_flags = F_RANGED
 tt.powers.clobber = E.clone_c(E, "power")
-tt.powers.clobber.price_base = 250
-tt.powers.clobber.price_inc = 250
+tt.powers.clobber.price_base = 200
+tt.powers.clobber.price_inc = 200
 tt.powers.clobber.attack_idx = 3
 tt.powers.clobber.stun_durations = {
 	1,
@@ -3299,9 +3306,9 @@ tt.powers.clobber.stun_durations = {
 	3
 }
 tt.powers.clobber.damage_values = {
+	75,
 	100,
-	125,
-	150
+	125
 }
 tt.powers.clobber.enc_icon = 14
 tt.powers.fiery_nuts = E.clone_c(E, "power")
@@ -3368,7 +3375,7 @@ tt = E.register_t(E, "tower_elven_barrack_1_s", "tower")
 
 E.add_comps(E, tt, "barrack")
 
-tt.barrack.rally_range = 145
+tt.barrack.rally_range = 175
 tt.barrack.respawn_offset = v(0, 0)
 tt.barrack.soldier_type = "soldier_barrack_3"
 tt.barrack.max_soldiers = 3
@@ -3405,7 +3412,7 @@ tt = E.register_t(E, "tower_elven_barrack_1_b", "tower")
 
 E.add_comps(E, tt, "barrack")
 
-tt.barrack.rally_range = 145
+tt.barrack.rally_range = 175
 tt.barrack.respawn_offset = v(0, 0)
 tt.barrack.soldier_type = "soldier_barrack_3"
 tt.barrack.max_soldiers = 3
@@ -3485,7 +3492,7 @@ tt.render.sprites[4].offset = v(9, 57)
 tt.main_script.insert = scripts.tower_archer.insert
 tt.main_script.update = scripts.tower_archer.update
 tt.main_script.remove = scripts.tower_archer.remove
-tt.attacks.range = 180
+tt.attacks.range = 220
 tt.attacks.list[1] = E.clone_c(E, "bullet_attack")
 tt.attacks.list[1].bullet = "arrow_3"
 tt.attacks.list[1].cooldown = 0.5
@@ -3541,7 +3548,7 @@ tt.render.sprites[4].offset = v(9, 57)
 tt.main_script.insert = scripts.tower_archer.insert
 tt.main_script.update = scripts.tower_archer.update
 tt.main_script.remove = scripts.tower_archer.remove
-tt.attacks.range = 180
+tt.attacks.range = 220
 tt.attacks.list[1] = E.clone_c(E, "bullet_attack")
 tt.attacks.list[1].bullet = "arrow_3"
 tt.attacks.list[1].cooldown = 0.5
@@ -3561,7 +3568,7 @@ tt.info.portrait = (IS_PHONE_OR_TABLET and "portraits_towers_0004") or "info_por
 tt.info.enc_icon = 4
 tt.main_script.insert = scripts.tower_engineer.insert
 tt.main_script.update = scripts.tower_engineer.update
-tt.attacks.range = 179.20000000000002
+tt.attacks.range = 199.20000000000002
 tt.attacks.list[1] = E.clone_c(E, "bullet_attack")
 tt.attacks.list[1].bullet = "bomb_black"
 tt.attacks.list[1].cooldown = 3
@@ -3591,7 +3598,7 @@ tt.info.portrait = (IS_PHONE_OR_TABLET and "portraits_towers_0004") or "info_por
 tt.info.enc_icon = 4
 tt.main_script.insert = scripts.tower_engineer.insert
 tt.main_script.update = scripts.tower_engineer.update
-tt.attacks.range = 179.20000000000002
+tt.attacks.range = 199.20000000000002
 tt.attacks.list[1] = E.clone_c(E, "bullet_attack")
 tt.attacks.list[1].bullet = "bomb_black"
 tt.attacks.list[1].cooldown = 3
@@ -3622,7 +3629,7 @@ tt.info.enc_icon = 3
 tt.info.fn = scripts.tower_mage.get_info
 tt.main_script.insert = scripts.tower_mage.insert
 tt.main_script.update = scripts.tower_mage.update
-tt.attacks.range = 180
+tt.attacks.range = 200
 tt.attacks.list[1] = E.clone_c(E, "bullet_attack")
 tt.attacks.list[1].animation = "shoot"
 tt.attacks.list[1].bullet = "bolt_3"
@@ -3667,7 +3674,7 @@ tt.info.enc_icon = 3
 tt.info.fn = scripts.tower_mage.get_info
 tt.main_script.insert = scripts.tower_mage.insert
 tt.main_script.update = scripts.tower_mage.update
-tt.attacks.range = 180
+tt.attacks.range = 200
 tt.attacks.list[1] = E.clone_c(E, "bullet_attack")
 tt.attacks.list[1].animation = "shoot"
 tt.attacks.list[1].bullet = "bolt_3"
@@ -3723,7 +3730,7 @@ tt.render.sprites[3].name = "close"
 tt.render.sprites[3].loop = false
 tt.render.sprites[3].offset = v(0, 38)
 tt.barrack.soldier_type = "soldier_knight"
-tt.barrack.rally_range = 145
+tt.barrack.rally_range = 175
 tt.barrack.max_soldiers = 3
 tt.barrack.respawn_offset = v(0, 0)
 tt.main_script.insert = scripts.tower_barrack.insert
@@ -3753,7 +3760,7 @@ tt.render.sprites[3].name = "close"
 tt.render.sprites[3].loop = false
 tt.render.sprites[3].offset = v(0, 38)
 tt.barrack.soldier_type = "soldier_knight"
-tt.barrack.rally_range = 145
+tt.barrack.rally_range = 175
 tt.barrack.max_soldiers = 3
 tt.barrack.respawn_offset = v(0, 0)
 tt.main_script.insert = scripts.tower_barrack.insert
@@ -3868,6 +3875,7 @@ E.add_comps(E, tt, "melee", "count_group")
 tt.count_group.name = "soldier_druid_bear"
 tt.count_group.type = COUNT_GROUP_CONCURRENT
 tt.health.armor = 0.4
+tt.health.magic_armor = 0.5
 tt.health.hp_max = 350
 tt.health_bar.offsets = {
 	idle = v(0, 40),
@@ -3875,7 +3883,7 @@ tt.health_bar.offsets = {
 }
 tt.health_bar.offset = tt.health_bar.offsets.idle
 tt.health_bar.type = HEALTH_BAR_SIZE_MEDIUM
-tt.health.dead_lifetime = 15
+tt.health.dead_lifetime = 10
 tt.info.fn = scripts2.soldier_barrack.get_info
 tt.info.portrait = "portraits_sc_0132"
 tt.info.random_name_format = "ELVES_SOLDIER_BEAR_%i_NAME"
@@ -3910,7 +3918,7 @@ tt.unit.hit_offset = v(0, 14)
 tt.unit.marker_offset = v(0, 0)
 tt.unit.mod_offset = v(0, 16)
 tt.unit.size = UNIT_SIZE_MEDIUM
-tt.vis.bans = bor(F_POISON)
+tt.vis.bans = bor(F_POISON, F_LYCAN, F_POLYMORPH)
 tt = RT("tower_barrack_1", "tower")
 
 AC(tt, "barrack")
@@ -3971,8 +3979,8 @@ tt.info.i18n_key = "TOWER_ARCANE"
 tt.info.fn = scripts.tower_arcane_wizard.get_info
 tt.info.portrait = (IS_PHONE_OR_TABLET and "portraits_towers_0005") or "info_portraits_towers_0008"
 tt.powers.disintegrate = CC("power")
-tt.powers.disintegrate.price_base = 350
-tt.powers.disintegrate.price_inc = 200
+tt.powers.disintegrate.price_base = 300
+tt.powers.disintegrate.price_inc = 175
 tt.powers.disintegrate.cooldown_base = 22
 tt.powers.disintegrate.cooldown_inc = -2
 tt.powers.disintegrate.enc_icon = 15
@@ -4054,8 +4062,8 @@ tt.info.portrait = (IS_PHONE_OR_TABLET and "portraits_towers_0006") or "info_por
 tt.barrack.soldier_type = "soldier_elemental"
 tt.barrack.rally_range = 180
 tt.powers.polymorph = CC("power")
-tt.powers.polymorph.price_base = 300
-tt.powers.polymorph.price_inc = 150
+tt.powers.polymorph.price_base = 325
+tt.powers.polymorph.price_inc = 175
 tt.powers.polymorph.cooldown_base = 22
 tt.powers.polymorph.cooldown_inc = -2
 tt.powers.polymorph.enc_icon = 1
@@ -4900,8 +4908,8 @@ tt.damage_min = 0
 tt.damage_max = 0
 tt.damage_inc = 75
 tt.damage_type = DAMAGE_TRUE
-tt.enemies_max = 4
-tt.enemies_inc = 1
+tt.enemies_max = 1
+tt.enemies_inc = 3
 tt.nodes = 15
 tt.nodes_inc = 5
 tt.nodes_limit = 15
@@ -6206,14 +6214,14 @@ tt.barrack.soldier_type = "soldier_dwarf"
 tt.info.portrait = ((IS_PHONE_OR_TABLET and "portraits_towers_") or "info_portraits_towers_") .. "0018"
 tt.powers.armor = E.clone_c(E, "power")
 tt.powers.armor.max_level = 2
-tt.powers.armor.price_base = 200
-tt.powers.armor.price_inc = 200
+tt.powers.armor.price_base = 100
+tt.powers.armor.price_inc = 250
 tt.powers.beer = E.clone_c(E, "power")
 tt.powers.beer.price_base = 250
 tt.powers.beer.price_inc = 150
 tt.powers.hammer = E.clone_c(E, "power")
-tt.powers.hammer.price_base = 100
-tt.powers.hammer.price_inc = 100
+tt.powers.hammer.price_base = 75
+tt.powers.hammer.price_inc = 75
 tt.render.sprites[1].name = "terrain_specials_%04i"
 tt.render.sprites[1].offset = v(0, 8)
 tt.render.sprites[2].name = "DwarfHall_0001"
@@ -6224,7 +6232,7 @@ tt.render.sprites[3].offset = v(0, 30)
 tt.sound_events.insert = "DwarfTaunt"
 tt.sound_events.change_rally_point = "DwarfTaunt"
 tt.tower.can_be_mod = false
-tt.tower.price = 200
+tt.tower.price = 180
 tt.tower.type = "barrack_dwarf"
 tt = E.register_t(E, "soldier_dwarf", "soldier_militia")
 image_y = 42
@@ -6249,7 +6257,7 @@ tt.info.portrait = (IS_PHONE_OR_TABLET and "portraits_sc_0066") or "info_portrai
 tt.info.random_name_count = 10
 tt.info.random_name_format = "SOLDIER_DWARF_RANDOM_%i_NAME"
 tt.main_script.update = scripts3.soldier_dwarf.update
-tt.melee.attacks[1].damage_inc = 5
+tt.melee.attacks[1].damage_inc = 6
 tt.melee.attacks[1].damage_max = 18
 tt.melee.attacks[1].damage_min = 12
 tt.melee.attacks[1].power_name = "hammer"
@@ -6313,7 +6321,7 @@ tt.attacks.list[1].bullet_start_offset = {
 }
 tt.attacks.list[2] = E.clone_c(E, "bullet_attack")
 tt.attacks.list[2].bullet = "totem_weakness"
-tt.attacks.list[2].cooldown = 10
+tt.attacks.list[2].cooldown = 9
 tt.attacks.list[2].vis_bans = bor(F_CLIFF)
 tt.attacks.list[3] = E.clone_c(E, "bullet_attack")
 tt.attacks.list[3].bullet = "totem_silence"
@@ -6365,7 +6373,7 @@ tt.aura.mod = "mod_silence_totem"
 tt.aura.cycle_time = 0.3
 tt.aura.duration = 2
 tt.aura.duration_inc = 2
-tt.aura.radius = 90
+tt.aura.radius = 105
 tt.aura.vis_bans = F_BOSS
 tt.aura.vis_flags = F_MOD
 tt.render.sprites[1].name = "TotemTower_GroundEffect-Violet_0002"
@@ -6497,8 +6505,8 @@ tt.powers.poison.price_inc = 200
 tt.powers.poison.mod = "mod_ranger_poison"
 tt.powers.poison.enc_icon = 8
 tt.powers.thorn = CC("power")
-tt.powers.thorn.price_base = 300
-tt.powers.thorn.price_inc = 150
+tt.powers.thorn.price_base = 225
+tt.powers.thorn.price_inc = 225
 tt.powers.thorn.aura = "aura_ranger_thorn"
 tt.powers.thorn.enc_icon = 9
 tt.powers.thorn.name = "thorns"
@@ -6879,6 +6887,29 @@ tt.attacks.list[4].min_spread = 12.5
 tt.attacks.list[4].max_spread = 32.5
 tt.attacks.list[4].vis_bans = bor(F_FLYING)
 tt.attacks.list[4].shoot_fx = "fx_rifle_smoke"
+tt = RT("tower_imperial_patrol", "tower_barrack_1")
+
+AC(tt, "powers")
+
+tt.info.portrait = (IS_PHONE_OR_TABLET and "portraits_towers_0007") or "info_portraits_towers_0005"
+tt.info.enc_icon = 14
+tt.info.i18n_key = "TOWER_IMPERIAL_PATROL"
+tt.tower.type = "imperial_patrol"
+tt.tower.price = 230
+tt.barrack.max_soldiers = 2
+tt.barrack.soldier_type = "soldier_s6_imperial_guard"
+tt.barrack.rally_range = 145
+tt.render.sprites[1].name = "terrain_barrack_%04i"
+tt.render.sprites[1].offset = v(0, 13)
+tt.render.sprites[2].name = "tower_barracks_lvl4_Paladins_layer1_0001"
+tt.render.sprites[2].offset = v(0, 39)
+tt.render.sprites[3].prefix = "towerbarracklvl4_paladin_door"
+tt.render.sprites[3].offset = v(0, 39)
+tt.render.sprites[4] = E.clone_c(E, "sprite")
+tt.render.sprites[4].name = "tower_paladin_flag"
+tt.render.sprites[4].offset = v(7, 72)
+tt.sound_events.insert = "BarrackPaladinTaunt"
+tt.sound_events.change_rally_point = "BarrackPaladinTaunt"
 tt = RT("tower_paladin", "tower_barrack_1")
 
 AC(tt, "powers")
@@ -6925,13 +6956,13 @@ tt.info.i18n_key = "TOWER_BARBARIANS"
 tt.tower.type = "barbarian"
 tt.tower.price = 230
 tt.powers.dual = E.clone_c(E, "power")
-tt.powers.dual.price_base = 300
-tt.powers.dual.price_inc = 100
+tt.powers.dual.price_base = 150
+tt.powers.dual.price_inc = 150
 tt.powers.dual.enc_icon = 12
 tt.powers.dual.name = "DOUBLE_AXE"
 tt.powers.twister = E.clone_c(E, "power")
-tt.powers.twister.price_base = 150
-tt.powers.twister.price_inc = 100
+tt.powers.twister.price_base = 200
+tt.powers.twister.price_inc = 200
 tt.powers.twister.enc_icon = 13
 tt.powers.throwing = E.clone_c(E, "power")
 tt.powers.throwing.price_base = 200
@@ -6949,8 +6980,8 @@ tt.render.sprites[3].offset = v(0, 39)
 tt.sound_events.insert = "BarrackBarbarianTaunt"
 tt.sound_events.change_rally_point = "BarrackBarbarianTaunt"
 tt = RT("dagger_drow", "bullet")
-tt.bullet.damage_max = 20
-tt.bullet.damage_min = 14
+tt.bullet.damage_max = 45
+tt.bullet.damage_min = 25
 tt.bullet.hide_radius = 6
 tt.bullet.hit_distance = 22
 tt.bullet.hit_fx = "fx_dagger_drow_hit"
@@ -7186,15 +7217,15 @@ tt.barrack.soldier_type = "soldier_drow"
 tt.info.i18n_key = "ELVES_TOWER_SPECIAL_DROW"
 tt.info.portrait = ((IS_PHONE and "portraits_towers") or "info_portraits_towers") .. "_0016"
 tt.powers.life_drain = CC("power")
-tt.powers.life_drain.price_base = 250
-tt.powers.life_drain.price_inc = 250
+tt.powers.life_drain.price_base = 200
+tt.powers.life_drain.price_inc = 200
 tt.powers.double_dagger = CC("power")
-tt.powers.double_dagger.price_base = 225
-tt.powers.double_dagger.price_inc = 225
+tt.powers.double_dagger.price_base = 150
+tt.powers.double_dagger.price_inc = 150
 tt.powers.double_dagger.max_level = 1
 tt.powers.blade_mail = CC("power")
-tt.powers.blade_mail.price_base = 135
-tt.powers.blade_mail.price_inc = 135
+tt.powers.blade_mail.price_base = 200
+tt.powers.blade_mail.price_inc = 200
 tt.render.sprites[1].name = "terrains_0003"
 tt.render.sprites[2].name = "mercenaryDraw_tower_layer1_0001"
 tt.render.sprites[2].offset = v(0, 29)
@@ -7202,15 +7233,16 @@ tt.render.sprites[3].prefix = "tower_drow_door"
 tt.render.sprites[3].offset = v(0, 29)
 tt.sound_events.change_rally_point = "ElvesDrowTaunt"
 tt.sound_events.mute_on_level_insert = true
-tt.tower.price = 250
+tt.tower.price = 300
 tt.tower.type = "drow"
 tt = RT("soldier_drow", "soldier_militia")
 
 AC(tt, "powers", "ranged", "track_damage")
 
-tt.health.armor = 0.6
-tt.health.dead_lifetime = 15
+tt.health.armor = 0.2
+tt.health.dead_lifetime = 20
 tt.health.hp_max = 250
+tt.regen.health = 35
 tt.health.spiked_armor = 0
 tt.info.portrait = "portraits_sc_0061"
 tt.info.random_name_format = "ELVES_SOLDIER_DROW_%i_NAME"
@@ -7219,8 +7251,8 @@ tt.main_script.insert = scripts2.soldier_drow.insert
 tt.main_script.update = scripts2.soldier_drow.update
 tt.melee.attacks[1].animation = "attack"
 tt.melee.attacks[1].cooldown = 1
-tt.melee.attacks[1].damage_max = 20
-tt.melee.attacks[1].damage_min = 14
+tt.melee.attacks[1].damage_max = 45
+tt.melee.attacks[1].damage_min = 25
 tt.melee.attacks[1].hit_time = fts(12)
 tt.melee.attacks[1].forced_cooldown = true
 tt.melee.attacks[2] = CC("melee_attack")
@@ -7229,20 +7261,21 @@ tt.melee.attacks[2].animation = "healAttack"
 tt.melee.attacks[2].track_damage = true
 tt.melee.attacks[2].damage_max = 0
 tt.melee.attacks[2].damage_min = 0
-tt.melee.attacks[2].damage_inc = 75
-tt.melee.attacks[2].cooldown = 6
+tt.melee.attacks[2].damage_inc = 50
+tt.melee.attacks[2].damage_type = DAMAGE_TRUE
+tt.melee.attacks[2].cooldown = 8
 tt.melee.attacks[2].hit_time = fts(12)
 tt.melee.attacks[2].power_name = "life_drain"
 tt.melee.forced_cooldown = tt.melee.attacks[1].cooldown
-tt.melee.range = 55
+tt.melee.range = 65
 tt.motion.max_speed = 75
 tt.powers.life_drain = CC("power")
 tt.powers.double_dagger = CC("power")
 tt.powers.blade_mail = CC("power")
 tt.powers.blade_mail.spiked_armor = {
-	0.4,
-	0.6,
-	0.8
+	0.2,
+	0.35,
+	0.5
 }
 tt.ranged.attacks[1].bullet = "dagger_drow"
 tt.ranged.attacks[1].animations = {
@@ -7261,7 +7294,6 @@ tt.ranged.attacks[1].shoot_times = {
 	0
 }
 tt.ranged.attacks[1].power_name = "double_dagger"
-tt.regen.health = 5
 tt.render.sprites[1].prefix = "soldier_drow"
 tt.render.sprites[1].anchor.y = 0.2037037037037037
 tt.render.sprites[2] = CC("sprite")
@@ -7627,7 +7659,7 @@ tt.render.sprites[2].name = "forestKeeper_soldierBuff"
 tt.render.sprites[2].animated = false
 tt.render.sprites[2].sort_y_offset = -1
 tt.render.sprites[2].anchor.y = 0.21428571428571427
-tt.modifier.duration = 4
+tt.modifier.duration = 7
 tt.modifier.use_mod_offset = false
 tt.modifier.bans = {
 	"mod_rotten_lesser_pestilence",
@@ -7643,7 +7675,7 @@ tt.modifier.bans = {
 tt.modifier.remove_banned = true
 tt.hps.heal_min = 0
 tt.hps.heal_max = 0
-tt.hps.heal_inc = 4
+tt.hps.heal_inc = 6
 tt.hps.heal_every = 0.2
 tt.main_script.insert = scripts2.mod_hps.insert
 tt.main_script.update = scripts2.mod_hps.update
@@ -7704,17 +7736,17 @@ tt = E.register_t(E, "tower_faerie_dragon", "tower")
 E.add_comps(E, tt, "powers", "attacks")
 
 tt.attacks.list[1] = E.clone_c(E, "custom_attack")
-tt.attacks.list[1].cooldown = 3
+tt.attacks.list[1].cooldown = 2.5
 tt.attacks.list[1].vis_flags = bor(F_RANGED, F_STUN, F_FREEZE)
 tt.attacks.list[1].vis_bans = bor(F_BOSS)
-tt.attacks.range = 250
+tt.attacks.range = 175
 tt.info.i18n_key = "ELVES_TOWER_SPECIAL_FAERIE_DRAGONS"
 tt.info.fn = scripts2.tower_faerie_dragon.get_info
 tt.info.portrait = ((IS_PHONE and "portraits_towers") or "info_portraits_towers") .. "_0018"
 tt.main_script.update = scripts2.tower_faerie_dragon.update
 tt.powers.more_dragons = E.clone_c(E, "power")
-tt.powers.more_dragons.price_base = 150
-tt.powers.more_dragons.price_inc = 150
+tt.powers.more_dragons.price_base = 75
+tt.powers.more_dragons.price_inc = 75
 tt.powers.more_dragons.max_level = 2
 tt.powers.more_dragons.idle_offsets = {
 	v(-12, 7),
@@ -7776,7 +7808,9 @@ tt.render.sprites[2].offset = v(0, 0)
 tt.owner = nil
 tt = E.register_t(E, "bolt_faerie_dragon", "bolt")
 tt.render.sprites[1].prefix = "faerie_dragon_proy"
-tt.bullet.damage_type = DAMAGE_NONE
+tt.bullet.damage_min = 25
+tt.bullet.damage_max = 45
+tt.bullet.damage_type = DAMAGE_MAGICAL
 tt.bullet.acceleration_factor = 0.25
 tt.bullet.min_speed = 90
 tt.bullet.max_speed = 180
@@ -7821,6 +7855,31 @@ tt.shader_args = {
 		1
 	}
 }
+tt = E.register_t(E, "ray_neptune", "bullet")
+tt.image_width = 358
+tt.main_script.update = scripts3.ray_neptune.update
+tt.render.sprites[1].name = "ray_neptune"
+tt.render.sprites[1].loop = false
+tt.render.sprites[1].anchor = v(0, 0.5)
+tt.bullet.damage_type = DAMAGE_TRUE
+tt.bullet.damage_min_levels = {
+	400,
+	800,
+	1200
+}
+tt.bullet.damage_max_levels = {
+	500,
+	1000,
+	1500
+}
+tt.bullet.damage_radius = 65
+tt.bullet.damage_rect = r(-40, -2, 80, 50)
+tt.bullet.hit_fx = "fx_ray_neptune_explosion"
+tt.sound_events.insert = "PolymorphSound"
+tt = E.register_t(E, "fx_ray_neptune_explosion", "decal_timed")
+tt.render.sprites[1].name = "ray_neptune_explosion"
+tt.render.sprites[1].anchor.y = 0.24444444444444444
+tt.render.sprites[1].z = Z_BULLETS
 tt = E.register_t(E, "tower_neptune_holder")
 
 E.add_comps(E, tt, "tower", "tower_holder", "pos", "render", "ui", "info")
@@ -7977,7 +8036,7 @@ tt.melee.attacks[1].shared_cooldown = true
 tt.melee.attacks[2] = E.clone_c(E, "melee_attack")
 tt.melee.attacks[2].animation = "blood"
 tt.melee.attacks[2].chance = 0.2
-tt.melee.attacks[2].damage_max = 25
+tt.melee.attacks[2].damage_max = 75
 tt.melee.attacks[2].damage_min = 25
 tt.melee.attacks[2].damage_inc = 75
 tt.melee.attacks[2].disabled = true
@@ -7996,14 +8055,14 @@ tt.motion.max_speed = 75
 tt.powers.blood = E.clone_c(E, "power")
 tt.powers.extralife = E.clone_c(E, "power")
 tt.powers.holygrail = E.clone_c(E, "power")
-tt.regen.health = 25
+tt.regen.health = 50
 tt.render.sprites[1].prefix = "soldiertemplar"
 tt.render.sprites[1].anchor.y = anchor_y
 tt.revive.animation = "holygrail"
-tt.revive.chance = 0.5
-tt.revive.chance_inc = 0
-tt.revive.health_recover = 0.25
-tt.revive.health_recover_inc = 0.25
+tt.revive.chance = 0.1
+tt.revive.chance_inc = 0.15
+tt.revive.health_recover = 0.05
+tt.revive.health_recover_inc = 0
 tt.revive.hit_time = fts(10)
 tt.revive.power_name = "holygrail"
 tt.revive.sound = "TemplarHolygrail"
@@ -8019,8 +8078,8 @@ tt.info.enc_icon = 20
 tt.tower.type = "assassin"
 tt.tower.price = 230
 tt.powers.sneak = E.clone_c(E, "power")
-tt.powers.sneak.price_base = 225
-tt.powers.sneak.price_inc = 150
+tt.powers.sneak.price_base = 150
+tt.powers.sneak.price_inc = 100
 tt.powers.sneak.enc_icon = 24
 tt.powers.pickpocket = E.clone_c(E, "power")
 tt.powers.pickpocket.price_base = 100
@@ -8078,9 +8137,10 @@ tt.melee.attacks[2].animation = "sneak"
 tt.melee.attacks[2].chance = 0.15
 tt.melee.attacks[2].chance_inc = 0.05
 tt.melee.attacks[2].cooldown = fts(24) + 0.6
-tt.melee.attacks[2].damage_inc = 20
-tt.melee.attacks[2].damage_max = 40
-tt.melee.attacks[2].damage_min = 20
+tt.melee.attacks[2].damage_inc = 75
+tt.melee.attacks[2].damage_max = 75
+tt.melee.attacks[2].damage_min = 25
+tt.melee.attacks[2].damage_type = DAMAGE_TRUE
 tt.melee.attacks[2].disabled = true
 tt.melee.attacks[2].hit_time = fts(15)
 tt.melee.attacks[2].pop = nil
@@ -8109,7 +8169,7 @@ tt.melee.forced_cooldown = tt.melee.attacks[1].cooldown
 tt.melee.range = 64
 tt.motion.max_speed = 75
 tt.pickpocket.chance = 0
-tt.pickpocket.chance_inc = 0.25
+tt.pickpocket.chance_inc = 0.3
 tt.pickpocket.fx = "fx_coin_jump"
 tt.pickpocket.power_name = "pickpocket"
 tt.pickpocket.sound = "AssassinGold"
@@ -8386,7 +8446,7 @@ tt.tower.can_be_mod = false
 tt.tower.hide_dust = true
 tt.tower.type = "baby_ashbite"
 tt.tower.level = 1
-tt.tower.price = 325
+tt.tower.price = 650
 tt.info.fn = scripts2.tower_baby_ashbite.get_info
 tt.info.portrait = ((IS_PHONE and "portraits_towers_") or "info_portraits_towers_") .. "0119"
 tt.info.i18n_key = "ELVES_BABY_ASHBITE_TOWER"
@@ -8415,20 +8475,20 @@ tt.main_script.remove = scripts2.tower_barrack.remove
 tt.sound_events.insert = "ElvesAshbiteDeath"
 tt.sound_events.change_rally_point = "ElvesAshbiteConfirm"
 tt.powers.blazing_breath = E.clone_c(E, "power")
-tt.powers.blazing_breath.price_base = 250
+tt.powers.blazing_breath.price_base = 300
 tt.powers.blazing_breath.price_inc = 200
 tt.powers.blazing_breath.max_level = 3
 tt.powers.fiery_mist = E.clone_c(E, "power")
-tt.powers.fiery_mist.price_base = 250
-tt.powers.fiery_mist.price_inc = 0
+tt.powers.fiery_mist.price_base = 350
+tt.powers.fiery_mist.price_inc = 150
 tt.powers.fiery_mist.max_level = 1
 tt = E.register_t(E, "soldier_baby_ashbite", "soldier")
 
 E.add_comps(E, tt, "ranged", "powers")
 
-tt.health.armor = 0.5
-tt.health.dead_lifetime = 10
-tt.health.hp_max = 450
+tt.health.armor = 0
+tt.health.dead_lifetime = 25
+tt.health.hp_max = 550
 tt.health.ignore_delete_after = true
 tt.health_bar.offset = v(0, 120)
 tt.health_bar.type = HEALTH_BAR_SIZE_SMALL
@@ -8441,8 +8501,8 @@ tt.info.damage_icon = "fireball"
 tt.main_script.insert = scripts2.soldier_baby_ashbite.insert
 tt.main_script.update = scripts2.soldier_baby_ashbite.update
 tt.motion.max_speed = 90
-tt.regen.cooldown = 0.5
-tt.regen.health = 15
+tt.regen.cooldown = 1
+tt.regen.health = 30
 tt.render.sprites[1] = E.clone_c(E, "sprite")
 tt.render.sprites[1].anchor.y = 0.0625
 tt.render.sprites[1].angles = {
@@ -8462,7 +8522,7 @@ tt.unit.hit_offset = v(0, 84)
 tt.unit.hide_after_death = false
 tt.unit.marker_offset = v(0, 0)
 tt.unit.mod_offset = v(0, ady(25))
-tt.vis.bans = bor(tt.vis.bans, F_EAT, F_NET, F_POISON)
+tt.vis.bans = bor(tt.vis.bans, F_EAT, F_NET, F_POISON, F_POLYMORPH)
 tt.vis.flags = bor(tt.vis.flags, F_HERO, F_FLYING)
 tt.powers.blazing_breath = E.clone_c(E, "power")
 tt.powers.fiery_mist = E.clone_c(E, "power")
@@ -8473,7 +8533,7 @@ tt.ranged.attacks[1].bullet_start_offset = {
 }
 tt.ranged.attacks[1].cooldown = fts(28) + 1.3
 tt.ranged.attacks[1].min_range = 30
-tt.ranged.attacks[1].max_range = 100
+tt.ranged.attacks[1].max_range = 150
 tt.ranged.attacks[1].shoot_time = fts(12)
 tt.ranged.attacks[1].sync_animation = true
 tt.ranged.attacks[1].ignore_hit_offset = true
@@ -8515,8 +8575,8 @@ tt.ranged.attacks[3].sound = "ElvesAshbiteSmoke"
 tt = E.register_t(E, "fireball_baby_ashbite", "bullet")
 tt.render.sprites[1].name = "fireball_baby_ashbite"
 tt.render.sprites[1].z = Z_BULLETS
-tt.bullet.damage_min = 83
-tt.bullet.damage_max = 125
+tt.bullet.damage_min = 62
+tt.bullet.damage_max = 87
 tt.bullet.damage_type = DAMAGE_TRUE
 tt.bullet.damage_radius = 30
 tt.bullet.min_speed = 240
@@ -8564,9 +8624,9 @@ E.add_comps(E, tt, "tween", "render")
 
 tt.main_script.update = scripts2.aura_apply_damage.update
 tt.aura.duration = fts(30)
-tt.aura.damage_inc = 16.666666666666668
-tt.aura.damage_min = 8.333333333333334
-tt.aura.damage_max = 8.333333333333334
+tt.aura.damage_inc = 15
+tt.aura.damage_min = 10
+tt.aura.damage_max = 10
 tt.aura.damage_type = DAMAGE_TRUE
 tt.aura.radius = 60
 tt.aura.cycle_time = fts(5)
@@ -8602,7 +8662,7 @@ tt.emit_ps = "ps_emit_fiery_mist_baby_ashbite"
 tt = E.register_t(E, "aura_fiery_mist_baby_ashbite", "aura")
 tt.main_script.update = scripts2.aura_fiery_mist_baby_ashbite.update
 tt.fx = "decal_fiery_mist_baby_ashbite"
-tt.aura.duration = 2.5
+tt.aura.duration = 4
 tt.aura.mod = "mod_slow_baby_ashbite"
 tt.aura.cycle_time = 0.25
 tt.aura.damage_inc = (25*tt.aura.cycle_time)/tt.aura.duration
@@ -8612,8 +8672,8 @@ tt.aura.damage_type = DAMAGE_TRUE
 tt.aura.radius = 50
 tt.aura.vis_bans = bor(F_FRIEND)
 tt = E.register_t(E, "mod_slow_baby_ashbite", "mod_slow")
-tt.slow.factor = 0.3
-tt.slow.factor_inc = 0.1
+tt.slow.factor = 0.4
+tt.slow.factor_inc = 0
 tt = E.register_t(E, "decal_fiery_mist_baby_ashbite", "decal_tween")
 tt.render.sprites[1].name = "baby_ashbite_fierymist_decal"
 tt.render.sprites[1].loop = true
@@ -8888,7 +8948,7 @@ tt.ui.click_rect = r(-55, -40, 110, 130)
 tt.powers.ray = E.clone_c(E, "power")
 tt.powers.ray.level = 0
 tt.powers.ray.max_level = 4
-tt.powers.ray.price_base = 100
+tt.powers.ray.price_base = 0
 tt.powers.ray.price_inc = 100
 tt.main_script.insert = scripts.tower_sunray.insert
 tt.main_script.update = scripts.tower_sunray.update
@@ -8927,7 +8987,7 @@ tt.sound_events.mute_on_level_insert = true
 tt.user_selection.can_select_point_fn = scripts.tower_sunray.can_select_point
 tt.user_selection.custom_pointer_name = "sunray_tower"
 tt.attacks.list[1] = E.clone_c(E, "bullet_attack")
-tt.attacks.list[1].bullet = "ray_sunray"
+tt.attacks.list[1].bullet = "ray_sunray_mini"
 tt.attacks.list[1].cooldown = 19
 tt.attacks.list[1].cooldown_base = 22
 tt.attacks.list[1].cooldown_inc = -3
@@ -12209,13 +12269,13 @@ tt.hero.level_stats.armor = {
 	0.3,
 	0.3,
 	0.4,
-	0.45,
-	0.55,
-	0.55,
+	0.4,
+	0.5,
+	0.5,
 	0.6,
-	0.65,
-	0.75,
-	0.85
+	0.6,
+	0.7,
+	0.8
 }
 tt.hero.level_stats.hp_max = {
 	400,
@@ -12322,7 +12382,7 @@ tt.melee.attacks[1].shared_cooldown = true
 tt.melee.attacks[2] = table.deepclone(tt.melee.attacks[1])
 tt.melee.attacks[2].animation = "attack2"
 tt.melee.attacks[2].chance = 0.5
-tt.melee.range = 65
+tt.melee.range = 45
 tt.timed_attacks.list[1] = E.clone_c(E, "mod_attack")
 tt.timed_attacks.list[1].animation = "courage"
 tt.timed_attacks.list[1].cooldown = fts(55) + 6
@@ -19261,14 +19321,14 @@ tt.hero.fixed_stat_health = 6
 tt.hero.fixed_stat_range = 5
 tt.hero.fixed_stat_speed = 4
 tt.hero.level_stats.armor = {
-	0.2,
-	0.25,
-	0.3,
-	0.35,
-	0.4,
+	0.45,
 	0.45,
 	0.5,
+	0.5,
+	0.5,
 	0.55,
+	0.55,
+	0.6,
 	0.6,
 	0.65
 }
@@ -19285,52 +19345,52 @@ tt.hero.level_stats.hp_max = {
 	560
 }
 tt.hero.level_stats.melee_damage_max = {
-	18,
-	20,
-	23,
-	25,
+	24,
 	28,
-	30,
+	32,
 	35,
-	37,
-	41,
-	45
+	39,
+	43,
+	47,
+	50,
+	54,
+	58
 }
 tt.hero.level_stats.melee_damage_min = {
-	14,
-	15,
-	17,
 	18,
-	19,
 	21,
 	24,
-	26,
-	28,
-	30
+	27,
+	30,
+	32,
+	35,
+	38,
+	41,
+	44
 }
 tt.hero.level_stats.ranged_damage_max = {
-	18,
-	20,
-	23,
-	25,
+	24,
 	28,
-	30,
+	32,
 	35,
-	37,
-	41,
-	45
+	39,
+	43,
+	47,
+	50,
+	54,
+	58
 }
 tt.hero.level_stats.ranged_damage_min = {
-	14,
-	15,
-	17,
 	18,
-	19,
 	21,
 	24,
-	26,
-	28,
-	30
+	27,
+	30,
+	32,
+	35,
+	38,
+	41,
+	44
 }
 tt.hero.level_stats.regen_health = {
 	105,
@@ -19361,20 +19421,20 @@ tt.hero.skills.mines.xp_gain = {
 	75
 }
 tt.hero.skills.mines.damage_min = {
-	40,
 	60,
-	80
+	120,
+	180
 }
 tt.hero.skills.mines.damage_max = {
 	60,
-	80,
-	100
+	120,
+	180
 }
 tt.hero.skills.tar = CC("hero_skill")
 tt.hero.skills.tar.duration = {
-	4,
 	6,
-	8
+	9,
+	12
 }
 tt.hero.skills.tar.xp_level_steps = {
 	[10.0] = 3,
@@ -19396,9 +19456,9 @@ tt.info.hero_portrait = (IS_PHONE_OR_TABLET and "hero_portraits_0003") or "heroP
 tt.info.fn = scripts.hero_bolin.get_info
 tt.info.i18n_key = "HERO_RIFLEMAN"
 tt.info.portrait = (IS_PHONE_OR_TABLET and "portraits_hero_0003") or "info_portraits_hero_0002"
-tt.melee.range = 55
+tt.melee.range = 45
 tt.main_script.update = scripts.hero_bolin.update
-tt.motion.max_speed = FPS*2
+tt.motion.max_speed = FPS*1.9
 tt.regen.cooldown = 1
 tt.render.sprites[1].anchor = v(0.5, 0.24)
 tt.render.sprites[1].prefix = "hero_bolin"
@@ -19449,7 +19509,7 @@ tt.timed_attacks.list[1].xp_gain_factor = 3.1
 tt.timed_attacks.list[2] = CC("bullet_attack")
 tt.timed_attacks.list[2].bullet = "bomb_tar_bolin"
 tt.timed_attacks.list[2].bullet_start_offset = v(0, 30)
-tt.timed_attacks.list[2].cooldown = fts(27) + 16
+tt.timed_attacks.list[2].cooldown = fts(27) + 18
 tt.timed_attacks.list[2].disabled = true
 tt.timed_attacks.list[2].min_range = 80
 tt.timed_attacks.list[2].max_range = 180
@@ -19458,7 +19518,7 @@ tt.timed_attacks.list[2].vis_bans = bor(F_FLYING)
 tt.timed_attacks.list[3] = CC("bullet_attack")
 tt.timed_attacks.list[3].bullet = "bomb_mine_bolin"
 tt.timed_attacks.list[3].bullet_start_offset = v(0, 12)
-tt.timed_attacks.list[3].count = 5
+tt.timed_attacks.list[3].count = 9e+99
 tt.timed_attacks.list[3].cooldown = fts(19) + 6
 tt.timed_attacks.list[3].cooldown_mixed = fts(19) + 6
 tt.timed_attacks.list[3].cooldown_flying = fts(19) + 2
@@ -19466,8 +19526,8 @@ tt.timed_attacks.list[3].disabled = true
 tt.timed_attacks.list[3].max_range = 50
 tt.timed_attacks.list[3].shoot_time = fts(3)
 tt.timed_attacks.list[3].node_offset = {
-	-12,
-	12
+	-6,
+	6
 }
 tt = RT("hero_magnus", "hero")
 
@@ -19503,7 +19563,7 @@ tt.hero.level_stats.hp_max = {
 	290,
 	310,
 	330,
-	375
+	350
 }
 tt.hero.level_stats.melee_damage_max = {
 	2,
@@ -19571,8 +19631,8 @@ tt.hero.skills.mirage.count = {
 	2,
 	3
 }
-tt.hero.skills.mirage.health_factor = 0.4
-tt.hero.skills.mirage.damage_factor = 0.5
+tt.hero.skills.mirage.health_factor = 0.3
+tt.hero.skills.mirage.damage_factor = 0.2
 tt.hero.skills.mirage.xp_level_steps = {
 	nil,
 	1,
@@ -19629,7 +19689,7 @@ tt.sound_events.insert = "HeroMageTauntIntro"
 tt.sound_events.respawn = "HeroMageTauntIntro"
 tt.sound_events.change_rally_point = "HeroMageTaunt"
 tt.sound_events.hero_room_select = "HeroMageTauntSelect"
-tt.teleport.min_distance = 70
+tt.teleport.min_distance = 50
 tt.teleport.delay = 0
 tt.teleport.sound = "TeleporthSound"
 tt.ui.click_rect = r(-13, -5, 26, 32)
@@ -19682,7 +19742,7 @@ tt.timed_attacks.list[2].entity = "magnus_arcane_rain_controller"
 tt.timed_attacks.list[2].cooldown = fts(25) + 14
 tt.timed_attacks.list[2].cast_time = fts(15)
 tt.timed_attacks.list[2].disabled = true
-tt.timed_attacks.list[2].max_range = 120
+tt.timed_attacks.list[2].max_range = 150
 tt.timed_attacks.list[2].min_range = 50
 tt.timed_attacks.list[2].sound = "HeroMageRainCharge"
 tt.timed_attacks.list[2].vis_bans = bor(F_FRIEND, F_FLYING)
@@ -19722,7 +19782,7 @@ tt.hero.level_stats.hp_max = {
 	580,
 	610,
 	640,
-	700
+	670
 }
 tt.hero.level_stats.melee_damage_max = {
 	30,
@@ -19758,18 +19818,18 @@ tt.hero.level_stats.regen_health = {
 	145,
 	153,
 	160,
-	170
+	168
 }
 tt.hero.skills.flaming_frenzy = CC("hero_skill")
 tt.hero.skills.flaming_frenzy.damage_max = {
 	30,
 	50,
-	100
+	70
 }
 tt.hero.skills.flaming_frenzy.damage_min = {
 	20,
 	40,
-	75
+	60
 }
 tt.hero.skills.flaming_frenzy.xp_level_steps = {
 	[10.0] = 3,
@@ -19784,13 +19844,13 @@ tt.hero.skills.flaming_frenzy.xp_gain = {
 tt.hero.skills.surge_of_flame = CC("hero_skill")
 tt.hero.skills.surge_of_flame.damage_max = {
 	30,
-	50,
-	65
+	40,
+	50
 }
 tt.hero.skills.surge_of_flame.damage_min = {
+	10,
 	20,
-	30,
-	50
+	30
 }
 tt.hero.skills.surge_of_flame.xp_level_steps = {
 	nil,
@@ -19833,7 +19893,7 @@ tt.unit.hit_offset = v(0, 19)
 tt.unit.marker_offset = v(0, 0)
 tt.unit.mod_offset = v(0, 20)
 tt.vis.bans = bor(tt.vis.bans, F_BURN)
-tt.melee.range = 60
+tt.melee.range = 45
 tt.melee.attacks[1].cooldown = 1
 tt.melee.attacks[1].damage_type = DAMAGE_TRUE
 tt.melee.attacks[1].hit_time = fts(9)
@@ -19842,8 +19902,8 @@ tt.melee.attacks[1].sound_hit = "HeroReinforcementHit"
 tt.timed_attacks.list[1] = CC("custom_attack")
 tt.timed_attacks.list[1].animation = "flamingFrenzy"
 tt.timed_attacks.list[1].cast_time = fts(8)
-tt.timed_attacks.list[1].chance = 0.25
-tt.timed_attacks.list[1].cooldown = fts(24) + 4
+tt.timed_attacks.list[1].chance = 1
+tt.timed_attacks.list[1].cooldown = fts(24) + 6
 tt.timed_attacks.list[1].damage_type = DAMAGE_TRUE
 tt.timed_attacks.list[1].decal = "decal_ignus_flaming"
 tt.timed_attacks.list[1].disabled = true
@@ -19883,15 +19943,15 @@ tt.hero.fixed_stat_range = 0
 tt.hero.fixed_stat_speed = 4
 tt.hero.level_stats.armor = {
 	0,
-	0.1,
-	0.1,
-	0.2,
-	0.2,
-	0.3,
-	0.3,
-	0.4,
-	0.4,
-	0.5
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0
 }
 tt.hero.level_stats.hp_max = {
 	450,
@@ -19943,14 +20003,14 @@ tt.hero.level_stats.regen_health = {
 }
 tt.hero.skills.smash = CC("hero_skill")
 tt.hero.skills.smash.damage_min = {
-	40,
-	60,
-	80
+	25,
+	50,
+	75
 }
 tt.hero.skills.smash.damage_max = {
-	60,
-	90,
-	120
+	45,
+	75,
+	100
 }
 tt.hero.skills.smash.xp_level_steps = {
 	nil,
@@ -19984,9 +20044,9 @@ tt.hero.skills.fissure.xp_level_steps = {
 	[7.0] = 2
 }
 tt.hero.skills.fissure.xp_gain = {
-	50,
-	100,
-	150
+	300,
+	600,
+	900
 }
 tt.health.dead_lifetime = 15
 tt.health_bar.offset = v(0, 38)
@@ -20010,12 +20070,12 @@ tt.sound_events.insert = "HeroReinforcementTauntIntro"
 tt.sound_events.respawn = "HeroReinforcementTauntIntro"
 tt.unit.marker_offset = v(0, 0)
 tt.unit.mod_offset = v(0, 20)
-tt.melee.range = 65
+tt.melee.range = 45
 tt.melee.cooldown = 1
 tt.melee.attacks[1].cooldown = 1
 tt.melee.attacks[1].hit_time = fts(5)
 tt.melee.attacks[1].shared_cooldown = true
-tt.melee.attacks[1].xp_gain_factor = 3
+tt.melee.attacks[1].xp_gain_factor = 2
 tt.melee.attacks[1].sound_hit = "HeroReinforcementHit"
 tt.melee.attacks[2] = table.deepclone(tt.melee.attacks[1])
 tt.melee.attacks[2].animation = "attack2"
@@ -20032,12 +20092,12 @@ tt.melee.attacks[3].hit_decal = "decal_bomb_crater"
 tt.melee.attacks[3].hit_fx = "decal_malik_ring"
 tt.melee.attacks[3].hit_time = fts(14)
 tt.melee.attacks[3].hit_offset = v(22, 0)
-tt.melee.attacks[3].min_count = 3
+tt.melee.attacks[3].min_count = 1
 tt.melee.attacks[3].sound = "HeroReinforcementSpecial"
 tt.melee.attacks[3].xp_from_skill = "smash"
 tt.melee.attacks[4] = CC("area_attack")
 tt.melee.attacks[4].animation = "fissure"
-tt.melee.attacks[4].cooldown = fts(37) + 10
+tt.melee.attacks[4].cooldown = fts(37) + 14
 tt.melee.attacks[4].damage_max = 0
 tt.melee.attacks[4].damage_min = 0
 tt.melee.attacks[4].damage_radius = 50
@@ -20085,52 +20145,52 @@ tt.hero.level_stats.hp_max = {
 	480
 }
 tt.hero.level_stats.melee_damage_max = {
-	20,
-	24,
-	30,
-	34,
+	19,
+	23,
+	28,
+	33,
 	38,
-	43,
-	48,
-	53,
-	58,
-	64
+	42,
+	47,
+	52,
+	56,
+	61
 }
 tt.hero.level_stats.melee_damage_min = {
+	11,
+	14,
+	17,
 	20,
-	24,
-	30,
+	23,
+	25,
+	28,
+	31,
 	34,
-	38,
-	43,
-	48,
-	53,
-	58,
-	64
+	37
 }
 tt.hero.level_stats.ranged_damage_max = {
-	20,
-	24,
-	30,
-	34,
+	19,
+	23,
+	28,
+	33,
 	38,
-	43,
-	48,
-	53,
-	58,
-	64
+	42,
+	47,
+	52,
+	56,
+	61
 }
 tt.hero.level_stats.ranged_damage_min = {
+	11,
+	14,
+	17,
 	20,
-	24,
-	30,
+	23,
+	25,
+	28,
+	31,
 	34,
-	38,
-	43,
-	48,
-	53,
-	58,
-	64
+	37
 }
 tt.hero.level_stats.regen_health = {
 	75,
@@ -20146,9 +20206,9 @@ tt.hero.level_stats.regen_health = {
 }
 tt.hero.skills.tower_buff = CC("hero_skill")
 tt.hero.skills.tower_buff.duration = {
-	6,
-	9,
-	15
+	5,
+	8,
+	11
 }
 tt.hero.skills.tower_buff.xp_level_steps = {
 	nil,
@@ -20167,19 +20227,19 @@ tt.hero.skills.tower_buff.xp_gain = {
 }
 tt.hero.skills.catapult = CC("hero_skill")
 tt.hero.skills.catapult.count = {
-	2,
 	3,
-	4
+	5,
+	7
 }
 tt.hero.skills.catapult.damage_min = {
-	15,
-	25,
-	40
+	10,
+	20,
+	30
 }
 tt.hero.skills.catapult.damage_max = {
 	30,
 	40,
-	55
+	50
 }
 tt.hero.skills.catapult.xp_level_steps = {
 	[10.0] = 3,
@@ -20432,7 +20492,7 @@ tt.sound_events.respawn = "HeroVikingTauntIntro"
 tt.unit.marker_offset = v(0, 0)
 tt.unit.mod_offset = v(0, 20)
 tt.unit.hit_offset = v(0, 20)
-tt.melee.range = 83.2
+tt.melee.range = 45
 tt.melee.attacks[1].cooldown = 1.5
 tt.melee.attacks[1].hit_time = fts(12)
 tt.melee.attacks[1].sound_hit = "HeroVikingAttackHit"
@@ -20483,7 +20543,7 @@ tt.timed_attacks.list[2] = CC("custom_attack")
 tt.timed_attacks.list[2].cooldown = 10
 tt.timed_attacks.list[2].disabled = true
 tt.timed_attacks.list[2].duration = nil
-tt.timed_attacks.list[2].transform_health_factor = 0.6
+tt.timed_attacks.list[2].transform_health_factor = 0.8
 tt.timed_attacks.list[2].immune_to = bor(DAMAGE_BASE_TYPES, DAMAGE_MODIFIER)
 tt.timed_attacks.list[2].sound = "HeroVikingBearTransform"
 tt = RT("hero_elora", "hero")
@@ -20587,14 +20647,14 @@ tt.hero.skills.chill.slow_factor = {
 	0.2
 }
 tt.hero.skills.chill.max_range = {
-	180,
-	180,
-	180
+	150,
+	150,
+	150
 }
 tt.hero.skills.chill.count = {
-	20,
-	20,
-	20
+	8,
+	10,
+	12
 }
 tt.hero.skills.chill.xp_level_steps = {
 	nil,
@@ -20618,19 +20678,19 @@ tt.hero.skills.ice_storm.count = {
 	8
 }
 tt.hero.skills.ice_storm.damage_max = {
-	40,
-	50,
+	60,
+	60,
 	60
 }
 tt.hero.skills.ice_storm.damage_min = {
-	20,
-	20,
+	30,
+	30,
 	30
 }
 tt.hero.skills.ice_storm.max_range = {
-	180,
-	180,
-	180
+	150,
+	150,
+	150
 }
 tt.hero.skills.ice_storm.xp_level_steps = {
 	[10.0] = 3,
@@ -20675,7 +20735,7 @@ tt.melee.attacks[1].cooldown = 1.5
 tt.melee.attacks[1].hit_time = fts(14)
 tt.melee.attacks[1].sound = "MeleeSword"
 tt.melee.attacks[1].xp_gain_factor = 2
-tt.melee.attacks[1].damage_type = DAMAGE_MAGICAL
+tt.melee.attacks[1].damage_type = DAMAGE_PHYSICAL
 tt.melee.range = 45
 tt.ranged.attacks[1] = E.clone_c(E, "bullet_attack")
 tt.ranged.attacks[1].cooldown = fts(54)
@@ -20719,8 +20779,8 @@ tt.timed_attacks.list[2].disabled = true
 tt.timed_attacks.list[2].max_range = nil
 tt.timed_attacks.list[2].min_range = 19.2
 tt.timed_attacks.list[2].sound = "HeroFrostGroundFreeze"
-tt.timed_attacks.list[2].step = 1
-tt.timed_attacks.list[2].nodes_offset = 1
+tt.timed_attacks.list[2].step = 3
+tt.timed_attacks.list[2].nodes_offset = 6
 tt.timed_attacks.list[2].vis_bans = bor(F_FLYING, F_FRIEND)
 tt.timed_attacks.list[2].vis_flags = F_RANGED
 tt.timed_attacks.list[2].xp_from_skill = "chill"
@@ -20746,7 +20806,7 @@ tt.hero.level_stats.armor = {
 	0.5,
 	0.5,
 	0.6,
-	0.65
+	0.6
 }
 tt.hero.level_stats.hp_max = {
 	425,
@@ -20798,14 +20858,14 @@ tt.hero.level_stats.regen_health = {
 }
 tt.hero.skills.death_strike = CC("hero_skill")
 tt.hero.skills.death_strike.chance = {
-	0.2,
-	0.25,
-	0.3
+	0.1,
+	0.15,
+	0.2
 }
 tt.hero.skills.death_strike.damage = {
 	180,
 	260,
-	360
+	340
 }
 tt.hero.skills.death_strike.xp_level_steps = {
 	[10.0] = 3,
@@ -20853,7 +20913,7 @@ tt.info.fn = scripts.hero_basic.get_info_melee
 tt.info.hero_portrait = (IS_PHONE_OR_TABLET and "hero_portraits_0011") or "heroPortrait_portraits_0011"
 tt.info.i18n_key = "HERO_SAMURAI"
 tt.info.portrait = (IS_PHONE_OR_TABLET and "portraits_hero_0013") or "info_portraits_hero_0013"
-tt.melee.range = 65
+tt.melee.range = 45
 tt.main_script.update = scripts.hero_oni.update
 tt.motion.max_speed = FPS*2.7
 tt.regen.cooldown = 1
@@ -21016,9 +21076,9 @@ tt.hero.skills.timber.xp_level_steps = {
 	[7.0] = 2
 }
 tt.hero.skills.timber.xp_gain = {
-	500,
-	1000,
-	1500
+	750,
+	1500,
+	2250
 }
 tt.hero.skills.sawblade = CC("hero_skill")
 tt.hero.skills.sawblade.bounces = {
@@ -21071,7 +21131,7 @@ tt.melee.order = {
 	2,
 	1
 }
-tt.melee.range = 65
+tt.melee.range = 45
 tt.melee.attacks[1].cooldown = 1.2
 tt.melee.attacks[1].hit_time = fts(15)
 tt.melee.attacks[1].sound = "MeleeSword"
@@ -21238,6 +21298,7 @@ tt.hero.skills.thunderclap.xp_gain = {
 tt.health.dead_lifetime = 15
 tt.health_bar.offset = v(0, 53)
 tt.health_bar.type = HEALTH_BAR_SIZE_MEDIUM
+tt.health.magic_armor = 0.5
 tt.hero.fn_level_up = scripts.hero_thor.level_up
 tt.hero.tombstone_show_time = fts(150)
 tt.info.fn = scripts.hero_basic.get_info_melee
@@ -21258,7 +21319,7 @@ tt.sound_events.respawn = "HeroThorTauntIntro"
 tt.unit.hit_offset = v(0, 22)
 tt.unit.marker_offset = v(0, 0)
 tt.unit.mod_offset = v(0, 20)
-tt.melee.range = 65
+tt.melee.range = 45
 tt.melee.cooldown = 1.5
 tt.melee.attacks[1].cooldown = 1.5
 tt.melee.attacks[1].hit_time = fts(13)
@@ -21407,9 +21468,9 @@ tt.hero.skills.rain.xp_gain = {
 }
 tt.hero.skills.buffed = CC("hero_skill")
 tt.hero.skills.buffed.bomb_steps = {
+	3,
 	4,
-	6,
-	8
+	6
 }
 tt.hero.skills.buffed.bomb_step_damage_min = {
 	10,
@@ -21486,14 +21547,14 @@ tt.sound_events.death_args = {
 tt.sound_events.hero_room_select = "TenShiTauntSelect"
 tt.sound_events.insert = "TenShiTauntIntro"
 tt.sound_events.respawn = "TenShiRespawn"
-tt.teleport.min_distance = 100
+tt.teleport.min_distance = 50
 tt.teleport.delay = 0
 tt.teleport.sound = "TenShiTeleportSfx"
 tt.unit.marker_offset = v(0, 0)
 tt.unit.mod_offset = v(0, 20)
 tt.unit.hit_offset = v(0, 20)
-tt.melee.range_normal = 55
-tt.melee.range_buffed = 85
+tt.melee.range_normal = 45
+tt.melee.range_buffed = 65
 tt.melee.range = tt.melee.range_normal
 tt.melee.attacks[1].cooldown = 1.35
 tt.melee.attacks[1].hit_time = fts(19)
@@ -21519,7 +21580,7 @@ tt.melee.attacks[3].loops = 2
 tt.melee.attacks[3].disabled = true
 tt.melee.attacks[3].damage_min = nil
 tt.melee.attacks[3].damage_max = nil
-tt.melee.attacks[3].damage_radius = 50
+tt.melee.attacks[3].damage_radius = 60
 tt.melee.attacks[3].damage_type = DAMAGE_PHYSICAL
 tt.melee.attacks[3].hit_times = {
 	fts(2),
@@ -23117,7 +23178,7 @@ anchor_x = 0.5
 image_y = 68
 image_x = 88
 tt.enemy.gold = 50
-tt.enemy.lives_cost = 3
+tt.enemy.lives_cost = 1
 tt.enemy.melee_slot = v(23, 0)
 tt.health.armor = 0.95
 tt.health.hp_max = 1000
@@ -23739,8 +23800,8 @@ image_x = 108
 tt.enemy.gold = 100
 tt.enemy.lives_cost = 5
 tt.enemy.melee_slot = v(25, 0)
-tt.health.hp_max = 4000
-tt.health.armor = 0.7
+tt.health.hp_max = 2500
+tt.health.armor = 0
 tt.health_bar.offset = v(0, 62)
 tt.health_bar.type = HEALTH_BAR_SIZE_MEDIUM
 tt.info.portrait = (IS_PHONE_OR_TABLET and "portraits_sc_0055") or "info_portraits_sc_0055"
@@ -25054,7 +25115,7 @@ tt.ranged.attacks[1].bullet_start_offset = {
 }
 tt.ranged.attacks[1].cooldown = fts(36) + 3
 tt.ranged.attacks[1].hold_advance = false
-tt.ranged.attacks[1].max_range = 200
+tt.ranged.attacks[1].max_range = 150
 tt.ranged.attacks[1].min_range = 50
 tt.ranged.attacks[1].shoot_time = fts(9)
 tt.render.sprites[1].anchor = v(anchor_x, anchor_y)
@@ -25100,7 +25161,7 @@ tt.sound_events.death = "DeathPuff"
 tt.timed_attacks.list[1] = E.clone_c(E, "spawn_attack")
 tt.timed_attacks.list[1].spawn_time = fts(5)
 tt.timed_attacks.list[1].clone_time = fts(31)
-tt.timed_attacks.list[1].generation = 3
+tt.timed_attacks.list[1].generation = 2
 tt.timed_attacks.list[1].animation = "summon"
 tt.timed_attacks.list[1].spawn_animation = "spawn"
 tt.timed_attacks.list[1].entity = "enemy_demon_legion"
@@ -25131,7 +25192,7 @@ tt.death_spawns.name = "aura_gulaemon_death"
 tt.enemy.gold = 80
 tt.enemy.lives_cost = 2
 tt.enemy.melee_slot = v(28, 0)
-tt.health.hp_max = 3000
+tt.health.hp_max = 2500
 tt.health.magic_armor = 0.6
 tt.health_bar.type = HEALTH_BAR_SIZE_MEDIUM
 tt.health_bar.offset.y = 68
@@ -26330,7 +26391,7 @@ tt.enemy.lives_cost = 20
 tt.enemy.melee_slot = v(33, 0)
 tt.health.dead_lifetime = 100
 tt.health.ignore_damage = true
-tt.health.magic_armor = 0.6
+tt.health.magic_armor = 0
 tt.health.hp_max = {
 	8889,
 	11111,
@@ -26895,7 +26956,7 @@ tt.bullet.hit_time = fts(2)
 tt.track_target = true
 tt = E.register_t(E, "bolt_high_elven_weak", "bolt_elves")
 tt.bullet.damage_max = 10
-tt.bullet.damage_min = 5
+tt.bullet.damage_min = 10
 tt.bullet.hit_fx = "fx_bolt_high_elven_weak_hit"
 tt.bullet.particles_name = "ps_bolt_high_elven"
 tt.bullet.pop = {
@@ -27015,9 +27076,9 @@ tt.render.sprites[1].name = "artillery_tree_proys_0001"
 tt.sound_events.insert = "TowerEntwoodCocoThrow"
 tt.sound_events.hit = "TowerEntwoodCocoExplosion"
 tt = E.register_t(E, "rock_firey_nut", "rock_entwood")
-tt.bullet.damage_max = 0
-tt.bullet.damage_max_inc = 100
-tt.bullet.damage_min = 0
+tt.bullet.damage_max = 180
+tt.bullet.damage_max_inc = 0
+tt.bullet.damage_min = 180
 tt.bullet.damage_min_inc = tt.bullet.damage_max_inc
 tt.bullet.damage_radius = 75
 tt.bullet.hit_payload = "aura_fiery_nut"
@@ -27384,9 +27445,9 @@ tt.render.sprites[1].name = "bombs_0005"
 tt.sound_events.hit = "BombExplosionSound"
 tt.sound_events.insert = "BombShootSound"
 tt = RT("bomb_bfg_fragment", "bomb")
-tt.bullet.damage_max = 50
-tt.bullet.damage_min = 25
-tt.bullet.damage_inc = 25
+tt.bullet.damage_max = 60
+tt.bullet.damage_min = 20
+tt.bullet.damage_inc = 40
 tt.bullet.damage_radius = 60
 tt.bullet.flight_time = fts(10)
 tt.bullet.hide_radius = 2
@@ -27510,7 +27571,7 @@ tt.bullet.damage_bans = F_ALL
 tt.bullet.damage_flags = 0
 tt.bullet.damage_max = 0
 tt.bullet.damage_min = 0
-tt.bullet.damage_radius = 1
+tt.bullet.damage_radius = 55
 tt.bullet.flight_time = fts(24)
 tt.bullet.pop = nil
 tt.bullet.hit_payload = "decal_bolin_mine"
@@ -27526,7 +27587,7 @@ tt.sound_events.hit = nil
 tt.sound_events.hit_water = nil
 tt = E.register_t(E, "denas_catapult_rock", "bomb")
 tt.bullet.flight_time = fts(45)
-tt.bullet.damage_radius = 45
+tt.bullet.damage_radius = 55
 tt.bullet.damage_min = nil
 tt.bullet.damage_max = nil
 tt.bullet.g = (fts(1)*fts(1))/-0.8
@@ -27687,6 +27748,27 @@ tt.ray_y_scales = {
 	0.8,
 	1
 }
+tt = RT("ray_sunray_mini", "bullet")
+tt.bullet.damage_type = bor(DAMAGE_DISINTEGRATE, DAMAGE_TRUE)
+tt.bullet.hit_time = fts(1)
+tt.bullet.mod = "mod_ray_sunray_hit"
+tt.bullet.damage_max = 75
+tt.bullet.damage_min = 25
+tt.bullet.damage_inc = 100
+tt.image_width = 82
+tt.main_script.update = scripts.ray_simple.update
+tt.render.sprites[1].anchor = v(0, 0.5)
+tt.render.sprites[1].name = "ray_sunray"
+tt.render.sprites[1].loop = false
+tt.sound_events.insert = "PolymorphSound"
+tt.track_target = true
+tt.ray_duration = fts(9)
+tt.ray_y_scales = {
+	0.4,
+	0.6,
+	0.8,
+	1
+}
 tt = RT("ray_sunray2", "bullet")
 tt.bullet.damage_type = bor(DAMAGE_DISINTEGRATE, DAMAGE_TRUE)
 tt.bullet.hit_time = fts(1)
@@ -27715,7 +27797,7 @@ tt.render.sprites[1].name = "ray_hero_thor"
 tt.main_script.update = scripts.ray_thor.update
 tt = RT("shotgun_musketeer", "shotgun")
 tt.bullet.damage_max = 65
-tt.bullet.damage_min = 35
+tt.bullet.damage_min = 45
 tt.bullet.hit_blood_fx = "fx_blood_splat"
 tt.bullet.miss_fx = "fx_smoke_bullet"
 tt.bullet.start_fx = "fx_rifle_smoke"
@@ -27735,7 +27817,7 @@ tt.bullet.pop = {
 }
 tt = RT("shotgun_bolin", "shotgun")
 tt.bullet.damage_max = 65
-tt.bullet.damage_min = 35
+tt.bullet.damage_min = 45
 tt.bullet.hit_blood_fx = "fx_blood_splat"
 tt.bullet.miss_fx = "fx_smoke_bullet"
 tt.bullet.start_fx = nil
@@ -27891,11 +27973,11 @@ tt.check_interval = fts(3)
 tt.damage_max = nil
 tt.damage_min = nil
 tt.damage_type = DAMAGE_EXPLOSION
-tt.duration = 50
+tt.duration = 180
 tt.hit_decal = "decal_bomb_crater"
 tt.hit_fx = "fx_explosion_fragment"
 tt.main_script.update = scripts.decal_bolin_mine.update
-tt.radius = 13
+tt.radius = 55
 tt.render.sprites[1].loop = true
 tt.render.sprites[1].name = "decal_bolin_mine"
 tt.render.sprites[1].z = Z_DECALS
@@ -27964,6 +28046,18 @@ tt.tween.props[1].keys = {
 		0
 	}
 }
+tt = E.register_t(E, "mod_blood_elves", "mod_blood")
+tt.modifier.allows_duplicates = true
+tt.modifier.max_of_same = 5
+tt.modifier.source_damage = nil
+tt.modifier.type = MOD_TYPE_BLEED
+tt.chance = 0.15
+tt.damage_factor = 0.1
+tt.dps.damage_every = fts(4)
+tt.dps.damage_inc = 0
+tt.dps.damage_type = DAMAGE_TRUE
+tt.dps.fx_every = fts(12)
+tt.main_script.insert = scripts2.mod_blood_elves.insert
 tt = E.register_t(E, "mod_timelapse", "modifier")
 
 E.add_comps(E, tt, "render", "tween")
@@ -28017,8 +28111,8 @@ tt.main_script.insert = scripts2.mod_timelapse.insert
 tt.main_script.remove = scripts2.mod_timelapse.remove
 tt.damage_levels = {
 	100,
-	150,
-	200
+	200,
+	300
 }
 tt.damage_type = bor(DAMAGE_TRUE)
 tt.modifier.duration = 5
@@ -28106,7 +28200,7 @@ E.add_comps(E, tt, "dps", "render")
 
 tt.dps.damage_min = 0
 tt.dps.damage_max = 0
-tt.dps.damage_inc = 5
+tt.dps.damage_inc = 4
 tt.dps.damage_type = DAMAGE_TRUE
 tt.dps.damage_every = fts(3)
 tt.dps.kill = true
@@ -28608,8 +28702,8 @@ tt = E.register_t(E, "aura_ulgukhai_regen", "aura_forest_troll_regen")
 tt.regen.ignore_mods = true
 tt = E.register_t(E, "aura_goblin_zapper_death", "aura")
 tt.aura.cycles = 1
-tt.aura.damage_min = 50
-tt.aura.damage_max = 150
+tt.aura.damage_min = 100
+tt.aura.damage_max = 100
 tt.aura.damage_type = DAMAGE_PHYSICAL
 tt.aura.radius = 60
 tt.aura.vis_bans = bor(F_ENEMY)
@@ -28617,8 +28711,8 @@ tt.aura.vis_flags = bor(F_RANGED)
 tt.main_script.update = scripts.aura_apply_damage.update
 tt = E.register_t(E, "aura_goblin_zapper_death_solider", "aura")
 tt.aura.cycles = 1
-tt.aura.damage_min = 50
-tt.aura.damage_max = 150
+tt.aura.damage_min = 100
+tt.aura.damage_max = 100
 tt.aura.damage_type = DAMAGE_PHYSICAL
 tt.aura.radius = 60
 tt.aura.vis_bans = bor(F_FRIEND)
@@ -28626,8 +28720,8 @@ tt.aura.vis_flags = bor(F_RANGED)
 tt.main_script.update = scripts.aura_apply_damage.update
 tt = E.register_t(E, "aura_demon_death", "aura")
 tt.aura.cycles = 1
-tt.aura.damage_min = 50
-tt.aura.damage_max = 100
+tt.aura.damage_min = 75
+tt.aura.damage_max = 75
 tt.aura.damage_type = DAMAGE_PHYSICAL
 tt.aura.excluded_templates = {
 	"hero_oni"
@@ -28651,11 +28745,11 @@ tt.aura.vis_bans = F_FRIEND
 tt.aura.vis_flags = bor(F_RANGED)
 tt.main_script.update = scripts.aura_apply_damage.update
 tt = E.register_t(E, "aura_demon_mage_death", "aura_demon_death")
-tt.aura.damage_min = 200
-tt.aura.damage_max = 400
+tt.aura.damage_min = 300
+tt.aura.damage_max = 300
 tt = E.register_t(E, "aura_demon_wolf_death", "aura_demon_death")
-tt.aura.damage_min = 70
-tt.aura.damage_max = 140
+tt.aura.damage_min = 100
+tt.aura.damage_max = 100
 tt = E.register_t(E, "aura_rotten_lesser_death", "aura")
 tt.aura.cycles = 1
 tt.aura.radius = 60
@@ -28685,11 +28779,11 @@ tt.regen.health = 1
 tt.regen.ignore_stun = false
 tt.regen.ignore_freeze = false
 tt = E.register_t(E, "aura_flareon_death", "aura_demon_death")
-tt.aura.damage_min = 40
-tt.aura.damage_max = 80
+tt.aura.damage_min = 60
+tt.aura.damage_max = 60
 tt = E.register_t(E, "aura_gulaemon_death", "aura_demon_death")
-tt.aura.damage_min = 200
-tt.aura.damage_max = 400
+tt.aura.damage_min = 300
+tt.aura.damage_max = 300
 tt = E.register_t(E, "aura_burning_floor", "aura")
 
 E.add_comps(E, tt, "render", "tween")
@@ -28803,7 +28897,10 @@ tt.graveyard.excluded_templates = {
 "enemy_skeleton_big",
 "enemy_spider_tiny",
 "enemy_spider_big",
-"enemy_spider_small"
+"enemy_spider_small",
+"enemy_gargoyle",
+"enemy_rocketeer",
+"enemy_demon_imp"
 }
 tt.graveyard.vis_has = F_ENEMY
 tt.graveyard.vis_flags = F_SKELETON
@@ -28812,7 +28909,7 @@ tt = RT("swamp_controller", "graveyard_controller")
 tt.graveyard.spawns_by_health = {
 	{
 		"enemy_zombie",
-		500
+		549
 	},
 	{
 		"enemy_swamp_thing",
@@ -28827,8 +28924,7 @@ tt.graveyard.excluded_templates = {
 	"soldier_skeleton_knight",
 	"soldier_sand_warrior",
 	"soldier_death_rider",
-	"soldier_rotten_tree",
-	"soldier_baby_ashbite"
+	"soldier_rotten_tree"
 }
 tt.graveyard.keep_gold = false
 tt.graveyard.vis_has = F_FRIEND
@@ -29147,8 +29243,8 @@ tt = RT("mod_ray_arcane", "modifier")
 
 AC(tt, "render", "dps")
 
-tt.dps.damage_min = 76
-tt.dps.damage_max = 140
+tt.dps.damage_min = 87
+tt.dps.damage_max = 148
 tt.dps.damage_type = bor(DAMAGE_MAGICAL, DAMAGE_ONE_SHIELD_HIT)
 tt.dps.damage_every = fts(2)
 tt.dps.pop = {
@@ -29387,7 +29483,7 @@ tt.modifier.duration = fts(16)
 tt.dps.damage_every = fts(2)
 tt.dps.damage_min = 5
 tt.dps.damage_max = 5
-tt.dps.damage_type = DAMAGE_MAGICAL
+tt.dps.damage_type = DAMAGE_TRUE
 tt = RT("mod_hero_thor_chainlightning", "modifier")
 tt.chainlightning = {
 	bullet = "ray_hero_thor",
@@ -29559,7 +29655,7 @@ tt = RT("mod_rotten_lesser_pestilence", "mod_poison")
 tt.dps.damage_every = fts(4)
 tt.dps.damage_max = 2
 tt.dps.damage_min = 2
-tt.modifier.duration = fts(4) - 5
+tt.modifier.duration = fts(4) + 5
 tt.render.sprites[1].prefix = "poison_violet"
 tt = RT("mod_poison_giant_rat", "mod_poison")
 tt.dps.damage_every = fts(7)
@@ -30839,12 +30935,12 @@ tt.aura.excluded_templates = {
 "soldier_zombie",
 "soldier_alleria_wildcat",
 "soldier_magnus_illusion",
+"soldier_ingvar_ancestor",
 "soldier_skeleton",
 "soldier_skeleton_knight",
 "soldier_sand_warrior",
 "soldier_death_rider",
-"soldier_rotten_tree",
-"soldier_baby_ashbite"
+"soldier_rotten_tree"
 }
 tt.aura.vis_flags = F_FRIEND
 tt.aura.vis_bans = bor(F_ENEMY)
