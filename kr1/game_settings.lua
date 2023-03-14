@@ -1,7 +1,7 @@
 local GS = {
 	gameplay_tips_count = 21,
 	early_wave_reward_per_second = 1,
-	max_stars = 140,
+	max_stars = 145,
 	max_difficulty = DIFFICULTY_HARD,
 	difficulty_soldier_hp_max_factor = {
 		1.2,
@@ -19,7 +19,7 @@ local GS = {
 		1.28
 	},
 	main_campaign_levels = 12,
-	last_level = 28,
+	last_level = 29,
 	endless_levels_count = 1,
 	level_ranges = {
 		{
