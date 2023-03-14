@@ -67,27 +67,6 @@ return {
 				{}
 			}
 		},
-		hero_dracolich = {
-			shader_args = {
-				{
-					margin = 0 * rs,
-					p1 = p11,
-					p2 = p12,
-					c1 = fc(0, 0, 0, 0),
-					c2 = fc(228, 255, 95, 255),
-					c3 = fc(107, 173, 0, 255)
-				},
-				{
-					thickness = 4.5 * rs,
-					outline_color = fc(29, 51, 1, 255)
-				},
-				{
-					thickness = 1.5 * rs,
-					glow_color = fc(29, 51, 1, 255)
-				},
-				{}
-			}
-		},
 		hero_alleria = {
 			shader_args = {
 				{
@@ -497,20 +476,6 @@ return {
 				7,
 				8,
 				0,
-				6
-			}
-		},
-		{
-		portrait = 15,
-			thumb = 17,
-			name = "hero_dracolich",
-			available_level = 26,
-			starting_level = 10,
-			icon = 15,
-			stats = {
-				6,
-				0,
-				8,
 				6
 			}
 		},
