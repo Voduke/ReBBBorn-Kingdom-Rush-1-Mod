@@ -6927,22 +6927,22 @@ local a = {
 	},
 	tower_time_wizard_idle = {
 		prefix = "time_wizard_tower",
-		to = 1,
+		to = 9,
 		from = 1
 	},
 	tower_time_wizard_shoot = {
 		prefix = "time_wizard_tower",
-		to = 26,
+		to = 63,
 		from = 1
 	},
-	tower_time_wizard_polymorph = {
+	tower_time_wizard_sandstorm = {
 		prefix = "time_wizard_tower",
-		to = 26,
-		from = 1
+		to = 89,
+		from = 64
 	},
 	fx_tower_time_wizard_polymorph = {
 		prefix = "fx_polymorph",
-		to = 20,
+		to = 1,
 		from = 1
 	},
 	tower_time_wizard_shooter_idleDown = {
@@ -6952,28 +6952,53 @@ local a = {
 	},
 	tower_time_wizard_shooter_idleUp = {
 		prefix = "time_wizard_shooter",
-		to = 2,
-		from = 2
+		to = 13,
+		from = 13
 	},
 	tower_time_wizard_shooter_shootingDown = {
 		prefix = "time_wizard_shooter",
-		to = 11,
-		from = 3
+		to = 12,
+		from = 2
 	},
 	tower_time_wizard_shooter_shootingUp = {
 		prefix = "time_wizard_shooter",
-		to = 43,
-		from = 23
+		to = 24,
+		from = 14
 	},
-	tower_time_wizard_shooter_polymorphUp = {
+	tower_time_wizard_shooter_sandstormUp = {
 		prefix = "time_wizard_shooter",
-		to = 68,
-		from = 44
+		to = 72,
+		from = 49
 	},
-	tower_time_wizard_shooter_polymorphDown = {
+	tower_time_wizard_shooter_sandstormDown = {
 		prefix = "time_wizard_shooter",
-		to = 93,
-		from = 69
+		to = 48,
+		from = 25
+	},
+	bolt_time_wizard_idle = {
+		prefix = "time_wizard_bolt",
+		to = 8,
+		from = 1
+	},
+	bolt_time_wizard_flying = {
+		prefix = "time_wizard_bolt",
+		to = 8,
+		from = 1
+	},
+	bolt_time_wizard_hit = {
+		prefix = "sorcererbolt",
+		to = 16,
+		from = 9
+	},
+	decal_sandstormtw = {
+		prefix = "time_wizard_sandstorm",
+		to = 24,
+		from = 1
+	},
+		fx_time_wizard_word = {
+		prefix = "time_wizard_word",
+		to = 1,
+		from = 1
 	},
 	tower_paladin_flag = {
 		prefix = "paladinFlag",

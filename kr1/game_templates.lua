@@ -4148,7 +4148,7 @@ tt.tower.menu_offset = v(0, 14)
 tt.info.enc_icon = 19
 tt.info.i18n_key = "TOWER_TIME_WIZARD"
 tt.info.portrait = (IS_PHONE_OR_TABLET and "portraits_towers_0006") or "info_portraits_towers_0011"
-tt.barrack.soldier_type = "soldier_elemental"
+tt.barrack.soldier_type = "soldier_time_traveler"
 tt.barrack.rally_range = 180
 tt.powers.polymorph = CC("power")
 tt.powers.polymorph.price_base = 325
@@ -4156,7 +4156,7 @@ tt.powers.polymorph.price_inc = 175
 tt.powers.polymorph.cooldown_base = 22
 tt.powers.polymorph.cooldown_inc = -2
 tt.powers.polymorph.enc_icon = 1
-tt.powers.polymorph.name = "POLIMORPH"
+tt.powers.polymorph.name = "SANDSTORM"
 tt.powers.elemental = CC("power")
 tt.powers.elemental.price_base = 350
 tt.powers.elemental.price_inc = 150
@@ -4180,14 +4180,14 @@ tt.render.sprites[3].angles = {
 		"shootingUp",
 		"shootingDown"
 	},
-	polymorph = {
-		"polymorphUp",
-		"polymorphDown"
+	sandstorm = {
+		"sandstormUp",
+		"sandstormDown"
 	}
 }
 tt.render.sprites[3].offset = v(1, 64)
 tt.render.sprites[4] = CC("sprite")
-tt.render.sprites[4].name = "fx_tower_sorcerer_polymorph"
+tt.render.sprites[4].name = "fx_tower_time_wizard_polymorph"
 tt.render.sprites[4].loop = false
 tt.render.sprites[4].ts = -10
 tt.render.sprites[4].offset = v(0, 80)
@@ -4196,28 +4196,28 @@ tt.render.sprites[4].hide_after_runs = 1
 tt.main_script.insert = scripts.tower_barrack.insert
 tt.main_script.update = scripts.tower_sorcerer.update
 tt.main_script.remove = scripts.tower_barrack.remove
-tt.sound_events.insert = "MageSorcererTaunt"
+tt.sound_events.insert = "MageTimeWizardTaunt"
 tt.sound_events.change_rally_point = "RockElementalRally"
-tt.attacks.range = 200
-tt.attacks.min_cooldown = 1.5
+tt.attacks.range = 275
+tt.attacks.min_cooldown = 0.5
 tt.attacks.list[1] = CC("bullet_attack")
 tt.attacks.list[1].animation = "shoot"
-tt.attacks.list[1].bullet = "bolt_sorcerer"
+tt.attacks.list[1].bullet = "bolt_time_wizard"
 tt.attacks.list[1].bullet_start_offset = {
-	v(8, 68),
-	v(-6, 68)
+	v(8, 84),
+	v(-6, 84)
 }
-tt.attacks.list[1].cooldown = 1.5
-tt.attacks.list[1].shoot_time = fts(11)
+tt.attacks.list[1].cooldown = 2
+tt.attacks.list[1].shoot_time = fts(7)
 tt.attacks.list[2] = CC("bullet_attack")
 tt.attacks.list[2].bullet_start_offset = {
-	v(0, 78),
-	v(0, 78)
+	v(8, 84),
+	v(-6, 84)
 }
-tt.attacks.list[2].animation = "polymorph"
-tt.attacks.list[2].bullet = "ray_sorcerer_polymorph"
-tt.attacks.list[2].cooldown = 20
-tt.attacks.list[2].shoot_time = fts(9)
+tt.attacks.list[2].animation = "sandstorm"
+tt.attacks.list[2].bullet = "time_wizard_sandstorm"
+tt.attacks.list[2].cooldown = 1
+tt.attacks.list[2].shoot_time = fts(7)
 tt.attacks.list[2].vis_bans = bor(F_BOSS)
 tt.attacks.list[2].vis_flags = bor(F_MOD, F_RANGED, F_POLYMORPH)
 tt = RT("tower_sorcerer_cheat", "tower_mage_1")
@@ -4676,6 +4676,51 @@ tt.unit.hit_offset = v(0, 14)
 tt.unit.marker_offset = v(0, ady(10))
 tt.unit.size = UNIT_SIZE_MEDIUM
 tt.vis.bans = bor(F_POLYMORPH, F_POISON, F_LYCAN, F_CANNIBALIZE)
+tt = E.register_t(E, "soldier_time_traveler", "soldier")
+
+E.add_comps(E, tt, "melee", "ranged", "auras")
+tt.auras.list[1] = E.clone_c(E, "aura_attack")
+tt.auras.list[1].cooldown = 0
+tt.auras.list[1].name = "time_traveler_aura"
+tt.health.armor = 0.3
+tt.health.armor_inc = 0.1
+tt.health.dead_lifetime = 12
+tt.health.hp_inc = 50
+tt.health.hp_max = 20000
+tt.health_bar.offset = v(0, 47.76)
+tt.health_bar.type = HEALTH_BAR_SIZE_MEDIUM
+tt.info.fn = scripts3.soldier_barrack.get_info
+tt.info.portrait = (IS_PHONE_OR_TABLET and "portraits_sc_0006") or "info_portraits_soldiers_0006"
+tt.main_script.insert = scripts3.soldier_barrack.insert
+tt.main_script.update = scripts3.soldier_barrack.update
+tt.melee.attacks[1].cooldown = 3
+tt.melee.attacks[1].damage_inc = 10
+tt.melee.attacks[1].damage_max = 20
+tt.melee.attacks[1].damage_min = 0
+tt.melee.attacks[1].hit_time = fts(9)
+tt.melee.attacks[1].sound = "MeleeSword"
+tt.melee.attacks[1].vis_bans = bor(F_FLYING, F_CLIFF)
+tt.melee.attacks[1].vis_flags = F_BLOCK
+tt.melee.attacks[1].mod = "mod_teleport_arcane"
+tt.melee.range = 76.8
+tt.motion.max_speed = 100
+tt.regen.cooldown = 1
+tt.regen.health = 25
+tt.render.sprites[1] = E.clone_c(E, "sprite")
+tt.render.sprites[1].anchor.y = 0.18
+tt.render.sprites[1].angles = {
+  walk = {
+    "running"
+  }
+}
+tt.render.sprites[1].name = "raise"
+tt.render.sprites[1].prefix = "soldier_death_rider"
+tt.soldier.melee_slot_offset = v(15, 0)
+tt.unit.blood_color = BLOOD_GRAY
+tt.unit.hit_offset = v(0, 14)
+tt.unit.marker_offset = v(0, ady(10))
+tt.unit.size = UNIT_SIZE_MEDIUM
+tt.vis.bans = bor(F_POLYMORPH, F_POISON, F_LYCAN, F_CANNIBALIZE)
 tt = E.register_t(E, "death_rider_aura", "aura")
 
 E.add_comps(E, tt, "render")
@@ -4694,6 +4739,33 @@ tt.aura.allowed_templates = {
   "soldier_frankenstein",
   "soldier_ingvar_ancestor",
   "soldier_magnus_illusion"
+}
+tt.aura.vis_bans = F_ENEMY
+tt.aura.vis_flags = F_MOD
+tt.main_script.insert = scripts3.aura_apply_mod.insert
+tt.main_script.update = scripts3.aura_apply_mod.update
+tt.render.sprites[1].name = "soldier_death_rider_aura"
+tt.render.sprites[1].loop = true
+tt = E.register_t(E, "time_traveler_aura", "aura")
+
+E.add_comps(E, tt, "render")
+
+tt.aura.mod = "mod_time_traveler"
+tt.aura.cycle_time = 1
+tt.aura.duration = -1
+tt.aura.radius = 275
+tt.aura.track_source = true
+tt.aura.allowed_templates = {
+  "soldier_skeleton",
+  "soldier_skeleton_knight",
+  "soldier_sand_warrior",
+  "soldier_dracolich_golem",
+  "soldier_elemental",
+  "soldier_frankenstein",
+  "soldier_ingvar_ancestor",
+  "soldier_magnus_illusion",
+  "hero_gerald",
+  "reinforcement"
 }
 tt.aura.vis_bans = F_ENEMY
 tt.aura.vis_flags = F_MOD
@@ -7237,6 +7309,81 @@ tt.timed_attacks.list[1].sound = "TowerBladesingerBladedance"
 tt.unit.marker_offset = v(0, 0)
 tt.unit.mod_offset = v(0, 14)
 tt = E.register_t(E, "soldier_forest", "soldier_militia")
+
+E.add_comps(E, tt, "powers", "revive", "timed_attacks", "ranged")
+
+image_y = 114
+anchor_y = 0.25
+tt.health.armor = 0
+tt.health.dead_lifetime = 12
+tt.health.hp_max = 300
+tt.health_bar.offset = v(0, 54)
+tt.info.portrait = "portraits_sc_0137"
+tt.info.random_name_format = "ELVES_SOLDIER_FOREST_KEEPER_%i_NAME"
+tt.info.random_name_count = 11
+tt.main_script.insert = scripts2.soldier_forest.insert
+tt.main_script.update = scripts2.soldier_forest.update
+tt.melee.attacks[1].animation = "attack"
+tt.melee.attacks[1].cooldown = 1.3
+tt.melee.attacks[1].damage_max = 36
+tt.melee.attacks[1].damage_min = 24
+tt.melee.attacks[1].pop = {
+  "pop_forest_keeper"
+}
+tt.melee.attacks[1].forced_cooldown = true
+tt.melee.forced_cooldown = tt.melee.attacks[1].cooldown
+tt.melee.range = 49.5
+tt.motion.max_speed = 60
+tt.powers.circle = E.clone_c(E, "power")
+tt.powers.eerie = E.clone_c(E, "power")
+tt.powers.oak = E.clone_c(E, "power")
+tt.ranged.attacks[1].animation = "ranged_attack"
+tt.ranged.attacks[1].bullet = "spear_forest"
+tt.ranged.attacks[1].bullet_start_offset = {
+  v(0, 35)
+}
+tt.ranged.attacks[1].cooldown = fts(18) + 2.5
+tt.ranged.attacks[1].max_range = 165
+tt.ranged.attacks[1].min_range = 22.5
+tt.ranged.attacks[1].shoot_time = fts(8)
+tt.ranged.attacks[2] = table.deepclone(tt.ranged.attacks[1])
+tt.ranged.attacks[2].animation = "oak_attack"
+tt.ranged.attacks[2].bullet = "spear_forest_oak"
+tt.ranged.attacks[2].disabled = true
+tt.ranged.attacks[2].shoot_time = fts(14)
+tt.regen.health = 35
+tt.render.sprites[1].prefix = "soldier_forest"
+tt.render.sprites[1].anchor.y = anchor_y
+tt.revive.disabled = true
+tt.revive.chance = 0.10
+tt.revive.health_recover = 1
+tt.revive.fx = "fx_soldier_barrack_revive"
+tt.soldier.melee_slot_offset = v(5, 0)
+tt.timed_attacks.list[1] = E.clone_c(E, "custom_attack")
+tt.timed_attacks.list[1].animation = "circle"
+tt.timed_attacks.list[1].cast_time = fts(15)
+tt.timed_attacks.list[1].cooldown = 10
+tt.timed_attacks.list[1].max_range = 150
+tt.timed_attacks.list[1].mod = "mod_forest_circle"
+tt.timed_attacks.list[1].sound = "TowerForestKeeperCircleOfHealing"
+tt.timed_attacks.list[1].trigger_hp_factor = 0.8
+tt.timed_attacks.list[1].vis_bans = bor(F_ENEMY)
+tt.timed_attacks.list[1].vis_flags = bor(F_MOD)
+tt.timed_attacks.list[2] = E.clone_c(E, "aura_attack")
+tt.timed_attacks.list[2].animation = "eerie"
+tt.timed_attacks.list[2].cast_time = fts(20)
+tt.timed_attacks.list[2].cooldown = 16
+tt.timed_attacks.list[2].max_range = 110
+tt.timed_attacks.list[2].max_range_inc = 15
+tt.timed_attacks.list[2].bullet = "aura_forest_eerie"
+tt.timed_attacks.list[2].vis_bans = bor(F_FLYING, F_BOSS)
+tt.timed_attacks.list[2].vis_flags = bor(F_RANGED)
+tt.ui.click_rect = r(-10, -2, 20, 35)
+tt.unit.marker_offset = v(0, 0)
+tt.unit.mod_offset = v(0, 25)
+tt.unit.hit_offset = v(0, 25)
+
+tt = E.register_t(E, "soldier_testwizard", "soldier_militia")
 
 E.add_comps(E, tt, "powers", "revive", "timed_attacks", "ranged")
 
@@ -23162,11 +23309,11 @@ tt.info.portrait = (IS_PHONE_OR_TABLET and "portraits_sc_0009") or "info_portrai
 tt.main_script.insert = scripts.enemy_basic.insert
 tt.main_script.update = scripts.enemy_shaman.update
 tt.melee.attacks[1].cooldown = fts(18) + 1
-tt.melee.attacks[1].damage_max = 25
-tt.melee.attacks[1].damage_min = 30
+tt.melee.attacks[1].damage_max = 30
+tt.melee.attacks[1].damage_min = 25
 tt.melee.attacks[1].hit_time = fts(9)
 tt.motion.max_speed = FPS*0.5
-tt.ranged.attacks[1].bullet = "bolt_magnus"
+tt.ranged.attacks[1].bullet = "bolt_cursed_shaman"
 tt.ranged.attacks[1].bullet_start_offset = {
 	v(0, 23)
 }
@@ -27965,10 +28112,22 @@ tt.bullet.hit_fx = "fx_fiery_nut_explosion"
 tt.bullet.hit_decal = nil
 tt.render.sprites[1].name = "artillery_tree_proys_0002"
 tt.sound_events.hit = "TowerEntwoodFieryExplote"
+tt = E.register_t(E, "time_wizard_sandstorm", "rock_entwood")
+tt.bullet.flight_time = fts(1)
+tt.bullet.damage_max = 0
+tt.bullet.damage_max_inc = 0
+tt.bullet.damage_min = 0
+tt.bullet.damage_min_inc = tt.bullet.damage_max_inc
+tt.bullet.damage_radius = 75
+tt.bullet.hit_payload = "aura_time_wizard_sandstorm"
+tt.bullet.hit_fx = "fx_fiery_nut_explosion"
+tt.bullet.hit_decal = nil
+tt.render.sprites[1].name = "time_wizard_sandstorm_proj"
+tt.sound_events.hit = "TowerEntwoodFieryExplote"
 tt = E.register_t(E, "arrow_soldier_barrack_2", "arrow")
 tt.bullet.damage_max = 7
 tt.bullet.damage_min = 3
-tt.bullet.flight_time = fts(15)
+tt.bullet.flight_time = fts(3)
 tt.bullet.reset_to_target_pos = true
 tt = E.register_t(E, "arrow_soldier_barrack_3", "arrow_soldier_barrack_2")
 tt.bullet.damage_max = 12
@@ -28141,6 +28300,21 @@ tt.bullet.pop = {
 tt.render.sprites[1].anchor = v(0.5, 0.5)
 tt.render.sprites[1].prefix = "bolt_sorcerer"
 tt.sound_events.insert = "BoltSorcererSound"
+tt = RT("bolt_time_wizard", "bolt")
+tt.bullet.damage_max = 136
+tt.bullet.damage_min = 74
+tt.bullet.hit_fx = "fx_bolt_sorcerer_hit"
+tt.bullet.max_speed = 550
+tt.bullet.mods = {
+	"mod_time_wizard_bolt_slow"
+}
+tt.bullet.particles_name = "ps_bolt_sorcerer"
+tt.bullet.pop = {
+	"pop_zap_sorcerer"
+}
+tt.render.sprites[1].anchor = v(0.5, 0.5)
+tt.render.sprites[1].prefix = "bolt_time_wizard"
+tt.sound_events.insert = "BoltSorcererSound"
 tt = RT("bolt_sorcerer_cheat", "bolt")
 tt.bullet.damage_max = 99
 tt.bullet.damage_min = 66
@@ -28245,6 +28419,17 @@ tt.bullet.damage_min = 9
 tt.bullet.damage_max = 27
 tt.bullet.max_speed = 360
 tt.bullet.xp_gain_factor = 2.1
+tt = RT("bolt_cursed_shaman", "bolt")
+tt.bullet.vis_flags = F_RANGED
+tt.bullet.vis_bans = 0
+tt.render.sprites[1].prefix = "bolt_magnus"
+tt.bullet.hit_fx = "fx_bolt_magnus_hit"
+tt.bullet.pop = nil
+tt.bullet.pop_conds = nil
+tt.bullet.acceleration_factor = 0.1
+tt.bullet.damage_min = 60
+tt.bullet.damage_max = 50
+tt.bullet.max_speed = 350
 tt = RT("bolt_magnus_illusion", "bolt_magnus")
 tt.bullet.damage_min = nil
 tt.bullet.damage_max = nil
@@ -28925,6 +29110,38 @@ tt.tween.props[1].keys = {
 		0
 	}
 }
+tt = E.register_t(E, "aura_time_wizard_sandstorm", "aura")
+
+E.add_comps(E, tt, "render", "tween")
+
+tt.aura.cycle_time = 0.3
+tt.aura.duration = 5
+tt.aura.mods = { "mod_sandstorm_slow", "mod_sandstormtw" }
+tt.aura.radius = 80
+tt.aura.vis_bans = bor(F_FRIEND, F_FLYING)
+tt.aura.vis_flags = bor(F_MOD)
+tt.main_script.insert = scripts2.aura_apply_mod.insert
+tt.main_script.update = scripts.aura_slow_bolin.update
+tt.main_script.update = scripts2.aura_apply_mod.update
+tt.render.sprites[1].name = "decal_sandstormtw"
+tt.render.sprites[1].loop = true
+tt.render.sprites[1].z = Z_DECALS
+tt.render.sprites[1].scale = v(1.25, 1.25)
+tt.tween.remove = false
+tt.tween.props[1].keys = {
+	{
+		0,
+		255
+	},
+	{
+		"this.aura.duration-1",
+		255
+	},
+	{
+		"this.aura.duration",
+		0
+	}
+}
 tt = E.register_t(E, "mod_blood_elves", "mod_blood")
 tt.modifier.allows_duplicates = true
 tt.modifier.max_of_same = 5
@@ -29087,6 +29304,26 @@ tt.main_script.insert = scripts2.mod_dps.insert
 tt.main_script.update = scripts2.mod_dps.update
 tt.modifier.duration = 2
 tt.render.sprites[1].prefix = "fire"
+tt.render.sprites[1].name = "small"
+tt.render.sprites[1].size_names = {
+	"small",
+	"medium",
+	"large"
+}
+tt.render.sprites[1].draw_order = 10
+tt = E.register_t(E, "mod_sandstormtw", "modifier")
+
+E.add_comps(E, tt, "dps", "render")
+tt.dps.damage_min = 10
+tt.dps.damage_max = 10
+tt.dps.damage_inc = 10
+tt.dps.damage_type = DAMAGE_MAGICAL
+tt.dps.damage_every = fts(1)
+tt.dps.kill = true
+tt.main_script.insert = scripts2.mod_dps.insert
+tt.main_script.update = scripts2.mod_dps.update
+tt.modifier.duration = 1
+tt.render.sprites[1].prefix = "sandstormws"
 tt.render.sprites[1].name = "small"
 tt.render.sprites[1].size_names = {
 	"small",
@@ -30443,9 +30680,15 @@ tt.custom_animations = {
 tt = RT("mod_elora_bolt_slow", "mod_slow")
 tt.modifier.duration = 2
 tt.slow.factor = 0.5
+tt = RT("mod_time_wizard_bolt_slow", "mod_slow")
+tt.modifier.duration = 1
+tt.slow.factor = 0.2
 tt = RT("mod_bolin_slow", "mod_slow")
 tt.modifier.duration = 1
 tt.slow.factor = 0.5
+tt = RT("mod_sandstorm_slow", "mod_slow")
+tt.modifier.duration = 2
+tt.slow.factor = 0.2
 tt = RT("mod_denas_tower", "modifier")
 
 AC(tt, "render", "tween")
@@ -30535,6 +30778,23 @@ AC(tt, "render")
 tt.extra_armor = 0.5
 tt.extra_damage_max = 30
 tt.extra_damage_min = 15
+tt.extra_speed = 30.72
+tt.main_script.insert = scripts.mod_troll_rage.insert
+tt.main_script.remove = scripts.mod_troll_rage.remove
+tt.main_script.update = scripts.mod_track_target.update
+tt.modifier.duration = 6
+tt.modifier.type = MOD_TYPE_RAGE
+tt.modifier.vis_flags = bor(F_MOD)
+tt.modifier.use_mod_offset = false
+tt.render.sprites[1].anchor.y = 0.2
+tt.render.sprites[1].name = "mod_troll_rage"
+tt = RT("mod_time_traveler", "modifier")
+
+AC(tt, "render")
+
+tt.extra_armor = 0.1
+tt.extra_damage_max = 0
+tt.extra_damage_min = 0
 tt.extra_speed = 30.72
 tt.main_script.insert = scripts.mod_troll_rage.insert
 tt.main_script.remove = scripts.mod_troll_rage.remove

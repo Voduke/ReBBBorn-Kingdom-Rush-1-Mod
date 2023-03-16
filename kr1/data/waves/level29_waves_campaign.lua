@@ -17,7 +17,34 @@ return {
 							path = 1,
 							interval_next = 250,
 							max = 1
-						}
+						},
+						{
+							interval = 36,
+							max_same = 0,
+							fixed_sub_path = 0,
+							creep = "enemy_orc_armored",
+							path = 1,
+							interval_next = 250,
+							max = 3
+						},
+						{
+							interval = 36,
+							max_same = 0,
+							fixed_sub_path = 0,
+							creep = "enemy_orc_armored",
+							path = 2,
+							interval_next = 250,
+							max = 3
+						},
+						{
+							interval = 36,
+							max_same = 0,
+							fixed_sub_path = 0,
+							creep = "enemy_orc_armored",
+							path = 3,
+							interval_next = 250,
+							max = 3
+						},
 					}
 				}
 			}
@@ -33,7 +60,7 @@ return {
 							interval = 36,
 							max_same = 0,
 							fixed_sub_path = 0,
-							creep = "enemy_wolf",
+							creep = "enemy_cursed_shaman",
 							path = 1,
 							interval_next = 250,
 							max = 3
@@ -42,7 +69,7 @@ return {
 							interval = 36,
 							max_same = 0,
 							fixed_sub_path = 0,
-							creep = "enemy_wolf",
+							creep = "enemy_ogre",
 							path = 2,
 							interval_next = 250,
 							max = 3
@@ -51,7 +78,7 @@ return {
 							interval = 36,
 							max_same = 0,
 							fixed_sub_path = 0,
-							creep = "enemy_wolf",
+							creep = "enemy_ogre",
 							path = 3,
 							interval_next = 250,
 							max = 3
@@ -71,7 +98,7 @@ return {
 							interval = 36,
 							max_same = 0,
 							fixed_sub_path = 0,
-							creep = "enemy_brigand",
+							creep = "enemy_cursed_shaman",
 							path = 1,
 							interval_next = 250,
 							max = 3
@@ -80,7 +107,7 @@ return {
 							interval = 36,
 							max_same = 0,
 							fixed_sub_path = 0,
-							creep = "enemy_brigand",
+							creep = "enemy_goblin",
 							path = 2,
 							interval_next = 250,
 							max = 3
@@ -89,7 +116,7 @@ return {
 							interval = 36,
 							max_same = 0,
 							fixed_sub_path = 0,
-							creep = "enemy_brigand",
+							creep = "enemy_goblin",
 							path = 3,
 							interval_next = 250,
 							max = 3
@@ -113,6 +140,24 @@ return {
 							path = 1,
 							interval_next = 250,
 							max = 1
+						},
+						{
+							interval = 36,
+							max_same = 0,
+							fixed_sub_path = 0,
+							creep = "enemy_orc",
+							path = 2,
+							interval_next = 250,
+							max = 3
+						},
+						{
+							interval = 36,
+							max_same = 0,
+							fixed_sub_path = 0,
+							creep = "enemy_orc",
+							path = 3,
+							interval_next = 250,
+							max = 3
 						}
 					}
 				}
