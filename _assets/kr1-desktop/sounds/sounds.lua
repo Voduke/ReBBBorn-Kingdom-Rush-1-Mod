@@ -4262,9 +4262,34 @@ return {
 		gain = 0.6,
 		source_group = "TAUNTS",
 		files = {
-			"Time_Wizard_Ready.ogg",
-			"Time_Wizard_Taunt1.ogg",
 			"Time_Wizard_Taunt2.ogg"
+		}
+	},
+	MageTimeWizardSandstorm = {
+		loop = false,
+		gain = 0.6,
+		ignore = 1.5,
+		source_group = "TAUNTS",
+		files = {
+			"Time_Wizard_Sandstorm2.ogg"
+		}
+	},
+	AncientGuardDeath = {
+		loop = false,
+		gain = 0.6,
+		source_group = "TAUNTS",
+		files = {
+			"Ancient_Guard_Death.ogg"
+		}
+	},
+	AncientGuardRally = {
+		loop = false,
+		mode = "sequence",
+		gain = 0.6,
+		source_group = "TAUNTS",
+		files = {
+			"Ancient_Guardian_1.ogg",
+			"Ancient_Guardian_2.ogg",
 		}
 	},
 	MageTaunt = {

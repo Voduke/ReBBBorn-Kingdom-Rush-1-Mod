@@ -7000,6 +7000,49 @@ local a = {
 		to = 1,
 		from = 1
 	},
+	soldier_ancient_guardian_idle = {
+			prefix = "ancient_guardian",
+			to = 1,
+			from = 1
+	},
+	soldier_ancient_guardian_running = {
+			prefix = "ancient_guardian",
+			to = 20,
+			from = 16
+	},
+	soldier_ancient_guardian_attack = {
+			to = 30,
+			from = 21,
+			prefix = "ancient_guardian",
+			post = {
+				15
+			}
+	},
+	soldier_ancient_guardian_raise = {
+			prefix = "ancient_guardian",
+			to = 14,
+			from = 2
+	},
+	soldier_ancient_guardian_death = {
+			prefix = "ancient_guardian",
+			to = 63,
+			from = 31
+	},
+	mod_ancient_aura = {
+		prefix = "mod_ancient_guardian",
+		to = 18,
+		from = 1
+	},
+	fx_teleport_ancient_guardian_small = {
+		prefix = "teleport_ancient_guardian",
+		to = 14,
+		from = 1
+	},
+	fx_teleport_ancient_guardian_big = {
+		prefix = "teleport_ancient_guardian",
+		to = 14,
+		from = 1
+	},
 	tower_paladin_flag = {
 		prefix = "paladinFlag",
 		to = 9,

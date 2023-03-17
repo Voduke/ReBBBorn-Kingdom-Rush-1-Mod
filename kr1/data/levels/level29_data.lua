@@ -368,21 +368,6 @@ return {
 		{
 			["tower.holder_id"] = "3",
 			["tower.terrain_style"] = 1,
-			template = "tower_time_wizard",
-			["editor.game_mode"] = 0,
-			["ui.nav_mesh_id"] = "3",
-			pos = {
-				x = 815,
-				y = 399
-			},
-			["tower.default_rally_pos"] = {
-				x = 220,
-				y = 420
-			}
-		},
-		{
-			["tower.holder_id"] = "3",
-			["tower.terrain_style"] = 1,
 			template = "tower_holder_grass",
 			["editor.game_mode"] = 0,
 			["ui.nav_mesh_id"] = "3",

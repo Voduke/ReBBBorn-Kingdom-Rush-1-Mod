@@ -1571,6 +1571,54 @@ return {
 		},
 		alias = {}
 	},
+	bloodlust_icons_0003 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			82,
+			76
+		},
+		trim = {
+			0,
+			0,
+			0,
+			0
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			91,
+			533,
+			82,
+			76
+		},
+		alias = {}
+	},
+	bloodlust_icons_0003_disabled = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			82,
+			76
+		},
+		trim = {
+			0,
+			0,
+			0,
+			0
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			179,
+			533,
+			82,
+			76
+		},
+		alias = {}
+	},
 	pop_time_wizard = {
 		a_name = "go_towers_bloodlust-1.png",
 		size = {
@@ -1594,5 +1642,1448 @@ return {
 			1
 		},
 		alias = {}
-	}
+	},
+	ancient_guardian_0001 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			14,
+			628,
+			60,
+			64
+		},
+		alias = {}
+	},
+		ancient_guardian_0002 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			103,
+			628,
+			60,
+			64
+		},
+		alias = {}
+	},
+		ancient_guardian_0003 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			190,
+			628,
+			60,
+			64
+		},
+		alias = {}
+	},
+		ancient_guardian_0004 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			278,
+			628,
+			60,
+			64
+		},
+		alias = {}
+	},
+		ancient_guardian_0005 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			366,
+			628,
+			60,
+			64
+		},
+		alias = {}
+	},
+		ancient_guardian_0006 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			454,
+			628,
+			60,
+			64
+		},
+		alias = {}
+	},
+		ancient_guardian_0007 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			542,
+			628,
+			60,
+			64
+		},
+		alias = {}
+	},
+		ancient_guardian_0008 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			630,
+			628,
+			60,
+			64
+		},
+		alias = {}
+	},
+		ancient_guardian_0009 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			718,
+			628,
+			60,
+			64
+		},
+		alias = {}
+	},
+		ancient_guardian_0010 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			806,
+			628,
+			60,
+			64
+		},
+		alias = {}
+	},
+		ancient_guardian_0011 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			894,
+			628,
+			60,
+			64
+		},
+		alias = {}
+	},
+	ancient_guardian_0012 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			14,
+			716,
+			60,
+			64
+		},
+		alias = {}
+	},
+	ancient_guardian_0013 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			102,
+			716,
+			60,
+			64
+		},
+		alias = {}
+	},
+	ancient_guardian_0014 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			190,
+			716,
+			60,
+			64
+		},
+		alias = {}
+	},
+	ancient_guardian_0015 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			13,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			3,
+			809,
+			82,
+			54
+		},
+		alias = {}
+	},
+	ancient_guardian_0016 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			-2,
+			20,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			91,
+			809,
+			82,
+			54
+		},
+		alias = {}
+	},
+	ancient_guardian_0017 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			-2,
+			20,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			179,
+			809,
+			82,
+			54
+		},
+		alias = {}
+	},
+	ancient_guardian_0018 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			-2,
+			20,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			267,
+			809,
+			82,
+			54
+		},
+		alias = {}
+	},
+	ancient_guardian_0019 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			-2,
+			20,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			355,
+			809,
+			82,
+			54
+		},
+		alias = {}
+	},
+	ancient_guardian_0020 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			-2,
+			20,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			443,
+			809,
+			82,
+			54
+		},
+		alias = {}
+	},
+	ancient_guardian_0021 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			132,
+			88
+		},
+		trim = {
+			1,
+			13,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			6,
+			890,
+			120,
+			68
+		},
+		alias = {
+			"ancient_guardian_0022"
+		}
+	},
+	ancient_guardian_0023 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			132,
+			88
+		},
+		trim = {
+			1,
+			13,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			138,
+			890,
+			120,
+			68
+		},
+		alias = {
+			"ancient_guardian_0024"
+		}
+	},
+	ancient_guardian_0025 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			132,
+			88
+		},
+		trim = {
+			1,
+			13,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			270,
+			890,
+			120,
+			68
+		},
+		alias = {
+			"ancient_guardian_0026"
+		}
+	},
+	ancient_guardian_0027 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			132,
+			88
+		},
+		trim = {
+			1,
+			13,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			402,
+			890,
+			120,
+			68
+		},
+		alias = {
+			"ancient_guardian_0028"
+		}
+	},
+	ancient_guardian_0029 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			132,
+			88
+		},
+		trim = {
+			1,
+			13,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			534,
+			890,
+			120,
+			68
+		},
+		alias = {
+			"ancient_guardian_0030"
+		}
+	},
+	ancient_guardian_0031 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			14,
+			978,
+			60,
+			68
+		},
+		alias = {
+			"ancient_guardian_0032",
+			"ancient_guardian_0033",
+			"ancient_guardian_0034"
+		}
+	},
+	ancient_guardian_0035 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			102,
+			978,
+			60,
+			68
+		},
+		alias = {
+			"ancient_guardian_0036"
+		}
+	},
+	ancient_guardian_0037 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			190,
+			978,
+			60,
+			68
+		},
+		alias = {
+			"ancient_guardian_0038",
+			"ancient_guardian_0039",
+			"ancient_guardian_0040",
+			"ancient_guardian_0041",
+			"ancient_guardian_0042"
+		}
+	},
+		ancient_guardian_0043 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			190,
+			978,
+			60,
+			68
+		},
+		alias = {
+		}
+	},
+	ancient_guardian_0044 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			278,
+			978,
+			60,
+			68
+		},
+		alias = {
+		}
+	},
+	ancient_guardian_0045 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			366,
+			978,
+			60,
+			68
+		},
+		alias = {
+		}
+	},
+	ancient_guardian_0046 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			454,
+			978,
+			60,
+			68
+		},
+		alias = {
+		}
+	},
+	ancient_guardian_0047 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			542,
+			978,
+			60,
+			68
+		},
+		alias = {
+		}
+	},
+	ancient_guardian_0048 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			630,
+			978,
+			60,
+			68
+		},
+		alias = {
+		}
+	},
+	ancient_guardian_0049 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			718,
+			978,
+			60,
+			68
+		},
+		alias = {
+		}
+	},
+	ancient_guardian_0050 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			806,
+			978,
+			60,
+			68
+		},
+		alias = {
+		}
+	},
+	ancient_guardian_0051 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			894,
+			978,
+			60,
+			68
+		},
+		alias = {
+		}
+	},
+	ancient_guardian_0052 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			14,
+			1066,
+			60,
+			68
+		},
+		alias = {
+		}
+	},
+	ancient_guardian_0053 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			102,
+			1066,
+			60,
+			68
+		},
+		alias = {
+		}
+	},
+	ancient_guardian_0054 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			190,
+			1066,
+			60,
+			68
+		},
+		alias = {
+		}
+	},
+	ancient_guardian_0055 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			278,
+			1066,
+			60,
+			68
+		},
+		alias = {
+		}
+	},
+	ancient_guardian_0056 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			366,
+			1066,
+			60,
+			68
+		},
+		alias = {
+		}
+	},
+	ancient_guardian_0057 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			454,
+			1066,
+			60,
+			68
+		},
+		alias = {
+		}
+	},
+	ancient_guardian_0058 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			542,
+			1066,
+			60,
+			68
+		},
+		alias = {
+		}
+	},
+	ancient_guardian_0059 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			630,
+			1066,
+			60,
+			68
+		},
+		alias = {
+		}
+	},
+	ancient_guardian_0060 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			718,
+			1066,
+			60,
+			68
+		},
+		alias = {
+		}
+	},
+	ancient_guardian_0061 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			806,
+			1066,
+			60,
+			68
+		},
+		alias = {
+		}
+	},
+	ancient_guardian_0062 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			894,
+			1066,
+			60,
+			68
+		},
+		alias = {
+		}
+	},
+	ancient_guardian_0063 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			17,
+			15,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			1,
+			1,
+			1,
+			1
+		},
+		alias = {
+		}
+	},
+	mod_ancient_guardian_0001 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			23,
+			34,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			286,
+			213,
+			44,
+			14
+		},
+		alias = {
+			"mod_ancient_guardian_0002",
+			"mod_ancient_guardian_0003",
+			"mod_ancient_guardian_0004",
+			"mod_ancient_guardian_0005",
+			"mod_ancient_guardian_0006"
+		}
+	},
+	mod_ancient_guardian_0007 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			23,
+			34,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			374,
+			213,
+			44,
+			14
+		},
+		alias = {
+			"mod_ancient_guardian_0008",
+			"mod_ancient_guardian_0009",
+			"mod_ancient_guardian_0010",
+			"mod_ancient_guardian_0011",
+			"mod_ancient_guardian_0012"
+		}
+	},
+	mod_ancient_guardian_0013 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			23,
+			34,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			462,
+			213,
+			44,
+			14
+		},
+		alias = {
+			"mod_ancient_guardian_0014",
+			"mod_ancient_guardian_0015",
+			"mod_ancient_guardian_0016",
+			"mod_ancient_guardian_0017",
+			"mod_ancient_guardian_0018"
+		}
+	},
+	teleport_ancient_guardian_0001 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			44,
+			44
+		},
+		trim = {
+			1,
+			1,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			264,
+			132,
+			44,
+			44
+		},
+		alias = {
+			"teleport_ancient_guardian_0002",
+			"teleport_ancient_guardian_0013",
+			"teleport_ancient_guardian_0014"
+		}
+	},
+	teleport_ancient_guardian_0003 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			44,
+			44
+		},
+		trim = {
+			1,
+			1,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			308,
+			132,
+			44,
+			44
+		},
+		alias = {
+			"teleport_ancient_guardian_0004",
+			"teleport_ancient_guardian_0011",
+			"teleport_ancient_guardian_0012"
+		}
+	},
+	teleport_ancient_guardian_0005 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			44,
+			44
+		},
+		trim = {
+			1,
+			1,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			352,
+			132,
+			44,
+			44
+		},
+		alias = {
+			"teleport_ancient_guardian_0006"
+		}
+	},
+		teleport_ancient_guardian_0007 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			44,
+			44
+		},
+		trim = {
+			1,
+			1,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			396,
+			132,
+			44,
+			44
+		},
+		alias = {
+			"teleport_ancient_guardian_0008"
+		}
+	},
+		teleport_ancient_guardian_0009 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			44,
+			44
+		},
+		trim = {
+			1,
+			1,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			440,
+			132,
+			44,
+			44
+		},
+		alias = {
+		"teleport_ancient_guardian_0010"
+		}
+	},
 }

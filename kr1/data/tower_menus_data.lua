@@ -2471,7 +2471,7 @@ return {
 				place = 1,
 				halo = "glow_ico_special",
 				sounds = {
-					"MageTimeWizardTaunt"
+					"MageTimeWizardSandstorm"
 				},
 				tt_phrase = _("TOWER_TIME_WIZARD_SANDSTORM_NOTE"),
 				tt_list = {
@@ -2494,21 +2494,21 @@ return {
 				action = "upgrade_power",
 				halo = "glow_ico_special",
 				action_arg = "elemental",
-				image = "special_icons_0004",
+				image = "bloodlust_icons_0003",
 				place = 2,
-				tt_phrase = _("TOWER_TIME_WIZARD_ELEMENTAL_NOTE"),
+				tt_phrase = _("TOWER_TIME_WIZARD_ANCIENT_GUARDIAN_NOTE"),
 				tt_list = {
 					{
-						tt_title = _("TOWER_TIME_WIZARD_ELEMENTAL_NAME_1"),
-						tt_desc = _("TOWER_TIME_WIZARD_ELEMENTAL_DESCRIPTION_1")
+						tt_title = _("TOWER_TIME_WIZARD_ANCIENT_GUARDIAN_NAME_1"),
+						tt_desc = _("TOWER_TIME_WIZARD_ANCIENT_GUARDIAN_DESCRIPTION_1")
 					},
 					{
-						tt_title = _("TOWER_TIME_WIZARD_ELEMENTAL_NAME_2"),
-						tt_desc = _("TOWER_TIME_WIZARD_ELEMENTAL_DESCRIPTION_2")
+						tt_title = _("TOWER_TIME_WIZARD_ANCIENT_GUARDIAN_NAME_2"),
+						tt_desc = _("TOWER_TIME_WIZARD_ANCIENT_GUARDIAN_DESCRIPTION_2")
 					},
 					{
-						tt_title = _("TOWER_TIME_WIZARD_ELEMENTAL_NAME_3"),
-						tt_desc = _("TOWER_TIME_WIZARD_ELEMENTAL_DESCRIPTION_3")
+						tt_title = _("TOWER_TIME_WIZARD_ANCIENT_GUARDIAN_NAME_3"),
+						tt_desc = _("TOWER_TIME_WIZARD_ANCIENT_GUARDIAN_DESCRIPTION_3")
 					}
 				}
 			},

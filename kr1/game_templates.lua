@@ -1041,6 +1041,15 @@ tt.render.sprites[1].size_names = {
 	"big",
 	"big"
 }
+tt = RT("fx_teleport_ancient_guardian", "fx")
+tt.render.sprites[1].anchor.y = 0.5
+tt.render.sprites[1].prefix = "fx_teleport_ancient_guardian"
+tt.render.sprites[1].name = "small"
+tt.render.sprites[1].size_names = {
+	"small",
+	"big",
+	"big"
+}
 tt = RT("fx_explosion_shrapnel", "fx")
 tt.render.sprites[1].anchor.y = 0.2
 tt.render.sprites[1].sort_y_offset = -2
@@ -4148,7 +4157,7 @@ tt.tower.menu_offset = v(0, 14)
 tt.info.enc_icon = 19
 tt.info.i18n_key = "TOWER_TIME_WIZARD"
 tt.info.portrait = (IS_PHONE_OR_TABLET and "portraits_towers_0006") or "info_portraits_towers_0011"
-tt.barrack.soldier_type = "soldier_time_traveler"
+tt.barrack.soldier_type = "soldier_ancient_guardian"
 tt.barrack.rally_range = 180
 tt.powers.polymorph = CC("power")
 tt.powers.polymorph.price_base = 325
@@ -4197,7 +4206,7 @@ tt.main_script.insert = scripts.tower_barrack.insert
 tt.main_script.update = scripts.tower_sorcerer.update
 tt.main_script.remove = scripts.tower_barrack.remove
 tt.sound_events.insert = "MageTimeWizardTaunt"
-tt.sound_events.change_rally_point = "RockElementalRally"
+tt.sound_events.change_rally_point = "AncientGuardRally"
 tt.attacks.range = 275
 tt.attacks.min_cooldown = 0.5
 tt.attacks.list[1] = CC("bullet_attack")
@@ -4676,17 +4685,17 @@ tt.unit.hit_offset = v(0, 14)
 tt.unit.marker_offset = v(0, ady(10))
 tt.unit.size = UNIT_SIZE_MEDIUM
 tt.vis.bans = bor(F_POLYMORPH, F_POISON, F_LYCAN, F_CANNIBALIZE)
-tt = E.register_t(E, "soldier_time_traveler", "soldier")
+tt = E.register_t(E, "soldier_ancient_guardian", "soldier")
 
 E.add_comps(E, tt, "melee", "ranged", "auras")
 tt.auras.list[1] = E.clone_c(E, "aura_attack")
 tt.auras.list[1].cooldown = 0
-tt.auras.list[1].name = "time_traveler_aura"
+tt.auras.list[1].name = "ancient_guardian_aura"
 tt.health.armor = 0.3
 tt.health.armor_inc = 0.1
 tt.health.dead_lifetime = 12
 tt.health.hp_inc = 50
-tt.health.hp_max = 20000
+tt.health.hp_max = 200
 tt.health_bar.offset = v(0, 47.76)
 tt.health_bar.type = HEALTH_BAR_SIZE_MEDIUM
 tt.info.fn = scripts3.soldier_barrack.get_info
@@ -4701,7 +4710,7 @@ tt.melee.attacks[1].hit_time = fts(9)
 tt.melee.attacks[1].sound = "MeleeSword"
 tt.melee.attacks[1].vis_bans = bor(F_FLYING, F_CLIFF)
 tt.melee.attacks[1].vis_flags = F_BLOCK
-tt.melee.attacks[1].mod = "mod_teleport_arcane"
+tt.melee.attacks[1].mod = "mod_teleport_ancient_guardian"
 tt.melee.range = 76.8
 tt.motion.max_speed = 100
 tt.regen.cooldown = 1
@@ -4714,7 +4723,9 @@ tt.render.sprites[1].angles = {
   }
 }
 tt.render.sprites[1].name = "raise"
-tt.render.sprites[1].prefix = "soldier_death_rider"
+tt.render.sprites[1].prefix = "soldier_ancient_guardian"
+tt.sound_events.insert = "AncientGuardDeath"
+tt.sound_events.death = "AncientGuardDeath"
 tt.soldier.melee_slot_offset = v(15, 0)
 tt.unit.blood_color = BLOOD_GRAY
 tt.unit.hit_offset = v(0, 14)
@@ -4746,11 +4757,11 @@ tt.main_script.insert = scripts3.aura_apply_mod.insert
 tt.main_script.update = scripts3.aura_apply_mod.update
 tt.render.sprites[1].name = "soldier_death_rider_aura"
 tt.render.sprites[1].loop = true
-tt = E.register_t(E, "time_traveler_aura", "aura")
+tt = E.register_t(E, "ancient_guardian_aura", "aura")
 
 E.add_comps(E, tt, "render")
 
-tt.aura.mod = "mod_time_traveler"
+tt.aura.mod = "mod_ancient_guardian"
 tt.aura.cycle_time = 1
 tt.aura.duration = -1
 tt.aura.radius = 275
@@ -4771,7 +4782,7 @@ tt.aura.vis_bans = F_ENEMY
 tt.aura.vis_flags = F_MOD
 tt.main_script.insert = scripts3.aura_apply_mod.insert
 tt.main_script.update = scripts3.aura_apply_mod.update
-tt.render.sprites[1].name = "soldier_death_rider_aura"
+tt.render.sprites[1].name = "mod_ancient_aura"
 tt.render.sprites[1].loop = true
 tt = E.register_t(E, "necromancer_aura", "aura")
 tt.main_script.update = scripts3.necromancer_aura.update
@@ -30413,6 +30424,18 @@ tt.modifier.vis_flags = bor(F_MOD, F_TELEPORT)
 tt.nodes_offset_min = -26
 tt.nodes_offset_max = -17
 tt.nodes_offset_inc = -5
+tt = RT("mod_teleport_ancient_guardian", "mod_teleport")
+tt.delay_end = fts(6)
+tt.delay_start = fts(1)
+tt.fx_end = "fx_teleport_ancient_guardian"
+tt.fx_start = "fx_teleport_ancient_guardian"
+tt.max_times_applied = 3
+tt.modifier.use_mod_offset = true
+tt.modifier.vis_bans = bor(F_BOSS, F_FREEZE)
+tt.modifier.vis_flags = bor(F_MOD, F_TELEPORT)
+tt.nodes_offset_min = -26
+tt.nodes_offset_max = -17
+tt.nodes_offset_inc = -5
 tt = RT("mod_sorcerer_curse_armor", "modifier")
 
 AC(tt, "armor_buff")
@@ -30788,7 +30811,7 @@ tt.modifier.vis_flags = bor(F_MOD)
 tt.modifier.use_mod_offset = false
 tt.render.sprites[1].anchor.y = 0.2
 tt.render.sprites[1].name = "mod_troll_rage"
-tt = RT("mod_time_traveler", "modifier")
+tt = RT("mod_ancient_guardian", "modifier")
 
 AC(tt, "render")
 
@@ -30803,8 +30826,7 @@ tt.modifier.duration = 6
 tt.modifier.type = MOD_TYPE_RAGE
 tt.modifier.vis_flags = bor(F_MOD)
 tt.modifier.use_mod_offset = false
-tt.render.sprites[1].anchor.y = 0.2
-tt.render.sprites[1].name = "mod_troll_rage"
+tt.render.sprites[1].name = "mod_ancient_aura"
 tt = RT("mod_troll_heal", "mod_shaman_heal")
 tt = RT("mod_demon_shield", "modifier")
 
