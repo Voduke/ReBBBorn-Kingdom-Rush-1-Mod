@@ -4227,8 +4227,8 @@ tt.attacks.list[2].animation = "sandstorm"
 tt.attacks.list[2].bullet = "time_wizard_sandstorm"
 tt.attacks.list[2].cooldown = 1
 tt.attacks.list[2].shoot_time = fts(7)
-tt.attacks.list[2].vis_bans = bor(F_BOSS)
-tt.attacks.list[2].vis_flags = bor(F_MOD, F_RANGED, F_POLYMORPH)
+tt.attacks.list[2].vis_bans = bor(F_FLYING)
+tt.attacks.list[2].vis_flags = bor(F_MOD, F_RANGED)
 tt = RT("tower_sorcerer_cheat", "tower_mage_1")
 
 AC(tt, "attacks", "powers", "barrack")
@@ -4712,7 +4712,7 @@ tt.melee.attacks[1].vis_bans = bor(F_FLYING, F_CLIFF)
 tt.melee.attacks[1].vis_flags = F_BLOCK
 tt.melee.attacks[1].mod = "mod_teleport_ancient_guardian"
 tt.melee.range = 76.8
-tt.motion.max_speed = 100
+tt.motion.max_speed = 90
 tt.regen.cooldown = 1
 tt.regen.health = 25
 tt.render.sprites[1] = E.clone_c(E, "sprite")
@@ -4766,18 +4766,6 @@ tt.aura.cycle_time = 1
 tt.aura.duration = -1
 tt.aura.radius = 275
 tt.aura.track_source = true
-tt.aura.allowed_templates = {
-  "soldier_skeleton",
-  "soldier_skeleton_knight",
-  "soldier_sand_warrior",
-  "soldier_dracolich_golem",
-  "soldier_elemental",
-  "soldier_frankenstein",
-  "soldier_ingvar_ancestor",
-  "soldier_magnus_illusion",
-  "hero_gerald",
-  "reinforcement"
-}
 tt.aura.vis_bans = F_ENEMY
 tt.aura.vis_flags = F_MOD
 tt.main_script.insert = scripts3.aura_apply_mod.insert
@@ -26660,6 +26648,50 @@ tt.health_bar.offset = v(0, 82)
 tt.health_bar.type = HEALTH_BAR_SIZE_LARGE
 tt.info.i18n_key = "ENEMY_ENDLESS_MINIBOSS_ORC"
 tt.info.portrait = (IS_PHONE_OR_TABLET and "portraits_sc_0094") or "info_portraits_sc_0094"
+tt.melee.attacks[1] = CC("area_attack")
+tt.melee.attacks[1].cooldown = 2
+tt.melee.attacks[1].count = 10
+tt.melee.attacks[1].damage_max = 90
+tt.melee.attacks[1].damage_min = 40
+tt.melee.attacks[1].damage_radius = 45
+tt.melee.attacks[1].damage_type = DAMAGE_PHYSICAL
+tt.melee.attacks[1].hit_decal = "decal_hobgoblin_ground_hit"
+tt.melee.attacks[1].hit_fx = "fx_hobgoblin_ground_hit"
+tt.melee.attacks[1].hit_offset = v(72, -9)
+tt.melee.attacks[1].hit_time = fts(24)
+tt.melee.attacks[1].sound = "AreaAttack"
+tt.melee.attacks[1].sound_args = {
+	delay = fts(24)
+}
+tt.motion.max_speed = FPS*0.7
+tt.render.sprites[1].anchor = v(anchor_x, anchor_y)
+tt.render.sprites[1].prefix = "enemy_hobgoblin"
+tt.sound_events.death = "DeathJuggernaut"
+tt.ui.click_rect = r(-30, 0, 60, 70)
+tt.unit.can_explode = false
+tt.unit.hit_offset = v(0, 34)
+tt.unit.mod_offset = v(0, 34)
+tt.unit.show_blood_pool = false
+tt.unit.size = UNIT_SIZE_LARGE
+tt.vis.bans = bor(F_TELEPORT, F_THORN, F_POLYMORPH, F_DISINTEGRATED, F_INSTAKILL)
+tt.vis.flags = bor(F_ENEMY, F_BOSS, F_MINIBOSS)
+tt = RT("enemy_hobgoblin_small", "enemy")
+
+AC(tt, "melee", "death_spawns")
+
+anchor_y = 0.17532467532467533
+anchor_x = 0.5
+image_y = 154
+image_x = 224
+tt.enemy.gold = 250
+tt.enemy.lives_cost = 5
+tt.enemy.melee_slot = v(40, 0)
+tt.health.hp_max = 2000
+tt.health_bar.offset = v(0, 82)
+tt.health_bar.type = HEALTH_BAR_SIZE_LARGE
+tt.info.i18n_key = "ENEMY_HOBGOBLIN_SMALL"
+tt.info.enc_icon = 39
+tt.info.portrait = (IS_PHONE_OR_TABLET and "portraits_sc_0062") or "info_portraits_sc_0060"
 tt.melee.attacks[1] = CC("area_attack")
 tt.melee.attacks[1].cooldown = 2
 tt.melee.attacks[1].count = 10

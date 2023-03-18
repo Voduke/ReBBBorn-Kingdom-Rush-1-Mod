@@ -2496,6 +2496,9 @@ return {
 				action_arg = "elemental",
 				image = "bloodlust_icons_0003",
 				place = 2,
+				sounds = {
+					"AncientGuardRally"
+				},
 				tt_phrase = _("TOWER_TIME_WIZARD_ANCIENT_GUARDIAN_NOTE"),
 				tt_list = {
 					{

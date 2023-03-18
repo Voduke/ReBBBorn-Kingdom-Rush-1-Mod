@@ -1192,5 +1192,30 @@ return {
 		alias = {
 			"cursed_shaman_0111"
 		}
-	}
+	},
+	hobgoblin_small_0001 = {
+		a_name = "go_stage81-1.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			10,
+			25,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			273,
+			195,
+			48,
+			54
+		},
+		alias = {
+		}
+	},
 }

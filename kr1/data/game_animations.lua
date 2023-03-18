@@ -3682,6 +3682,36 @@ local a = {
 		to = 16,
 		from = 1
 	},
+	enemy_hobgoblin_small_attack = {
+		prefix = "hobgoblin_small",
+		to = 85,
+		from = 51
+	},
+	enemy_hobgoblin_small_death = {
+		prefix = "hobgoblin_small",
+		to = 110,
+		from = 86
+	},
+	enemy_hobgoblin_small_idle = {
+		prefix = "hobgoblin_small",
+		to = 1,
+		from = 1
+	},
+	enemy_hobgoblin_small_walkingDown = {
+		prefix = "hobgoblin_small",
+		to = 50,
+		from = 26
+	},
+	enemy_hobgoblin_small_walkingRightLeft = {
+		prefix = "hobgoblin_small",
+		to = 25,
+		from = 2
+	},
+	enemy_hobgoblin_small_walkingUp = {
+		prefix = "hobgoblin_small",
+		to = 25,
+		from = 2
+	},
 	eb_juggernaut_attack = {
 		prefix = "bossJuggernaut",
 		to = 78,
