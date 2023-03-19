@@ -172832,5 +172832,53 @@ return {
 		alias = {
 		"teleport_ancient_guardian_0010"
 		}
+	},
+	build_terrain_0009 = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			176,
+			88
+		},
+		trim = {
+			19,
+			1,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			900,
+			134,
+			136,
+			84
+		},
+		alias = {}
+	},
+	build_terrain_0009_over = {
+		a_name = "go_towers_bloodlust-1.png",
+		size = {
+			176,
+			88
+		},
+		trim = {
+			19,
+			1,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			1076,
+			134,
+			136,
+			84
+		},
+		alias = {}
 	}
 }

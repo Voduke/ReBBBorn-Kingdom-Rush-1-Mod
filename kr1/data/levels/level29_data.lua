@@ -247,8 +247,8 @@ return {
 		},
 		{
 			["tower.holder_id"] = "2",
-			["tower.terrain_style"] = 1,
-			template = "tower_holder_grass",
+			["tower.terrain_style"] = 9,
+			template = "tower_holder_lozagon",
 			["editor.game_mode"] = 0,
 			["ui.nav_mesh_id"] = "2",
 			pos = {
@@ -262,8 +262,8 @@ return {
 		},
 		{
 			["tower.holder_id"] = "2",
-			["tower.terrain_style"] = 1,
-			template = "tower_holder_grass",
+			["tower.terrain_style"] = 9,
+			template = "tower_holder_lozagon",
 			["editor.game_mode"] = 0,
 			["ui.nav_mesh_id"] = "2",
 			pos = {
@@ -277,8 +277,8 @@ return {
 		},
 		{
 			["tower.holder_id"] = "2",
-			["tower.terrain_style"] = 1,
-			template = "tower_holder_grass",
+			["tower.terrain_style"] = 9,
+			template = "tower_holder_lozagon",
 			["editor.game_mode"] = 0,
 			["ui.nav_mesh_id"] = "2",
 			pos = {
@@ -292,8 +292,8 @@ return {
 		},
 		{
 			["tower.holder_id"] = "2",
-			["tower.terrain_style"] = 1,
-			template = "tower_holder_grass",
+			["tower.terrain_style"] = 9,
+			template = "tower_holder_lozagon",
 			["editor.game_mode"] = 0,
 			["ui.nav_mesh_id"] = "2",
 			pos = {
@@ -307,8 +307,8 @@ return {
 		},
 		{
 			["tower.holder_id"] = "2",
-			["tower.terrain_style"] = 1,
-			template = "tower_holder_grass",
+			["tower.terrain_style"] = 9,
+			template = "tower_holder_lozagon",
 			["editor.game_mode"] = 0,
 			["ui.nav_mesh_id"] = "2",
 			pos = {
@@ -322,8 +322,8 @@ return {
 		},
 		{
 			["tower.holder_id"] = "2",
-			["tower.terrain_style"] = 1,
-			template = "tower_holder_grass",
+			["tower.terrain_style"] = 9,
+			template = "tower_holder_lozagon",
 			["editor.game_mode"] = 0,
 			["ui.nav_mesh_id"] = "2",
 			pos = {
@@ -337,8 +337,8 @@ return {
 		},
 		{
 			["tower.holder_id"] = "2",
-			["tower.terrain_style"] = 1,
-			template = "tower_holder_grass",
+			["tower.terrain_style"] = 9,
+			template = "tower_holder_lozagon",
 			["editor.game_mode"] = 0,
 			["ui.nav_mesh_id"] = "2",
 			pos = {
@@ -382,12 +382,12 @@ return {
 		},
 		{
 			["tower.holder_id"] = "3",
-			["tower.terrain_style"] = 1,
-			template = "tower_holder_grass",
+			["tower.terrain_style"] = 9,
+			template = "tower_holder_lozagon",
 			["editor.game_mode"] = 0,
 			["ui.nav_mesh_id"] = "3",
 			pos = {
-				x = 740,
+				x = 745,
 				y = 444
 			},
 			["tower.default_rally_pos"] = {

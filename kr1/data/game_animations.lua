@@ -1294,6 +1294,46 @@ local a = {
 		to = 37,
 		from = 20
 	},
+	enemy_hobgoblin_small_attack = {
+		prefix = "hobgoblin_small",
+		to = 10,
+		from = 2
+	},
+	enemy_hobgoblin_small_death = {
+		prefix = "hobgoblin_small",
+		to = 83,
+		from = 77
+	},
+	enemy_hobgoblin_small_idle = {
+		prefix = "hobgoblin_small",
+		to = 1,
+		from = 1
+	},
+	enemy_hobgoblin_small_thorn = {
+		prefix = "hobgoblin_small",
+		to = 1,
+		from = 1
+	},
+	enemy_hobgoblin_small_thornFree = {
+		prefix = "hobgoblin_small",
+		to = 1,
+		from = 1
+	},
+	enemy_hobgoblin_small_walkingDown = {
+		prefix = "hobgoblin_small",
+		to = 76,
+		from = 55
+	},
+	enemy_hobgoblin_small_walkingRightLeft = {
+		prefix = "hobgoblin_small",
+		to = 32,
+		from = 11
+	},
+	enemy_hobgoblin_small_walkingUp = {
+		prefix = "hobgoblin_small",
+		to = 54,
+		from = 25
+	},
 	enemy_ogre_attack = {
 		prefix = "ogre",
 		to = 106,
@@ -3681,36 +3721,6 @@ local a = {
 		prefix = "hobgoblin_decal_smoke",
 		to = 16,
 		from = 1
-	},
-	enemy_hobgoblin_small_attack = {
-		prefix = "hobgoblin_small",
-		to = 85,
-		from = 51
-	},
-	enemy_hobgoblin_small_death = {
-		prefix = "hobgoblin_small",
-		to = 110,
-		from = 86
-	},
-	enemy_hobgoblin_small_idle = {
-		prefix = "hobgoblin_small",
-		to = 1,
-		from = 1
-	},
-	enemy_hobgoblin_small_walkingDown = {
-		prefix = "hobgoblin_small",
-		to = 50,
-		from = 26
-	},
-	enemy_hobgoblin_small_walkingRightLeft = {
-		prefix = "hobgoblin_small",
-		to = 25,
-		from = 2
-	},
-	enemy_hobgoblin_small_walkingUp = {
-		prefix = "hobgoblin_small",
-		to = 25,
-		from = 2
 	},
 	eb_juggernaut_attack = {
 		prefix = "bossJuggernaut",
