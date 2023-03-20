@@ -31387,12 +31387,16 @@ tt = RT("mod_ancient_guardian", "modifier")
 AC(tt, "render")
 
 tt.extra_armor = 0
-tt.extra_damage_max = 10
-tt.extra_damage_min = 10
+tt.inflicted_damage_factor = 1.25
+tt.extra_damage_max = 0
+tt.extra_damage_min = 0
 tt.extra_speed = FPS*1
 tt.main_script.insert = scripts.mod_troll_rage.insert
 tt.main_script.remove = scripts.mod_troll_rage.remove
 tt.main_script.update = scripts.mod_track_target.update
+tt.main_script.insert = scripts3.mod_death_rider.insert
+tt.main_script.remove = scripts3.mod_death_rider.remove
+tt.main_script.update = scripts3.mod_track_target.update
 tt.modifier.duration = 2
 tt.modifier.type = MOD_TYPE_RAGE
 tt.modifier.vis_flags = bor(F_MOD)
