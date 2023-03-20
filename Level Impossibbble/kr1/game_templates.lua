@@ -1615,6 +1615,9 @@ tt.editor_script.remove = scripts2.editor_tower.remove
 tt = RT("tower_holder_grass", "tower_holder")
 tt.tower.terrain_style = TERRAIN_STYLE_GRASS
 tt.render.sprites[1].name = "build_terrain_0001"
+tt = RT("tower_holder_lozagon", "tower_holder")
+tt.tower.terrain_style = TERRAIN_STYLE_LOZAGON
+tt.render.sprites[1].name = "build_terrain_0009"
 tt = RT("tower_holder_snow", "tower_holder")
 tt.tower.terrain_style = TERRAIN_STYLE_SNOW
 tt.render.sprites[1].name = "build_terrain_0002"
@@ -2245,7 +2248,7 @@ tt.powers.slumber.price_inc = 120
 tt.powers.slumber.attack_idx = 3
 tt.powers.slumber.enc_icon = 1
 tt.render.sprites[1].animated = false
-tt.render.sprites[1].name = "terrains_%04i"
+tt.render.sprites[1].name = "terrain_archer_%04i"
 tt.render.sprites[1].offset = v(0, 10)
 tt.render.sprites[2] = E.clone_c(E, "sprite")
 tt.render.sprites[2].animated = false
@@ -2444,7 +2447,7 @@ tt.powers.mark.price_base = 200
 tt.powers.mark.price_inc = 150
 tt.powers.mark.enc_icon = 4
 tt.render.sprites[1].animated = false
-tt.render.sprites[1].name = "terrains_%04i"
+tt.render.sprites[1].name = "terrain_archer_%04i"
 tt.render.sprites[1].offset = v(0, 10)
 tt.render.sprites[2] = E.clone_c(E, "sprite")
 tt.render.sprites[2].animated = false
@@ -2727,7 +2730,7 @@ tt.powers.ward.target_count = {
 }
 tt.powers.ward.enc_icon = 17
 tt.render.sprites[1].animated = false
-tt.render.sprites[1].name = "terrains_%04i"
+tt.render.sprites[1].name = "terrain_mage_%04i"
 tt.render.sprites[1].offset = v(0, 10)
 tt.render.sprites[2] = E.clone_c(E, "sprite")
 tt.render.sprites[2].animated = false
@@ -2938,7 +2941,7 @@ tt.powers.sentinel.price_base = 200
 tt.powers.sentinel.price_inc = 200
 tt.powers.sentinel.enc_icon = 19
 tt.render.sprites[1].animated = false
-tt.render.sprites[1].name = "terrains_%04i"
+tt.render.sprites[1].name = "terrain_mage_%04i"
 tt.render.sprites[1].offset = v(0, 10)
 tt.render.sprites[2] = E.clone_c(E, "sprite")
 tt.render.sprites[2].animated = false
@@ -3192,7 +3195,7 @@ tt.powers.sylvan.entity = "druid_shooter_sylvan"
 tt.powers.sylvan.enc_icon = 13
 tt.render.sprites[1].animated = false
 tt.render.sprites[1].name = "terrain_artillery_%04i"
-tt.render.sprites[1].offset = v(0, 26)
+tt.render.sprites[1].offset = v(0, 11)
 tt.render.sprites[2] = E.clone_c(E, "sprite")
 tt.render.sprites[2].animated = false
 tt.render.sprites[2].name = "artillery_base_0005"
@@ -3330,7 +3333,7 @@ tt.powers.fiery_nuts.price_inc = 300
 tt.powers.fiery_nuts.attack_idx = 2
 tt.powers.fiery_nuts.enc_icon = 15
 tt.render.sprites[1].animated = false
-tt.render.sprites[1].name = "terrains_%04i"
+tt.render.sprites[1].name = "terrain_artillery_%04i"
 tt.render.sprites[1].offset = v(0, 10)
 
 for i = 2, 10, 1 do
@@ -3367,7 +3370,7 @@ tt.main_script.insert = scripts2.tower_barrack.insert
 tt.main_script.remove = scripts2.tower_barrack.remove
 tt.main_script.update = scripts2.tower_barrack.update
 tt.render.sprites[1].animated = false
-tt.render.sprites[1].name = "terrains_%04i"
+tt.render.sprites[1].name = "terrain_barrack_%04i"
 tt.render.sprites[1].offset = v(0, 10)
 tt.render.sprites[2] = E.clone_c(E, "sprite")
 tt.render.sprites[2].animated = false
@@ -3405,7 +3408,7 @@ tt.main_script.insert = scripts2.tower_barrack.insert
 tt.main_script.remove = scripts2.tower_barrack.remove
 tt.main_script.update = scripts2.tower_barrack.update
 tt.render.sprites[1].animated = false
-tt.render.sprites[1].name = "terrains_%04i"
+tt.render.sprites[1].name = "terrain_barrack_%04i"
 tt.render.sprites[1].offset = v(0, 10)
 tt.render.sprites[2] = E.clone_c(E, "sprite")
 tt.render.sprites[2].animated = false
@@ -3442,7 +3445,7 @@ tt.main_script.update = scripts2.tower_barrack.update
 tt.info.portrait = ((IS_PHONE and "portraits_towers") or "info_portraits_towers") .. "_0002"
 tt.info.enc_icon = 2
 tt.render.sprites[1].animated = false
-tt.render.sprites[1].name = "terrains_%04i"
+tt.render.sprites[1].name = "terrain_barrack_%04i"
 tt.render.sprites[1].offset = v(0, 10)
 tt.render.sprites[2] = E.clone_c(E, "sprite")
 tt.render.sprites[2].animated = false
@@ -4160,15 +4163,15 @@ tt.info.portrait = (IS_PHONE_OR_TABLET and "portraits_towers_0006") or "info_por
 tt.barrack.soldier_type = "soldier_ancient_guardian"
 tt.barrack.rally_range = 250
 tt.powers.polymorph = CC("power")
-tt.powers.polymorph.price_base = 325
-tt.powers.polymorph.price_inc = 175
-tt.powers.polymorph.cooldown_base = 22
-tt.powers.polymorph.cooldown_inc = -2
+tt.powers.polymorph.price_base = 200
+tt.powers.polymorph.price_inc = 200
+tt.powers.polymorph.cooldown_base = 25
+tt.powers.polymorph.cooldown_inc = -5
 tt.powers.polymorph.enc_icon = 1
 tt.powers.polymorph.name = "SANDSTORM"
 tt.powers.elemental = CC("power")
-tt.powers.elemental.price_base = 350
-tt.powers.elemental.price_inc = 150
+tt.powers.elemental.price_base = 300
+tt.powers.elemental.price_inc = 175
 tt.powers.elemental.enc_icon = 2
 tt.render.sprites[1].animated = false
 tt.render.sprites[1].name = "terrain_mage_%04i"
@@ -4208,7 +4211,7 @@ tt.main_script.remove = scripts.tower_barrack.remove
 tt.sound_events.insert = "MageTimeWizardTaunt"
 tt.sound_events.change_rally_point = "AncientGuardRally"
 tt.attacks.range = 275
-tt.attacks.min_cooldown = 0.5
+tt.attacks.min_cooldown = 0.1
 tt.attacks.list[1] = CC("bullet_attack")
 tt.attacks.list[1].animation = "shoot"
 tt.attacks.list[1].bullet = "bolt_time_wizard"
@@ -4530,7 +4533,7 @@ tt.attacks.list[2].vis_flags = bor(F_RANGED, F_POISON)
 tt.auras.list[1] = E.clone_c(E, "aura_attack")
 tt.auras.list[1].name = "necromancer_aura"
 tt.auras.list[1].cooldown = 0
-tt.render.sprites[1].name = "terrain_specials_%04i"
+tt.render.sprites[1].name = "terrain_mage_%04i"
 tt.render.sprites[1].animated = false
 tt.render.sprites[1].offset = v(0, 7)
 tt.render.sprites[2] = E.clone_c(E, "sprite")
@@ -4691,11 +4694,11 @@ E.add_comps(E, tt, "melee", "ranged", "auras")
 tt.auras.list[1] = E.clone_c(E, "aura_attack")
 tt.auras.list[1].cooldown = 0
 tt.auras.list[1].name = "ancient_guardian_aura"
-tt.health.armor = 0.3
-tt.health.armor_inc = 0.1
+tt.health.armor = 0
+tt.health.armor_inc = 0.25
 tt.health.dead_lifetime = 12
-tt.health.hp_inc = 50
-tt.health.hp_max = 200
+tt.health.hp_inc = 25
+tt.health.hp_max = 375
 tt.health_bar.offset = v(0, 47.76)
 tt.health_bar.type = HEALTH_BAR_SIZE_MEDIUM
 tt.info.fn = scripts3.soldier_barrack.get_info
@@ -4703,18 +4706,18 @@ tt.info.portrait = (IS_PHONE_OR_TABLET and "portraits_sc_0006") or "info_portrai
 tt.main_script.insert = scripts3.soldier_barrack.insert
 tt.main_script.update = scripts3.soldier_barrack.update
 tt.melee.attacks[1].cooldown = 3
-tt.melee.attacks[1].damage_inc = 10
-tt.melee.attacks[1].damage_max = 20
+tt.melee.attacks[1].damage_inc = 30
+tt.melee.attacks[1].damage_max = 30
 tt.melee.attacks[1].damage_min = 0
 tt.melee.attacks[1].hit_time = fts(9)
 tt.melee.attacks[1].sound = "MeleeSword"
 tt.melee.attacks[1].vis_bans = bor(F_FLYING, F_CLIFF)
 tt.melee.attacks[1].vis_flags = F_BLOCK
 tt.melee.attacks[1].mod = "mod_teleport_ancient_guardian"
-tt.melee.range = 76.8
-tt.motion.max_speed = 60
+tt.melee.range = 65
+tt.motion.max_speed = 75
 tt.regen.cooldown = 1
-tt.regen.health = 25
+tt.regen.health = 50
 tt.render.sprites[1] = E.clone_c(E, "sprite")
 tt.render.sprites[1].anchor.y = 0.18
 tt.render.sprites[1].angles = {
@@ -4731,7 +4734,7 @@ tt.unit.blood_color = BLOOD_GRAY
 tt.unit.hit_offset = v(0, 14)
 tt.unit.marker_offset = v(0, ady(10))
 tt.unit.size = UNIT_SIZE_MEDIUM
-tt.vis.bans = bor(F_POLYMORPH, F_POISON, F_LYCAN, F_CANNIBALIZE)
+tt.vis.bans = bor(F_POLYMORPH, F_LYCAN, F_CANNIBALIZE)
 tt = E.register_t(E, "death_rider_aura", "aura")
 
 E.add_comps(E, tt, "render")
@@ -4764,18 +4767,32 @@ E.add_comps(E, tt, "render")
 tt.aura.mod = "mod_ancient_guardian"
 tt.aura.cycle_time = 1
 tt.aura.duration = -1
-tt.aura.radius = 275
+tt.aura.radius = 150
 tt.aura.track_source = true
 tt.aura.allowed_templates = {
   "soldier_skeleton",
   "soldier_skeleton_knight",
+  "soldier_death_rider",
   "soldier_sand_warrior",
   "soldier_dracolich_golem",
   "soldier_elemental",
   "soldier_frankenstein",
   "soldier_ingvar_ancestor",
   "soldier_magnus_illusion",
+  "soldier_alleria_wildcat",
   "hero_gerald",
+  "hero_alleria",
+  "hero_malik",
+  "hero_bolin",
+  "hero_magnus",
+  "hero_ignus",
+  "hero_denas",
+  "hero_ingvar",
+  "hero_elora",
+  "hero_oni",
+  "hero_hacksaw",
+  "hero_thor",
+  "hero_10yr",
   "reinforcement"
 }
 tt.aura.vis_bans = F_ENEMY
@@ -4982,7 +4999,7 @@ tt.main_script.insert = scripts3.tower_archmage.insert
 tt.main_script.remove = scripts3.tower_archmage.remove
 tt.main_script.update = scripts3.tower_archmage.update
 tt.render.sprites[1].animated = false
-tt.render.sprites[1].name = "terrain_specials_%04i"
+tt.render.sprites[1].name = "terrain_mage_%04i"
 tt.render.sprites[1].offset = v(0, 9)
 tt.render.sprites[2] = E.clone_c(E, "sprite")
 tt.render.sprites[2].animated = false
@@ -5495,7 +5512,7 @@ tt.powers.lava.enc_icon = 1
 tt.main_script.insert = scripts3.tower_dwaarp.insert
 tt.main_script.update = scripts3.tower_dwaarp.update
 tt.render.sprites[1].animated = false
-tt.render.sprites[1].name = "terrain_specials_%04i"
+tt.render.sprites[1].name = "terrain_artillery_%04i"
 tt.render.sprites[1].offset = v(0, 12)
 tt.render.sprites[2] = E.clone_c(E, "sprite")
 tt.render.sprites[2].animated = false
@@ -5581,7 +5598,7 @@ tt.main_script.remove = scripts3.tower_barrack.remove
 tt.barrack.soldier_type = "soldier_mecha"
 tt.barrack.rally_range = 175
 tt.render.sprites[1].animated = false
-tt.render.sprites[1].name = "terrain_specials_%04i"
+tt.render.sprites[1].name = "terrain_artillery_%04i"
 tt.render.sprites[1].offset = v(0, 6)
 
 for i = 2, 10, 1 do
@@ -5841,7 +5858,7 @@ tt.attacks.list[3].excluded_templates = {
   "tower_barbarian",
   "tower_paladin"
 }
-tt.render.sprites[1].name = "terrain_specials_%04i"
+tt.render.sprites[1].name = "terrain_archer_%04i"
 tt.render.sprites[1].offset = v(0, 7)
 tt.render.sprites[2].name = "CossbowHunter_tower"
 tt.render.sprites[2].offset = v(0, 33)
@@ -5973,7 +5990,7 @@ tt.attacks.list[1].bullet_start_offset = v(0, 80)
 tt.attacks.list[1].sound = "TeslaAttack"
 tt.attacks.list[1].node_prediction = fts(11.5)
 tt.render.sprites[1].animated = false
-tt.render.sprites[1].name = "terrain_specials_%04i"
+tt.render.sprites[1].name = "terrain_artillery_%04i"
 tt.render.sprites[1].offset = v(0, 13)
 tt.render.sprites[2] = E.clone_c(E, "sprite")
 tt.render.sprites[2].animated = false
@@ -6394,7 +6411,7 @@ tt.powers.beer.price_inc = 100
 tt.powers.hammer = E.clone_c(E, "power")
 tt.powers.hammer.price_base = 75
 tt.powers.hammer.price_inc = 75
-tt.render.sprites[1].name = "terrain_specials_%04i"
+tt.render.sprites[1].name = "terrain_barrack_%04i"
 tt.render.sprites[1].offset = v(0, 8)
 tt.render.sprites[2].name = "DwarfHall_0001"
 tt.render.sprites[2].offset = v(0, 30)
@@ -6499,7 +6516,7 @@ tt.attacks.list[3] = E.clone_c(E, "bullet_attack")
 tt.attacks.list[3].bullet = "totem_silence"
 tt.attacks.list[3].cooldown = 8
 tt.attacks.list[3].vis_bans = bor(F_CLIFF, F_BOSS)
-tt.render.sprites[1].name = "terrain_specials_%04i"
+tt.render.sprites[1].name = "terrain_archer_%04i"
 tt.render.sprites[1].offset = v(0, 6)
 tt.render.sprites[2].name = "TotemTower"
 tt.render.sprites[2].offset = v(0, 37)
@@ -7410,7 +7427,7 @@ tt.powers.double_dagger.max_level = 1
 tt.powers.blade_mail = CC("power")
 tt.powers.blade_mail.price_base = 175
 tt.powers.blade_mail.price_inc = 175
-tt.render.sprites[1].name = "terrains_0003"
+tt.render.sprites[1].name = "terrain_barrack_%04i"
 tt.render.sprites[2].name = "mercenaryDraw_tower_layer1_0001"
 tt.render.sprites[2].offset = v(0, 29)
 tt.render.sprites[3].prefix = "tower_drow_door"
@@ -7529,7 +7546,7 @@ tt.main_script.insert = scripts2.tower_barrack.insert
 tt.main_script.remove = scripts2.tower_barrack.remove
 tt.main_script.update = scripts2.tower_barrack_mercenaries.update
 tt.render.sprites[1].animated = false
-tt.render.sprites[1].name = "terrains_0001"
+tt.render.sprites[1].name = "terrain_barrack_%04i"
 tt.render.sprites[1].offset = v(0, 10)
 tt.render.sprites[2] = E.clone_c(E, "sprite")
 tt.render.sprites[2].animated = false
@@ -7938,7 +7955,7 @@ tt.powers.improve_shot.price_base = 125
 tt.powers.improve_shot.price_inc = 125
 tt.powers.improve_shot.max_level = 2
 tt.render.sprites[1].animated = false
-tt.render.sprites[1].name = "terrains_0002"
+tt.render.sprites[1].name = "terrain_mage_%04i"
 tt.render.sprites[1].offset = v(0, 10)
 tt.render.sprites[2] = E.clone_c(E, "sprite")
 tt.render.sprites[2].animated = false
@@ -8402,7 +8419,7 @@ tt.powers.blood.name = "ARTERIAL"
 tt.powers.blood.enc_icon = 26
 tt.barrack.soldier_type = "soldier_templar"
 tt.barrack.rally_range = 147.20000000000002
-tt.render.sprites[1].name = "terrain_specials_%04i"
+tt.render.sprites[1].name = "terrain_barrack_%04i"
 tt.render.sprites[1].offset = v(0, 8)
 tt.render.sprites[2].name = "tower_templars_layer1_0001"
 tt.render.sprites[2].offset = v(0, 34)
@@ -8499,7 +8516,7 @@ tt.powers.counter.price_inc = 100
 tt.powers.counter.enc_icon = 23
 tt.barrack.soldier_type = "soldier_assassin"
 tt.barrack.rally_range = 147.20000000000002
-tt.render.sprites[1].name = "terrain_specials_%04i"
+tt.render.sprites[1].name = "terrain_barrack_%04i"
 tt.render.sprites[1].offset = v(0, 8)
 tt.render.sprites[2].name = "tower_assasins_layer1_0005"
 tt.render.sprites[2].offset = v(0, 30)
@@ -8930,7 +8947,7 @@ tt.tower.price = 230
 tt.barrack.soldier_type = "soldier_ewok_re"
 tt.barrack.rally_range = 160
 tt.render.sprites[1].animated = false
-tt.render.sprites[1].name = "terrains_0001"
+tt.render.sprites[1].name = "terrain_barrack_%04i"
 tt.render.sprites[1].offset = v(0, 10)
 tt.render.sprites[2] = E.clone_c(E, "sprite")
 tt.render.sprites[2].animated = false
@@ -23309,6 +23326,80 @@ tt.unit.hit_offset = v(0, 14)
 tt.unit.marker_offset = v(0, -2)
 tt.unit.mod_offset = v(adx(30), ady(20))
 tt.vis.flags = bor(tt.vis.flags, F_SPELLCASTER)
+tt = RT("enemy_hobgoblin_small", "enemy")
+
+AC(tt, "melee")
+
+anchor_y = 0.19
+anchor_x = 0.5
+image_y = 42
+image_x = 58
+tt.enemy.gold = 10
+tt.enemy.melee_slot = v(18, 0)
+tt.health.armor = 0
+tt.health.hp_max = 500
+tt.health_bar.offset = v(0, 30)
+tt.info.i18n_key = "ENEMY_HOBGOBLIN"
+tt.info.enc_icon = 2
+tt.info.portrait = (IS_PHONE_OR_TABLET and "portraits_sc_0007") or "info_portraits_sc_0007"
+tt.melee.attacks[1].cooldown = 1
+tt.melee.attacks[1].damage_max = 30
+tt.melee.attacks[1].damage_min = 50
+tt.melee.attacks[1].hit_time = fts(6)
+tt.motion.max_speed = FPS*1.4
+tt.render.sprites[1].anchor = v(0.5, 0.19)
+tt.render.sprites[1].prefix = "enemy_hobgoblin_small"
+tt.sound_events.death = "DeathGoblin"
+tt.unit.hit_offset = v(0, 14)
+tt.unit.mod_offset = v(adx(30), ady(20))
+tt = RT("enemy_hobgoblin_rider", "enemy")
+
+AC(tt, "melee", "death_spawns")
+
+anchor_y = 0.14
+anchor_x = 0.5
+image_y = 62
+image_x = 62
+tt.death_spawns.concurrent_with_death = true
+tt.death_spawns.name = "enemy_hobgoblin_small"
+tt.enemy.gold = 25
+tt.enemy.lives_cost = 2
+tt.enemy.melee_slot = v(30, 0)
+tt.health.hp_max = 400
+tt.health.magic_armor = 0.8
+tt.health_bar.offset = v(0, 48)
+tt.main_script.insert = scripts3.enemy_basic.insert
+tt.main_script.update = scripts3.enemy_hyena.update
+tt.info.i18n_key = "ENEMY_HOBGOBLIN_RIDER"
+tt.info.enc_icon = 37
+tt.info.portrait = (IS_PHONE_OR_TABLET and "portraits_sc_0060") or "info_portraits_sc_0059"
+tt.melee.attacks[1].cooldown = fts(14) + 1
+tt.melee.attacks[1].damage_max = 40
+tt.melee.attacks[1].damage_min = 20
+tt.melee.attacks[1].hit_time = fts(9)
+tt.melee.attacks[1].sound = "WolfAttack"
+tt.motion.max_speed = FPS*1.9
+tt.render.sprites[1].anchor = v(anchor_x, anchor_y)
+tt.render.sprites[1].prefix = "enemy_hobgoblin_rider"
+tt.render.sprites[1].angles_stickiness.run = 10
+tt.render.sprites[1].angles.run = {
+	"runningRightLeft",
+	"runningUp",
+	"runningDown"
+}
+tt.sound_events.death = "DeathPuff"
+tt.sound_events.insert = "WolfAttack"
+tt.ui.click_rect.size = v(32, 38)
+tt.ui.click_rect.pos = v(-16, 2)
+tt.unit.can_explode = false
+tt.unit.hide_after_death = true
+tt.unit.hit_offset = v(0, 23)
+tt.unit.marker_offset = v(0, 0)
+tt.unit.mod_offset = v(adx(31), ady(29))
+tt.unit.show_blood_pool = false
+tt.coward_duration = 1.2
+tt.coward_speed_factor = 1.2
+tt.vis.bans = bor(F_SKELETON)
 tt = RT("enemy_gargoyle", "enemy")
 anchor_y = 0
 anchor_x = 0.5
@@ -29590,8 +29681,8 @@ tt = E.register_t(E, "aura_time_wizard_sandstorm", "aura")
 
 E.add_comps(E, tt, "render", "tween")
 
-tt.aura.cycle_time = 0.3
-tt.aura.duration = 5
+tt.aura.cycle_time = 0.2
+tt.aura.duration = 8
 tt.aura.mods = { "mod_sandstorm_slow", "mod_sandstormtw" }
 tt.aura.radius = 80
 tt.aura.vis_bans = bor(F_FRIEND, F_FLYING)
@@ -29790,11 +29881,11 @@ tt.render.sprites[1].draw_order = 10
 tt = E.register_t(E, "mod_sandstormtw", "modifier")
 
 E.add_comps(E, tt, "dps", "render")
-tt.dps.damage_min = 10
-tt.dps.damage_max = 10
-tt.dps.damage_inc = 10
-tt.dps.damage_type = DAMAGE_MAGICAL
-tt.dps.damage_every = fts(1)
+tt.dps.damage_min = 2
+tt.dps.damage_max = 2
+tt.dps.damage_inc = 1
+tt.dps.damage_type = DAMAGE_TRUE
+tt.dps.damage_every = fts(10)
 tt.dps.kill = true
 tt.main_script.insert = scripts2.mod_dps.insert
 tt.main_script.update = scripts2.mod_dps.update
@@ -31188,7 +31279,7 @@ tt.modifier.duration = 1
 tt.slow.factor = 0.2
 tt = RT("mod_sandstorm_slow", "mod_slow")
 tt.modifier.duration = 2
-tt.slow.factor = 0.2
+tt.slow.factor = 0.3333
 tt = RT("mod_bolin_slow", "mod_slow")
 tt.modifier.duration = 1
 tt.slow.factor = 0.5
@@ -31295,14 +31386,14 @@ tt = RT("mod_ancient_guardian", "modifier")
 
 AC(tt, "render")
 
-tt.extra_armor = 0.1
-tt.extra_damage_max = 0
-tt.extra_damage_min = 0
-tt.extra_speed = 30.72
+tt.extra_armor = 0
+tt.extra_damage_max = 10
+tt.extra_damage_min = 10
+tt.extra_speed = FPS*1
 tt.main_script.insert = scripts.mod_troll_rage.insert
 tt.main_script.remove = scripts.mod_troll_rage.remove
 tt.main_script.update = scripts.mod_track_target.update
-tt.modifier.duration = 6
+tt.modifier.duration = 2
 tt.modifier.type = MOD_TYPE_RAGE
 tt.modifier.vis_flags = bor(F_MOD)
 tt.modifier.use_mod_offset = false
