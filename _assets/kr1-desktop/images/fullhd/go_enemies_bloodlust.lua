@@ -1201,7 +1201,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1227,7 +1227,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1253,7 +1253,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1279,7 +1279,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1305,7 +1305,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1331,7 +1331,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1357,7 +1357,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1383,7 +1383,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1409,7 +1409,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1435,7 +1435,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1461,7 +1461,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1486,7 +1486,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1512,7 +1512,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1538,7 +1538,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1564,7 +1564,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1590,7 +1590,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1616,7 +1616,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1641,7 +1641,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1669,7 +1669,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1697,7 +1697,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1725,7 +1725,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1753,7 +1753,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1781,7 +1781,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1806,7 +1806,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1831,7 +1831,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1859,7 +1859,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1887,7 +1887,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1915,7 +1915,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1943,7 +1943,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1971,7 +1971,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -1996,7 +1996,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -2021,7 +2021,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -2046,7 +2046,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -2071,7 +2071,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -2096,7 +2096,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -2121,7 +2121,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -2147,7 +2147,7 @@ return {
 		},
 		trim = {
 			1,
-			1,
+			5,
 			1,
 			1
 		},
@@ -2158,6 +2158,942 @@ return {
 		f_quad = {
 			264,
 			264,
+			88,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0001 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			352,
+			264,
+			88,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0002 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			440,
+			264,
+			88,
+			88
+		},
+		alias = {
+			"hobgoblin_rider_0003"
+		}
+	},
+	hobgoblin_rider_0004 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			528,
+			264,
+			88,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0005 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			616,
+			264,
+			88,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0006 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			704,
+			264,
+			88,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0007 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			792,
+			264,
+			88,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0008 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			880,
+			264,
+			88,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0009 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			0,
+			352,
+			88,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0010 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			88,
+			352,
+			88,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0011 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			176,
+			352,
+			88,
+			88
+		},
+		alias = {
+			"hobgoblin_rider_0012"
+		}
+	},
+	hobgoblin_rider_0013 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			264,
+			352,
+			88,
+			88
+		},
+		alias = {
+			"hobgoblin_rider_0014"
+		}
+	},
+	hobgoblin_rider_0015 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			352,
+			352,
+			88,
+			88
+		},
+		alias = {
+			"hobgoblin_rider_0016"
+		}
+	},
+	hobgoblin_rider_0017 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			440,
+			352,
+			88,
+			88
+		},
+		alias = {
+			"hobgoblin_rider_0018"
+		}
+	},
+	hobgoblin_rider_0019 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			528,
+			352,
+			88,
+			88
+		},
+		alias = {
+			"hobgoblin_rider_0020"
+		}
+	},
+	hobgoblin_rider_0021 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			616,
+			352,
+			88,
+			88
+		},
+		alias = {
+			"hobgoblin_rider_0022"
+		}
+	},
+	hobgoblin_rider_0023 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			704,
+			352,
+			88,
+			88
+		},
+		alias = {
+			"hobgoblin_rider_0024"
+		}
+	},
+	hobgoblin_rider_0025 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			792,
+			352,
+			88,
+			88
+		},
+		alias = {
+			"hobgoblin_rider_0026"
+		}
+	},
+	hobgoblin_rider_0027 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			880,
+			352,
+			88,
+			88
+		},
+		alias = {
+			"hobgoblin_rider_0028"
+		}
+	},
+	hobgoblin_rider_0029 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			0,
+			440,
+			88,
+			88
+		},
+		alias = {
+			"hobgoblin_rider_0030"
+		}
+	},
+	hobgoblin_rider_0031 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			132,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			88,
+			440,
+			132,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0032 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			132,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			220,
+			440,
+			132,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0033 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			132,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			352,
+			440,
+			132,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0034 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			132,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			484,
+			440,
+			132,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0035 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			132,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			616,
+			440,
+			132,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0036 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			132,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			748,
+			440,
+			132,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0037 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			132,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			880,
+			440,
+			132,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0038 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			132,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			0,
+			528,
+			132,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0039 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			132,
+			528,
+			88,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0040 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			220,
+			528,
+			88,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0041 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			308,
+			528,
+			88,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0042 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			396,
+			528,
+			88,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0043 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			484,
+			528,
+			88,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0044 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			572,
+			528,
+			88,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0045 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			660,
+			528,
+			88,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0046 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			748,
+			528,
+			88,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0047 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			836,
+			528,
+			88,
+			88
+		},
+		alias = {
+		}
+	},
+	hobgoblin_rider_0048 = {
+		a_name = "go_enemies_bloodlust-2.png",
+		size = {
+			88,
+			88
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			1024,
+			1024
+		},
+		f_quad = {
+			924,
+			528,
 			88,
 			88
 		},

@@ -24098,6 +24098,54 @@ tt.unit.marker_offset = v(0, 0)
 tt.unit.mod_offset = v(adx(31), ady(29))
 tt.unit.show_blood_pool = false
 tt.vis.bans = bor(F_SKELETON)
+tt = RT("enemy_hobgoblin_rider", "enemy")
+
+AC(tt, "melee", "death_spawns")
+
+anchor_y = 0.14
+anchor_x = 0.5
+image_y = 62
+image_x = 62
+tt.death_spawns.concurrent_with_death = true
+tt.death_spawns.name = "enemy_hobgoblin_small"
+tt.enemy.gold = 25
+tt.enemy.lives_cost = 2
+tt.enemy.melee_slot = v(30, 0)
+tt.health.hp_max = 400
+tt.health.magic_armor = 0.8
+tt.health_bar.offset = v(0, 48)
+tt.main_script.insert = scripts3.enemy_basic.insert
+tt.main_script.update = scripts3.enemy_hyena.update
+tt.info.i18n_key = "ENEMY_HOBGOBLIN_RIDER"
+tt.info.enc_icon = 37
+tt.info.portrait = (IS_PHONE_OR_TABLET and "portraits_sc_0060") or "info_portraits_sc_0059"
+tt.melee.attacks[1].cooldown = fts(14) + 1
+tt.melee.attacks[1].damage_max = 40
+tt.melee.attacks[1].damage_min = 20
+tt.melee.attacks[1].hit_time = fts(9)
+tt.melee.attacks[1].sound = "WolfAttack"
+tt.motion.max_speed = FPS*1.9
+tt.render.sprites[1].anchor = v(anchor_x, anchor_y)
+tt.render.sprites[1].prefix = "enemy_hobgoblin_rider"
+tt.render.sprites[1].angles_stickiness.run = 10
+tt.render.sprites[1].angles.run = {
+	"runningRightLeft",
+	"runningUp",
+	"runningDown"
+}
+tt.sound_events.death = "DeathPuff"
+tt.sound_events.insert = "WolfAttack"
+tt.ui.click_rect.size = v(32, 38)
+tt.ui.click_rect.pos = v(-16, 2)
+tt.unit.can_explode = false
+tt.unit.hide_after_death = true
+tt.unit.hit_offset = v(0, 23)
+tt.unit.marker_offset = v(0, 0)
+tt.unit.mod_offset = v(adx(31), ady(29))
+tt.unit.show_blood_pool = false
+tt.coward_duration = 1.2
+tt.coward_speed_factor = 1.2
+tt.vis.bans = bor(F_SKELETON)
 tt = RT("soldier_orc_rider", "soldier_militia")
 
 AC(tt, "melee", "auras")

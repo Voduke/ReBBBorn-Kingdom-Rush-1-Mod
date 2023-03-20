@@ -1332,7 +1332,62 @@ local a = {
 	enemy_hobgoblin_small_walkingUp = {
 		prefix = "hobgoblin_small",
 		to = 54,
-		from = 25
+		from = 33
+	},
+	enemy_hobgoblin_rider_attack = {
+		prefix = "hobgoblin_rider",
+		to = 1,
+		from = 1
+	},
+	enemy_hobgoblin_rider_death = {
+		prefix = "worg",
+		to = 84,
+		from = 69
+	},
+	enemy_hobgoblin_rider_idle = {
+		prefix = "hobgoblin_rider",
+		to = 1,
+		from = 1
+	},
+	enemy_hobgoblin_rider_thorn = {
+		prefix = "hobgoblin_rider",
+		to = 1,
+		from = 1
+	},
+	enemy_hobgoblin_rider_thornFree = {
+		prefix = "hobgoblin_rider",
+		to = 1,
+		from = 1
+	},
+	enemy_hobgoblin_rider_walkingDown = {
+		prefix = "hobgoblin_rider",
+		to = 30,
+		from = 21
+	},
+	enemy_hobgoblin_rider_walkingRightLeft = {
+		prefix = "hobgoblin_rider",
+		to = 10,
+		from = 2
+	},
+	enemy_hobgoblin_rider_walkingUp = {
+		prefix = "hobgoblin_rider",
+		to = 20,
+		from = 11
+	},
+	enemy_hobgoblin_rider_runningDown = {
+		prefix = "hobgoblin_rider",
+		to = 48,
+		from = 44
+	},
+	enemy_hobgoblin_rider_runningRightLeft = {
+		prefix = "hobgoblin_rider",
+		to = 38,
+		from = 31
+	},
+	enemy_hobgoblin_rider_runningUp = {
+		prefix = "hobgoblin_rider",
+		to = 43,
+		from = 39
 	},
 	enemy_ogre_attack = {
 		prefix = "ogre",
