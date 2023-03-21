@@ -1389,6 +1389,61 @@ local a = {
 		to = 43,
 		from = 39
 	},
+	enemy_hobgoblin_shield_attack = {
+		prefix = "hobgoblin_shield",
+		to = 18,
+		from = 1
+	},
+	enemy_hobgoblin_shield_death = {
+		prefix = "hobgoblin_shield",
+		to = 102,
+		from = 87
+	},
+	enemy_hobgoblin_shield_idle = {
+		prefix = "hobgoblin_shield",
+		to = 1,
+		from = 1
+	},
+	enemy_hobgoblin_shield_thorn = {
+		prefix = "hobgoblin_shield",
+		to = 1,
+		from = 1
+	},
+	enemy_hobgoblin_shield_thornFree = {
+		prefix = "hobgoblin_shield",
+		to = 1,
+		from = 1
+	},
+	enemy_hobgoblin_shield_walkingDown = {
+		prefix = "hobgoblin_shield",
+		to = 70,
+		from = 53
+	},
+	enemy_hobgoblin_shield_walkingRightLeft = {
+		prefix = "hobgoblin_shield",
+		to = 52,
+		from = 19
+	},
+	enemy_hobgoblin_shield_walkingUp = {
+		prefix = "hobgoblin_shield",
+		to = 86,
+		from = 71
+	},
+	enemy_hobgoblin_shield_raise = {
+			prefix = "hobgoblin_shield",
+			to = 1,
+			from = 1
+	},
+		enemy_hobgoblin_shield_burrow = {
+			prefix = "hobgoblin_shield",
+			to = 1,
+			from = 1
+	},
+		enemy_hobgoblin_shield_teleport = {
+			prefix = "states_flying_small",
+			to = 10,
+			from = 1
+	},
 	enemy_ogre_attack = {
 		prefix = "ogre",
 		to = 106,

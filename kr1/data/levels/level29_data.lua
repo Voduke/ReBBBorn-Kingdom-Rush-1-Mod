@@ -534,7 +534,7 @@ return {
 		}
 	},
 	required_sounds = {
-		"music_stage04"
+		"music_stage29"
 	},
 	required_textures = {
 		"go_enemies_acaroth",

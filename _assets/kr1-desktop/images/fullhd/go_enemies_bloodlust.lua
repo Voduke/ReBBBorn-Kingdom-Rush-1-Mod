@@ -3099,5 +3099,1307 @@ return {
 		},
 		alias = {
 		}
+	},
+	hobgoblin_shield_0001 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			0,
+			0,
+			132,
+			132
+		},
+		alias = {
+						"hobgoblin_shield_0002"
+		}
+	},
+	hobgoblin_shield_0003 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			132,
+			0,
+			132,
+			132
+		},
+		alias = {
+				"hobgoblin_shield_0004"
+		}
+	},
+	hobgoblin_shield_0005 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			264,
+			0,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0006"
+		}
+	},
+	hobgoblin_shield_0007 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			396,
+			0,
+			132,
+			132
+		},
+		alias = {
+				"hobgoblin_shield_0008"
+		}
+	},
+	hobgoblin_shield_0009 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			528,
+			0,
+			132,
+			132
+		},
+		alias = {
+				"hobgoblin_shield_0010"
+		}
+	},
+	hobgoblin_shield_0011 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			660,
+			0,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0012"
+					}
+	},
+	hobgoblin_shield_0013 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			792,
+			0,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0014"
+					}
+	},
+	hobgoblin_shield_0015 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			924,
+			0,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0016"
+					}
+	},
+	hobgoblin_shield_0017 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			1056,
+			0,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0018"
+					}
+	},
+	hobgoblin_shield_0019 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			1188,
+			0,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0020"
+					}
+	},
+	hobgoblin_shield_0021 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			1320,
+			0,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0022"
+					}
+	},
+	hobgoblin_shield_0023 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			1452,
+			0,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0024"
+					}
+	},
+	hobgoblin_shield_0025 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			1584,
+			0,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0026"
+					}
+	},
+	hobgoblin_shield_0027 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			1716,
+			0,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0028"
+					}
+	},
+	hobgoblin_shield_0029 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			1848,
+			0,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0030"
+					}
+	},
+	hobgoblin_shield_0031 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			0,
+			132,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0032"
+					}
+	},
+	hobgoblin_shield_0033 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			132,
+			132,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0034"
+					}
+	},
+	hobgoblin_shield_0035 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			264,
+			132,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0036"
+					}
+	},
+	hobgoblin_shield_0037 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			396,
+			132,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0038"
+					}
+	},
+	hobgoblin_shield_0039 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			528,
+			132,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0040"
+					}
+	},
+	hobgoblin_shield_0041 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			660,
+			132,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0042"
+					}
+	},
+	hobgoblin_shield_0043 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			792,
+			132,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0044"
+					}
+	},
+	hobgoblin_shield_0045 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			924,
+			132,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0046"
+					}
+	},
+	hobgoblin_shield_0047 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			1056,
+			132,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0048"
+					}
+	},
+	hobgoblin_shield_0049 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			1188,
+			132,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0050"
+					}
+	},
+	hobgoblin_shield_0051 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			1320,
+			132,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0052"
+					}
+	},
+	hobgoblin_shield_0053 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			1452,
+			132,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0054"
+					}
+	},
+	hobgoblin_shield_0055 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			1584,
+			132,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0056"
+					}
+	},
+	hobgoblin_shield_0057 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			1716,
+			132,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0058"
+					}
+	},
+	hobgoblin_shield_0059 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			1848,
+			132,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0060"
+					}
+	},
+	hobgoblin_shield_0061 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			0,
+			264,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0062"
+					}
+	},
+	hobgoblin_shield_0063 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			132,
+			264,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0064"
+					}
+	},
+	hobgoblin_shield_0065 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			264,
+			264,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0066"
+					}
+	},
+	hobgoblin_shield_0067 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			396,
+			264,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0068"
+					}
+	},
+	hobgoblin_shield_0069 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			528,
+			264,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0070"
+					}
+	},
+	hobgoblin_shield_0071 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			660,
+			264,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0072"
+					}
+	},
+	hobgoblin_shield_0073 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			792,
+			264,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0074"
+					}
+	},
+	hobgoblin_shield_0075 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			924,
+			264,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0076"
+					}
+	},
+	hobgoblin_shield_0077 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			1056,
+			264,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0078"
+					}
+	},
+	hobgoblin_shield_0079 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			1188,
+			264,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0080"
+					}
+	},
+	hobgoblin_shield_0081 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			1320,
+			264,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0082"
+					}
+	},
+	hobgoblin_shield_0083 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			1452,
+			264,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0084"
+					}
+	},
+	hobgoblin_shield_0085 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			1584,
+			264,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0086"
+					}
+	},
+	hobgoblin_shield_0087 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			1716,
+			264,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0088"
+					}
+	},
+	hobgoblin_shield_0089 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			1848,
+			264,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0090"
+					}
+	},
+	hobgoblin_shield_0091 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			0,
+			392,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0092"
+					}
+	},
+	hobgoblin_shield_0093 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			1,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			132,
+			392,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0094"
+					}
+	},
+	hobgoblin_shield_0095 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			15,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			264,
+			392,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0096"
+					}
+	},
+	hobgoblin_shield_0097 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			15,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			392,
+			392,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0098",
+			"hobgoblin_shield_0101",
+			"hobgoblin_shield_0102"
+					}
+	},
+	hobgoblin_shield_0099 = {
+		a_name = "go_enemies_bloodlust-3.png",
+		size = {
+			132,
+			132
+		},
+		trim = {
+			15,
+			10,
+			1,
+			1
+		},
+		a_size = {
+			2048,
+			2048
+		},
+		f_quad = {
+			528,
+			392,
+			132,
+			132
+		},
+		alias = {
+			"hobgoblin_shield_0100"
+					}
 	}
 }

@@ -23440,6 +23440,58 @@ tt.unit.show_blood_pool = false
 tt.coward_duration = 1.2
 tt.coward_speed_factor = 1.2
 tt.vis.bans = bor(F_SKELETON)
+tt = E.register_t(E,"enemy_hobgoblin_shield", "enemy")
+
+E.add_comps(E, tt, "melee")
+
+anchor_y = 0.2125
+anchor_x = 0.5
+image_y = 80
+image_x = 104
+tt.enemy.melee_slot_offset = v(35, 0)
+tt.health.armor = 0.6
+tt.health.hp_max = 1000
+tt.health_bar.type = HEALTH_BAR_SIZE_MEDIUM
+tt.health_bar.offset = v(0, 54)
+tt.info.i18n_key = "ENEMY_HOBGOBLIN_SHIELD"
+tt.info.enc_icon = 51
+tt.info.portrait = (IS_PHONE_OR_TABLET and "portraits_sc_0074") or "info_portraits_sc_0074"
+tt.main_script.insert = scripts2.enemy_basic.insert
+tt.main_script.update = scripts2.enemy_tremor.update
+tt.melee.attacks[1] = CC("area_attack")
+tt.melee.attacks[1].cooldown = 2
+tt.melee.attacks[1].count = 3
+tt.melee.attacks[1].damage_max = 165
+tt.melee.attacks[1].damage_min = 95
+tt.melee.attacks[1].damage_radius = 44.800000000000004
+tt.melee.attacks[1].damage_type = DAMAGE_PHYSICAL
+tt.melee.attacks[1].hit_decal = "decal_ground_hit"
+tt.melee.attacks[1].hit_fx = "fx_ground_hit"
+tt.melee.attacks[1].hit_offset = v(22, 5)
+tt.melee.attacks[1].hit_time = fts(8)
+tt.melee.attacks[1].sound_hit = "AreaAttack"
+tt.melee.range = 85
+tt.motion.max_speed = 20
+tt.render.sprites[1].anchor = v(anchor_x, anchor_y)
+tt.render.sprites[1].prefix = "enemy_hobgoblin_shield"
+tt.render.sprites[1].angles = {
+	walk = {
+		"walkingRightLeft",
+		"walkingUp",
+		"walkingDown"
+	}
+}
+tt.sound_events.death = "DeathBig"
+tt.ui.click_rect.size = v(30, 40)
+tt.ui.click_rect.pos.x = -15
+tt.unit.can_explode = false
+tt.unit.hit_offset = v(0, 18)
+tt.unit.marker_offset = v(0, 0)
+tt.unit.mod_offset = v(0, 14)
+tt.unit.size = UNIT_SIZE_MEDIUM
+tt.vis.bans_above_surface = bor(F_SKELETON)
+tt.vis.bans_below_surface = bor(F_RANGED, F_SKELETON, F_MOD, F_AREA, F_POLYMORPH)
+tt.vis.bans = tt.vis.bans_below_surface
 tt = RT("enemy_gargoyle", "enemy")
 anchor_y = 0
 anchor_x = 0.5
