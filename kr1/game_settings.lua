@@ -337,6 +337,18 @@ local GS = {
 		},
 		{
 			name = "eb_blackburn"
+		},
+		{
+			name = "enemy_hobgoblin_small"
+		},
+		{
+			name = "enemy_cursed_shaman"
+		},
+		{
+			name = "enemy_hobgoblin_shield"
+		},
+		{
+			name = "enemy_hobgoblin_rider"
 		}
 	}
 }

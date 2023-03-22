@@ -90,7 +90,7 @@ return {
 			}
 		},
 		{
-			["render.sprites[1].z"] = 3000,
+			["render.sprites[1].z"] = 2000,
 			template = "decal_water_spark",
 			["render.sprites[1].r"] = 0,
 			["render.sprites[1].name"] = "decal_water_spark_play",
@@ -104,7 +104,7 @@ return {
 			}
 		},
 		{
-			["render.sprites[1].z"] = 3000,
+			["render.sprites[1].z"] = 2000,
 			template = "decal_water_spark",
 			["render.sprites[1].r"] = 0,
 			["render.sprites[1].name"] = "decal_water_spark_play",
@@ -118,7 +118,7 @@ return {
 			}
 		},
 		{
-			["render.sprites[1].z"] = 3000,
+			["render.sprites[1].z"] = 2000,
 			template = "decal_water_spark",
 			["render.sprites[1].r"] = 0,
 			["render.sprites[1].name"] = "decal_water_spark_play",
@@ -132,7 +132,7 @@ return {
 			}
 		},
 		{
-			["render.sprites[1].z"] = 3000,
+			["render.sprites[1].z"] = 2000,
 			template = "decal_water_spark",
 			["render.sprites[1].r"] = 0,
 			["render.sprites[1].name"] = "decal_water_spark_play",
@@ -146,7 +146,7 @@ return {
 			}
 		},
 		{
-			["render.sprites[1].z"] = 3000,
+			["render.sprites[1].z"] = 2000,
 			template = "decal_water_spark",
 			["render.sprites[1].r"] = 0,
 			["render.sprites[1].name"] = "decal_water_spark_play",
@@ -160,7 +160,7 @@ return {
 			}
 		},
 		{
-			["render.sprites[1].z"] = 3000,
+			["render.sprites[1].z"] = 2000,
 			template = "decal_water_spark",
 			["render.sprites[1].r"] = 0,
 			["render.sprites[1].name"] = "decal_water_spark_play",
@@ -174,7 +174,7 @@ return {
 			}
 		},
 		{
-			["render.sprites[1].z"] = 3000,
+			["render.sprites[1].z"] = 2000,
 			template = "decal_water_spark",
 			["render.sprites[1].r"] = 0,
 			["render.sprites[1].name"] = "decal_water_spark_play",
@@ -188,7 +188,7 @@ return {
 			}
 		},
 		{
-			["render.sprites[1].z"] = 3000,
+			["render.sprites[1].z"] = 2000,
 			template = "decal_water_spark",
 			["render.sprites[1].r"] = 0,
 			["render.sprites[1].name"] = "decal_water_spark_play",
@@ -202,7 +202,7 @@ return {
 			}
 		},
 		{
-			["render.sprites[1].z"] = 3000,
+			["render.sprites[1].z"] = 2000,
 			template = "decal_water_spark",
 			["render.sprites[1].r"] = 0,
 			["render.sprites[1].name"] = "decal_water_spark_play",
@@ -424,6 +424,20 @@ return {
 				x = 500,
 				y = 200
 			}
+		},
+		{
+			["render.sprites[1].z"] = 3000,
+			template = "decal_water_fall",
+			["render.sprites[1].r"] = 0,
+			["render.sprites[1].name"] = "decal_water_fall_idle",
+			pos = {
+				x = 490,
+				y = 456
+			},
+			["render.sprites[1].scale"] = {
+				x = 1,
+				y = 1
+			}
 		}
 	},
 	invalid_path_ranges = {},
@@ -548,6 +562,7 @@ return {
 		"go_stage19",
 		"go_stage08",
 		"go_stage29_bg",
+		"go_stage29",
 		"go_stages_ice",
 		"go_stages_grass",
 		"go_enemies_bloodlust",

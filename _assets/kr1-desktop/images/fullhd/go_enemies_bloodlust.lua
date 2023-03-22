@@ -3100,7 +3100,7 @@ return {
 		alias = {
 		}
 	},
-	hobgoblin_shield_0001 = {
+	hobgoblin_shield_0105 = {
 		a_name = "go_enemies_bloodlust-3.png",
 		size = {
 			132,
@@ -3123,10 +3123,10 @@ return {
 			132
 		},
 		alias = {
-						"hobgoblin_shield_0002"
+						"hobgoblin_shield_0106"
 		}
 	},
-	hobgoblin_shield_0003 = {
+	hobgoblin_shield_0107 = {
 		a_name = "go_enemies_bloodlust-3.png",
 		size = {
 			132,
@@ -3149,10 +3149,10 @@ return {
 			132
 		},
 		alias = {
-				"hobgoblin_shield_0004"
+				"hobgoblin_shield_0108"
 		}
 	},
-	hobgoblin_shield_0005 = {
+	hobgoblin_shield_0109 = {
 		a_name = "go_enemies_bloodlust-3.png",
 		size = {
 			132,
@@ -3175,10 +3175,10 @@ return {
 			132
 		},
 		alias = {
-			"hobgoblin_shield_0006"
+			"hobgoblin_shield_0110"
 		}
 	},
-	hobgoblin_shield_0007 = {
+	hobgoblin_shield_0111 = {
 		a_name = "go_enemies_bloodlust-3.png",
 		size = {
 			132,
@@ -3201,10 +3201,10 @@ return {
 			132
 		},
 		alias = {
-				"hobgoblin_shield_0008"
+				"hobgoblin_shield_0112"
 		}
 	},
-	hobgoblin_shield_0009 = {
+	hobgoblin_shield_0113 = {
 		a_name = "go_enemies_bloodlust-3.png",
 		size = {
 			132,
@@ -3227,10 +3227,10 @@ return {
 			132
 		},
 		alias = {
-				"hobgoblin_shield_0010"
+				"hobgoblin_shield_0114"
 		}
 	},
-	hobgoblin_shield_0011 = {
+	hobgoblin_shield_0115 = {
 		a_name = "go_enemies_bloodlust-3.png",
 		size = {
 			132,
@@ -3253,10 +3253,10 @@ return {
 			132
 		},
 		alias = {
-			"hobgoblin_shield_0012"
+			"hobgoblin_shield_0116"
 					}
 	},
-	hobgoblin_shield_0013 = {
+	hobgoblin_shield_0117 = {
 		a_name = "go_enemies_bloodlust-3.png",
 		size = {
 			132,
@@ -3279,10 +3279,10 @@ return {
 			132
 		},
 		alias = {
-			"hobgoblin_shield_0014"
+			"hobgoblin_shield_0118"
 					}
 	},
-	hobgoblin_shield_0015 = {
+	hobgoblin_shield_0119 = {
 		a_name = "go_enemies_bloodlust-3.png",
 		size = {
 			132,
@@ -3305,10 +3305,10 @@ return {
 			132
 		},
 		alias = {
-			"hobgoblin_shield_0016"
+			"hobgoblin_shield_0120"
 					}
 	},
-	hobgoblin_shield_0017 = {
+	hobgoblin_shield_0121 = {
 		a_name = "go_enemies_bloodlust-3.png",
 		size = {
 			132,
@@ -3331,7 +3331,9 @@ return {
 			132
 		},
 		alias = {
-			"hobgoblin_shield_0018"
+			"hobgoblin_shield_0122",
+			"hobgoblin_shield_0123",
+			"hobgoblin_shield_0124"
 					}
 	},
 	hobgoblin_shield_0019 = {
@@ -4373,7 +4375,9 @@ return {
 		alias = {
 			"hobgoblin_shield_0098",
 			"hobgoblin_shield_0101",
-			"hobgoblin_shield_0102"
+			"hobgoblin_shield_0102",
+			"hobgoblin_shield_0103",
+			"hobgoblin_shield_0104"
 					}
 	},
 	hobgoblin_shield_0099 = {

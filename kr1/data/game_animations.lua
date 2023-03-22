@@ -1391,28 +1391,28 @@ local a = {
 	},
 	enemy_hobgoblin_shield_attack = {
 		prefix = "hobgoblin_shield",
-		to = 18,
-		from = 1
+		to = 124,
+		from = 105
 	},
 	enemy_hobgoblin_shield_death = {
 		prefix = "hobgoblin_shield",
-		to = 102,
+		to = 104,
 		from = 87
 	},
 	enemy_hobgoblin_shield_idle = {
 		prefix = "hobgoblin_shield",
-		to = 1,
-		from = 1
+		to = 105,
+		from = 105
 	},
 	enemy_hobgoblin_shield_thorn = {
 		prefix = "hobgoblin_shield",
-		to = 1,
-		from = 1
+		to = 105,
+		from = 105
 	},
 	enemy_hobgoblin_shield_thornFree = {
 		prefix = "hobgoblin_shield",
-		to = 1,
-		from = 1
+		to = 105,
+		from = 105
 	},
 	enemy_hobgoblin_shield_walkingDown = {
 		prefix = "hobgoblin_shield",
@@ -1431,13 +1431,13 @@ local a = {
 	},
 	enemy_hobgoblin_shield_raise = {
 			prefix = "hobgoblin_shield",
-			to = 1,
-			from = 1
+			to = 105,
+			from = 105
 	},
 		enemy_hobgoblin_shield_burrow = {
 			prefix = "hobgoblin_shield",
-			to = 1,
-			from = 1
+			to = 105,
+			from = 105
 	},
 		enemy_hobgoblin_shield_teleport = {
 			prefix = "states_flying_small",
@@ -9318,6 +9318,11 @@ local a = {
 	decal_lava_fall_idle = {
 		prefix = "Inferno_Stg20_LavaFall",
 		to = 21,
+		from = 1
+	},
+	decal_water_fall_idle = {
+		prefix = "Stg29_WaterFall",
+		to = 9,
 		from = 1
 	},
 	decal_inferno_bubble_jump = {

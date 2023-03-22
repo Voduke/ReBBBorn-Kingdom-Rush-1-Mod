@@ -13,25 +13,7 @@ return {
 							interval = 36,
 							max_same = 0,
 							fixed_sub_path = 0,
-							creep = "enemy_hobgoblin_shield",
-							path = 1,
-							interval_next = 250,
-							max = 1
-						},
-						{
-							interval = 36,
-							max_same = 0,
-							fixed_sub_path = 0,
 							creep = "enemy_hobgoblin_small",
-							path = 1,
-							interval_next = 250,
-							max = 3
-						},
-						{
-							interval = 36,
-							max_same = 0,
-							fixed_sub_path = 0,
-							creep = "enemy_hobgoblin_rider",
 							path = 1,
 							interval_next = 250,
 							max = 3
@@ -44,6 +26,24 @@ return {
 							path = 1,
 							interval_next = 250,
 							max = 1
+						},
+						{
+							interval = 36,
+							max_same = 0,
+							fixed_sub_path = 0,
+							creep = "enemy_hobgoblin_shield",
+							path = 1,
+							interval_next = 250,
+							max = 1
+						},
+						{
+							interval = 36,
+							max_same = 0,
+							fixed_sub_path = 0,
+							creep = "enemy_hobgoblin_rider",
+							path = 1,
+							interval_next = 250,
+							max = 3
 						},
 					}
 				}
